@@ -1,0 +1,36 @@
+<div  >
+	<div class="modal-body">
+		<form class="form-horizontal filterForm">
+			<fieldset>
+				<div class="control-group">
+					<div class="controls clearfix">
+						<div class="control-group-l">
+							<label for="filterName">Filter... </label>
+							<input name="filterName" type="text" ng-model="imageFilterName"/>
+						</div>
+						<div class="control-group-r">
+							<label for="filterLimit">Limit to: </label>
+							<select name="filterLimit" ng-model="imageFilterLimit">
+								<option value="5">5</option>
+								<option value="10">10</option>
+								<option value="100">100</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="imageList">
+					<table width="100%">
+						<tr ng-repeat="imageAsset in filteredImages = (levelImages | filter:imageFilterName | limitTo:imageFilterLimit)"
+							ng-click="setImage(imageAsset.name)"
+							ng-class="{'selected': imageAsset.name===chosenImage }"
+							>
+							<td>{{imageAsset.name}}</td>
+							<td><img ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{imageAsset.name}}" width="100" height="100"></td>
+						</tr>
+					</table>
+				</div>
+				<div><span ng-show="filteredImages.length>0">{{filteredImages.length}} item(s) found</span></div>
+			</fieldset>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,120 @@
+{
+    "compressed": {
+        "mp3": [
+            {
+                "id": "diceroll_1",
+                "path": "audio/compressed/common/diceroll_1.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_2",
+                "path": "audio/compressed/common/diceroll_2.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_3",
+                "path": "audio/compressed/common/diceroll_3.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_4",
+                "path": "audio/compressed/common/diceroll_4.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_5",
+                "path": "audio/compressed/common/diceroll_5.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_6",
+                "path": "audio/compressed/common/diceroll_6.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "key",
+                "path": "audio/compressed/common/key.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            }
+        ],
+        "ogg": [
+            {
+                "id": "diceroll_1",
+                "path": "audio/compressed/common/diceroll_1.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_2",
+                "path": "audio/compressed/common/diceroll_2.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_3",
+                "path": "audio/compressed/common/diceroll_3.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_4",
+                "path": "audio/compressed/common/diceroll_4.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_5",
+                "path": "audio/compressed/common/diceroll_5.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "diceroll_6",
+                "path": "audio/compressed/common/diceroll_6.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "key",
+                "path": "audio/compressed/common/key.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            }
+        ]
+    }
+}

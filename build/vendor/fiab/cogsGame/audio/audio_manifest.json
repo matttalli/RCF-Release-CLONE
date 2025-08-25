@@ -1,0 +1,122 @@
+{
+    "compressed": {
+        "mp3": [
+            {
+                "id": "button_1",
+                "path": "audio/compressed/common/button_1.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "button_2",
+                "path": "audio/compressed/common/button_2.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "complete",
+                "path": "audio/compressed/common/complete.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "correct",
+                "path": "audio/compressed/common/correct.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "incorrect",
+                "path": "audio/compressed/common/incorrect.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "unavailable",
+                "path": "audio/compressed/common/unavailable.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "bubble_1",
+                "path": "audio/compressed/skin/space/bubble_1.mp3",
+                "classes": [
+                    "skin",
+                    "space"
+                ],
+                "length": null
+            }
+        ],
+        "ogg": [
+            {
+                "id": "button_1",
+                "path": "audio/compressed/common/button_1.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "button_2",
+                "path": "audio/compressed/common/button_2.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "complete",
+                "path": "audio/compressed/common/complete.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "correct",
+                "path": "audio/compressed/common/correct.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "incorrect",
+                "path": "audio/compressed/common/incorrect.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "unavailable",
+                "path": "audio/compressed/common/unavailable.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "bubble_1",
+                "path": "audio/compressed/skin/space/bubble_1.ogg",
+                "classes": [
+                    "skin",
+                    "space"
+                ],
+                "length": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+
+macmil_gungegame_gunge.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gunge_000a
+  rotate: true
+  xy: 741, 408
+  size: 64, 68
+  orig: 304, 331
+  offset: 121, 263
+  index: -1
+gunge_000b
+  rotate: true
+  xy: 593, 394
+  size: 78, 145
+  orig: 304, 331
+  offset: 116, 186
+  index: -1
+gunge_000c
+  rotate: true
+  xy: 265, 1
+  size: 118, 168
+  orig: 304, 331
+  offset: 101, 163
+  index: -1
+gunge_001
+  rotate: true
+  xy: 597, 784
+  size: 217, 276
+  orig: 304, 331
+  offset: 44, 55
+  index: -1
+gunge_002
+  rotate: false
+  xy: 1, 677
+  size: 280, 324
+  orig: 304, 331
+  offset: 9, 7
+  index: -1
+gunge_003
+  rotate: true
+  xy: 327, 122
+  size: 266, 306
+  orig: 304, 331
+  offset: 12, 25
+  index: -1
+gunge_004
+  rotate: true
+  xy: 1, 383
+  size: 291, 323
+  orig: 304, 331
+  offset: 5, 8
+  index: -1
+gunge_005
+  rotate: true
+  xy: 284, 714
+  size: 287, 310
+  orig: 304, 331
+  offset: 12, 21
+  index: -1
+gunge_006
+  rotate: false
+  xy: 327, 391
+  size: 263, 320
+  orig: 304, 331
+  offset: 35, 11
+  index: -1
+gunge_007
+  rotate: false
+  xy: 636, 115
+  size: 217, 276
+  orig: 304, 331
+  offset: 44, 55
+  index: -1
+gunge_008
+  rotate: true
+  xy: 1, 100
+  size: 280, 261
+  orig: 304, 331
+  offset: 9, 7
+  index: -1
+gunge_009
+  rotate: false
+  xy: 593, 475
+  size: 266, 236
+  orig: 304, 331
+  offset: 12, 25
+  index: -1

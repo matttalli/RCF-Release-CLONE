@@ -1,0 +1,76 @@
+
+macmill_c45_balloon_pop_space_skin_v1-1.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+space_bubble_pop_animation_00000
+  rotate: false
+  xy: 619, 682
+  size: 194, 232
+  orig: 358, 358
+  offset: 82, 63
+  index: -1
+space_bubble_pop_animation_00001
+  rotate: true
+  xy: 409, 650
+  size: 264, 207
+  orig: 358, 358
+  offset: 47, 85
+  index: -1
+space_bubble_pop_animation_00002
+  rotate: true
+  xy: 202, 612
+  size: 302, 204
+  orig: 358, 358
+  offset: 28, 100
+  index: -1
+space_bubble_pop_animation_00003
+  rotate: true
+  xy: 1, 300
+  size: 273, 227
+  orig: 358, 358
+  offset: 43, 85
+  index: -1
+space_bubble_pop_animation_00004
+  rotate: true
+  xy: 231, 366
+  size: 243, 228
+  orig: 358, 358
+  offset: 58, 69
+  index: -1
+space_bubble_pop_animation_00005
+  rotate: false
+  xy: 197, 41
+  size: 217, 256
+  orig: 358, 358
+  offset: 74, 55
+  index: -1
+space_bubble_pop_animation_00006
+  rotate: true
+  xy: 462, 463
+  size: 184, 285
+  orig: 358, 358
+  offset: 84, 39
+  index: -1
+space_bubble_pop_animation_00007
+  rotate: false
+  xy: 417, 44
+  size: 167, 319
+  orig: 358, 358
+  offset: 84, 17
+  index: -1
+space_bubble_pop_animation_00008
+  rotate: false
+  xy: 1, 576
+  size: 198, 338
+  orig: 358, 358
+  offset: 89, 7
+  index: -1
+space_bubble_pop_animation_00009
+  rotate: false
+  xy: 1, 1
+  size: 193, 296
+  orig: 358, 358
+  offset: 94, 36
+  index: -1

@@ -1,0 +1,112 @@
+{
+"skeleton": {
+	"hash": "WBAFSg2uz+vMbQlhBDvg8eWZ32s",
+	"spine": "3.8.99",
+	"x": -179,
+	"y": -211.98,
+	"width": 358,
+	"height": 358,
+	"images": "../Exports/bubble_space_pop_animation/",
+	"audio": "C:/Users/TimKi-Kydd/Fish in a Bottle/Fish In A Bottle Limited Team Site - Documents/Studio2/2539 - MacMillan Education - Game - Education games/Creative/Artwork/Animation/Working"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "space_bubble_root", "parent": "root" },
+	{ "name": "space_bubble_control", "parent": "space_bubble_root", "y": -32.98 }
+],
+"slots": [
+	{ "name": "space_bubble_pop_animation_00000", "bone": "space_bubble_control", "attachment": "space_bubble_pop_animation_00000" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"space_bubble_pop_animation_00000": {
+				"space_bubble_pop_animation_00000": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00001": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00002": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00003": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00004": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00005": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00006": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00007": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00008": { "width": 358, "height": 358 },
+				"space_bubble_pop_animation_00009": { "width": 358, "height": 358 }
+			}
+		}
+	}
+],
+"animations": {
+	"001_space_bubble_idle": {
+		"slots": {
+			"space_bubble_pop_animation_00000": {
+				"attachment": [
+					{ "name": "space_bubble_pop_animation_00000" },
+					{ "time": 1, "name": "space_bubble_pop_animation_00000" }
+				]
+			}
+		},
+		"bones": {
+			"space_bubble_control": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"002_space_bubble_pop": {
+		"slots": {
+			"space_bubble_pop_animation_00000": {
+				"attachment": [
+					{ "name": "space_bubble_pop_animation_00000" },
+					{ "time": 0.0333, "name": "space_bubble_pop_animation_00001" },
+					{ "time": 0.0667, "name": "space_bubble_pop_animation_00002" },
+					{ "time": 0.1, "name": "space_bubble_pop_animation_00003" },
+					{ "time": 0.1333, "name": "space_bubble_pop_animation_00004" },
+					{ "time": 0.1667, "name": "space_bubble_pop_animation_00005" },
+					{ "time": 0.2, "name": "space_bubble_pop_animation_00006" },
+					{ "time": 0.2333, "name": "space_bubble_pop_animation_00007" },
+					{ "time": 0.2667, "name": "space_bubble_pop_animation_00008" },
+					{ "time": 0.3, "name": "space_bubble_pop_animation_00009" },
+					{ "time": 0.3333, "name": null }
+				]
+			}
+		}
+	},
+	"003_space_bubble_popped_idle": {
+		"slots": {
+			"space_bubble_pop_animation_00000": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 1, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"space_bubble_control": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				]
+			}
+		}
+	}
+}
+}

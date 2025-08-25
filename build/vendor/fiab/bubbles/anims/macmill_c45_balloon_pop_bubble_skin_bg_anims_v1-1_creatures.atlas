@@ -1,0 +1,188 @@
+
+macmill_c45_balloon_pop_bubble_skin_bg_anims_v1-1_creatures.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+macmil_c45_undersea_bg_angelfish_whole
+  rotate: true
+  xy: 0, 721
+  size: 137, 170
+  orig: 137, 170
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_bg_fish_whole
+  rotate: false
+  xy: 891, 859
+  size: 106, 68
+  orig: 106, 68
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_bg_octopus_head_
+  rotate: false
+  xy: 440, 840
+  size: 85, 69
+  orig: 85, 69
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_bg_octopus_tentacle_
+  rotate: false
+  xy: 0, 956
+  size: 162, 19
+  orig: 162, 19
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_bg_octopus_tentacle_tail_
+  rotate: false
+  xy: 846, 927
+  size: 133, 48
+  orig: 133, 48
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_bg_shark_whole
+  rotate: false
+  xy: 525, 809
+  size: 186, 77
+  orig: 186, 77
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_bg_whale
+  rotate: false
+  xy: 170, 702
+  size: 300, 138
+  orig: 300, 138
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_fgmask_seaweed_1_
+  rotate: true
+  xy: 711, 780
+  size: 79, 247
+  orig: 79, 247
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_fgmask_seaweed_2_
+  rotate: true
+  xy: 0, 858
+  size: 51, 229
+  orig: 51, 229
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_fgmask_seaweed_3_
+  rotate: true
+  xy: 229, 855
+  size: 54, 211
+  orig: 54, 211
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_fgseaweed_basemask_stretch_
+  rotate: true
+  xy: 721, 935
+  size: 40, 125
+  orig: 40, 129
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_mg_seaweed_1_leaf_
+  rotate: false
+  xy: 826, 876
+  size: 65, 51
+  orig: 65, 51
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_mg_seaweed_1_stem_
+  rotate: true
+  xy: 162, 948
+  size: 27, 559
+  orig: 27, 560
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_mg_seaweed_2_leaf_1_
+  rotate: true
+  xy: 668, 886
+  size: 49, 81
+  orig: 49, 81
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_mg_seaweed_2_leaf_2_
+  rotate: true
+  xy: 749, 886
+  size: 49, 77
+  orig: 49, 77
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_mg_seaweed_3_
+  rotate: true
+  xy: 0, 909
+  size: 39, 668
+  orig: 39, 668
+  offset: 0, 0
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_001
+  rotate: false
+  xy: 470, 646
+  size: 164, 163
+  orig: 358, 358
+  offset: 97, 101
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_002
+  rotate: false
+  xy: 634, 612
+  size: 181, 168
+  orig: 358, 358
+  offset: 89, 93
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_003
+  rotate: true
+  xy: 815, 593
+  size: 187, 193
+  orig: 358, 358
+  offset: 82, 82
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_004
+  rotate: false
+  xy: 0, 505
+  size: 217, 197
+  orig: 358, 358
+  offset: 67, 78
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_005
+  rotate: false
+  xy: 217, 502
+  size: 210, 200
+  orig: 358, 358
+  offset: 73, 76
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_006
+  rotate: true
+  xy: 427, 364
+  size: 248, 264
+  orig: 358, 358
+  offset: 40, 49
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_007
+  rotate: true
+  xy: 0, 218
+  size: 284, 301
+  orig: 358, 358
+  offset: 29, 31
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_008
+  rotate: false
+  xy: 691, 323
+  size: 312, 270
+  orig: 358, 358
+  offset: 25, 62
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_009
+  rotate: false
+  xy: 301, 58
+  size: 323, 306
+  orig: 358, 358
+  offset: 14, 26
+  index: -1
+macmil_c45_undersea_undersea_bubble_pop_anim_v2_010
+  rotate: false
+  xy: 624, 0
+  size: 340, 323
+  orig: 358, 358
+  offset: 15, 14
+  index: -1

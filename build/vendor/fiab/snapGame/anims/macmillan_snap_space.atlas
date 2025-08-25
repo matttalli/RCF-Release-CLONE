@@ -1,0 +1,293 @@
+
+macmillan_snap_space.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+macmill_snap_asteroid_large_
+  rotate: true
+  xy: 884, 121
+  size: 193, 134
+  orig: 193, 134
+  offset: 0, 0
+  index: -1
+macmill_snap_bg_planet_cloud_horizon_1_
+  rotate: false
+  xy: 361, 234
+  size: 179, 95
+  orig: 179, 96
+  offset: 0, 0
+  index: -1
+macmill_snap_bg_planet_cloud_horizon_2_
+  rotate: false
+  xy: 900, 403
+  size: 106, 43
+  orig: 106, 44
+  offset: 0, 1
+  index: -1
+macmill_snap_bg_planet_cloud_horizon_3_
+  rotate: false
+  xy: 542, 260
+  size: 81, 29
+  orig: 82, 29
+  offset: 1, 0
+  index: -1
+macmill_snap_bg_planet_cloud_horizon_4_
+  rotate: false
+  xy: 258, 145
+  size: 94, 25
+  orig: 94, 25
+  offset: 0, 0
+  index: -1
+macmill_snap_bg_planet_cloud_horizon_5_
+  rotate: false
+  xy: 258, 415
+  size: 103, 31
+  orig: 103, 31
+  offset: 0, 0
+  index: -1
+macmill_snap_bg_planet_cloud_mid_1_
+  rotate: false
+  xy: 2, 220
+  size: 248, 123
+  orig: 249, 123
+  offset: 1, 0
+  index: -1
+macmill_snap_bg_planet_cloud_mid_2_
+  rotate: false
+  xy: 2, 345
+  size: 254, 101
+  orig: 254, 101
+  offset: 0, 0
+  index: -1
+macmill_snap_card_edge_
+  rotate: false
+  xy: 369, 588
+  size: 264, 26
+  orig: 264, 26
+  offset: 0, 0
+  index: -1
+macmill_snap_meteor_rock_
+  rotate: true
+  xy: 214, 69
+  size: 34, 36
+  orig: 34, 36
+  offset: 0, 0
+  index: -1
+macmill_snap_meteor_tail_
+  rotate: false
+  xy: 2, 448
+  size: 365, 166
+  orig: 365, 166
+  offset: 0, 0
+  index: -1
+macmill_snap_planet_small_
+  rotate: false
+  xy: 635, 426
+  size: 263, 188
+  orig: 263, 188
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_body_
+  rotate: true
+  xy: 361, 178
+  size: 54, 126
+  orig: 54, 126
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_booster_smoke_1_
+  rotate: true
+  xy: 409, 77
+  size: 24, 30
+  orig: 24, 30
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_booster_smoke_3_
+  rotate: false
+  xy: 488, 108
+  size: 32, 29
+  orig: 32, 29
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_flash_bulb_1_
+  rotate: false
+  xy: 1008, 425
+  size: 14, 21
+  orig: 14, 21
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_flash_bulb_1a_
+  rotate: false
+  xy: 1008, 402
+  size: 14, 21
+  orig: 14, 21
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_flash_bulb_2_
+  rotate: false
+  xy: 884, 415
+  size: 11, 9
+  orig: 11, 9
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_flash_bulb_2a_
+  rotate: true
+  xy: 884, 402
+  size: 11, 9
+  orig: 11, 9
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_panel_1_
+  rotate: false
+  xy: 884, 316
+  size: 135, 84
+  orig: 135, 84
+  offset: 0, 0
+  index: -1
+macmill_snap_satellite_panel_2_
+  rotate: true
+  xy: 542, 116
+  size: 125, 73
+  orig: 125, 73
+  offset: 0, 0
+  index: -1
+macmill_snap_space_card_front_
+  rotate: false
+  xy: 627, 169
+  size: 255, 255
+  orig: 255, 255
+  offset: 0, 0
+  index: -1
+macmill_snap_space_card_front_content_
+  rotate: false
+  xy: 2, 11
+  size: 210, 207
+  orig: 210, 207
+  offset: 0, 0
+  index: -1
+macmill_snap_space_card_rear_
+  rotate: true
+  xy: 369, 331
+  size: 255, 256
+  orig: 255, 256
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_capsules_
+  rotate: true
+  xy: 258, 172
+  size: 241, 101
+  orig: 242, 101
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_front_1_
+  rotate: false
+  xy: 900, 465
+  size: 115, 78
+  orig: 115, 78
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_front_2_
+  rotate: false
+  xy: 361, 103
+  size: 125, 73
+  orig: 125, 73
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_front_3_
+  rotate: false
+  xy: 900, 545
+  size: 119, 69
+  orig: 119, 69
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_front_4_
+  rotate: false
+  xy: 257, 56
+  size: 86, 53
+  orig: 86, 53
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_front_5_
+  rotate: true
+  xy: 214, 127
+  size: 91, 42
+  orig: 91, 42
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_front_6_
+  rotate: false
+  xy: 258, 111
+  size: 91, 32
+  orig: 91, 32
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_grey_1_
+  rotate: false
+  xy: 488, 139
+  size: 39, 20
+  orig: 39, 20
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_grey_2_
+  rotate: false
+  xy: 214, 105
+  size: 41, 20
+  orig: 41, 20
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_rear_1_
+  rotate: true
+  xy: 489, 161
+  size: 71, 51
+  orig: 71, 51
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_rear_2_
+  rotate: false
+  xy: 542, 291
+  size: 83, 38
+  orig: 83, 38
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_rear_3_
+  rotate: true
+  xy: 488, 21
+  size: 85, 30
+  orig: 85, 31
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_rear_4_
+  rotate: true
+  xy: 214, 2
+  size: 65, 32
+  orig: 66, 32
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_rear_5_
+  rotate: false
+  xy: 345, 74
+  size: 62, 27
+  orig: 63, 27
+  offset: 0, 0
+  index: -1
+macmill_snap_space_space_station_uvpanel_rear_6_
+  rotate: true
+  xy: 522, 74
+  size: 63, 17
+  orig: 63, 17
+  offset: 0, 0
+  index: -1
+macmill_snap_twinkle_star_hori_
+  rotate: false
+  xy: 542, 243
+  size: 77, 15
+  orig: 77, 15
+  offset: 0, 0
+  index: -1
+macmill_snap_twinkle_star_vert_
+  rotate: true
+  xy: 900, 448
+  size: 15, 113
+  orig: 15, 113
+  offset: 0, 0
+  index: -1

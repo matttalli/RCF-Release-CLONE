@@ -1,0 +1,56 @@
+{
+    "compressed": {
+        "mp3": [
+            {
+                "id": "dingding",
+                "path": "audio/compressed/common/dingding.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "key",
+                "path": "audio/compressed/common/key.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "spin",
+                "path": "audio/compressed/common/spin.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            }
+        ],
+        "ogg": [
+            {
+                "id": "dingding",
+                "path": "audio/compressed/common/dingding.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "key",
+                "path": "audio/compressed/common/key.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "spin",
+                "path": "audio/compressed/common/spin.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            }
+        ]
+    }
+}

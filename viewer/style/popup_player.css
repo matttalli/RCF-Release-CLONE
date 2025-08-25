@@ -1,0 +1,254 @@
+/* popup player styles */
+
+html.rcf-monorepo {
+	background: url(../images/llama-bg.png) fixed no-repeat bottom right #e2d6e6;
+}
+
+body .activity {
+	margin-bottom: 55px;
+}
+
+.rcf-monorepo body {
+	background: transparent;
+}
+
+
+.popupPlayer {
+	display: block;
+}
+
+.popupPlayerError {
+	display: none;
+}
+
+.hasError .popupPlayerError {
+	max-width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 75vh;
+	font-size: 20pt;
+	color: red;
+	font-weight: bold;
+}
+
+.popupPlayerError .errorMessage {
+	align-items: center;
+	flex-direction: column;
+	max-width: 75%;
+}
+
+.hasError .popupPlayer {
+	display: none;
+}
+
+.answersButton {
+	display: none;
+}
+
+.openNonGradable .showAnswers.answersButton,
+.openNonGradable .nextAnswer.answersButton,
+.answerKey .nextAnswer.answersButton,
+.closedGradable .answersButton{
+	display: inline-block;
+    width: 31%;
+}
+
+.itemBased .answersButton {
+	display: inline-block;
+    width: 45%;
+}
+
+.checkingAnswers:not(.perfectScore).closedGradable .answersButton{
+    width: 23%;
+}
+
+.story .nextAnswer.answersButton,
+.itemBased .nextAnswer.answersButton {
+	display: none;
+}
+
+.tryAgain.answersButton {
+	display:none
+}
+
+.checkingAnswers:not(.perfectScore):not(.itemBased) .tryAgain.answersButton {
+	display: inline-block;
+}
+
+.checkingAnswers:not(.perfectScore) .playerScore {
+	animation: notPerfectScoreAnimation 0.5s;
+}
+
+@keyframes notPerfectScoreAnimation {
+	20%, 80% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.1);
+		background: red;
+		color: white;
+	}
+	100% {
+		background-color: auto;
+		transform: scale(1);
+	}
+}
+
+.checkingAnswers.perfectScore .playerScore {
+	animation: perfectScoreAnimation 0.5s;
+}
+
+@keyframes perfectScoreAnimation {
+	20%, 80% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1.1);
+		background: green;
+		color: white;
+	}
+	100% {
+		background-color: auto;
+		transform: scale(1);
+	}
+}
+
+.openGradableFeedbackOptions {
+	display: none;
+}
+
+.openGradable .openGradableFeedbackOptions {
+	display: block;
+}
+
+.openGradable .nextAnswer {
+	display: none;
+}
+
+.openGradable .showAnswers {
+	display: none;
+}
+
+/* for open-gradable answer key mode - they are NOT real answer keys */
+.openGradable.answerKeyMode .playerControls {
+	flex: 1;
+}
+
+.openGradable.answerKeyMode .showAnswers {
+	display: inline-block;
+}
+
+/* for *REAL* answer keys */
+.rcf_answerKeyContainer .showAnswers,
+.rcf_answerKeyContainer .nextAnswer {
+	display: inline-block;
+}
+
+.playerToolbar {
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid #999;
+	background: #aaa;
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+.rcf-monorepo .playerToolbar {
+	background: #563d7c;
+}
+
+.playerToolbar .playerScore {
+	margin: 5px;
+	background: white;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+	padding: 3px 5px 0;
+	height: 30px;
+	min-width: 50px;
+	text-align: center;
+}
+
+.playerToolbar .gradableTypeContainer {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 750px) {
+    .playerToolbar .gradableTypeContainer {
+		display: none;
+	}
+}
+
+.playerToolbar .playerControls {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.playerToolbar button {
+	height: 35px;
+	font-weight: bold;
+	background-color: #497383;
+	color: white;
+	border-color: #497399;
+	border-radius: 5px;
+    max-width: max-content;
+    vertical-align: top;
+    margin: 5px 0;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.rcf-monorepo .playerToolbar button {
+	background-color: #412d4e;
+	font-weight: normal;
+	border-color: #352d4e;
+}
+
+.playerToolbar .resetContainer {
+	padding-right: 5px;
+}
+
+.screenshotMode {
+	overflow:hidden;
+}
+.screenshotMode .playerToolbar{
+	display: none;
+}
+
+.feedbackContainer {
+	display: none;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    background: purple;
+    bottom: 40%;
+    z-index: 11;
+    top: 20%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 15px;
+    box-shadow: 1px;
+    -webkit-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 31px 0px rgba(0,0,0,0.75);
+}
+
+.showingFeedback.activityComplete .feedbackContainer {
+	display: flex;
+}
+

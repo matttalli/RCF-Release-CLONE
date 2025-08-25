@@ -1,0 +1,44 @@
+<div class="desktopContentContainer" ng-controller="ProjectController" ng-init="init()">
+	<div class="rcfContentContainer">
+		<form class="form-horizontal metadataForm viewerForm projectForm">
+			<h1>Project: <span ng-bind="projectName"></span> (<span ng-bind="projectVersion"></span>)</h1>
+			<legend>Project information</legend>
+			<label for="project-type">Type</label>
+			<input id="project-type" type="text" ng-model="projectType" size="32" maxLength="32" disabled>
+			<label for="rcf-version">RCF Version</label>
+			<input id="rcf-version" type="text" ng-model="RCFVersion" size="32" maxLength="32" disabled>
+			<br/>
+			<br/>
+			<legend>Look and feel</legend>
+			<label for="mobile-drag-drop">Use Mobile Drag Drop</label>
+			<input id="mobile-drag-drop" type="checkbox" ng-model="mobileDragDrop" ng-true-value="true" ng-false-value="false" disabled>
+
+			<label for="drop-down-listoutput">Drop Down List Output</label>
+			<input id="drop-down-listoutput" type="checkbox" ng-model="dropDownListOutput" ng-true-value="true" ng-false-value="false" disabled>
+
+			<label for="disable-open-gradable-teacher-comments">Disable Open Gradable Teacher Comments</label>
+			<input id="disable-open-gradable-teacher-comments" type="checkbox" ng-model="disableOpenGradableTeacherComments" ng-true-value="true" ng-false-value="false" disabled>
+
+			<br>
+			<br>
+			<legend>Marking</legend>
+			<label for="penalise-wrong-answers">Penalise wrong answers</label>
+			<input id="penalise-wrong-answers" type="checkbox" ng-model="penaliseWrongAnswers" ng-true-value="true" ng-false-value="false" disabled>
+			<br/>
+			<br/>
+			<legend>Word Pool Settings</legend>
+			<label for="word-pool-position">Word Pool Position</label>
+			<input id="word-pool-position" type="text" ng-model="wordPoolPosition" size="32" maxLength="32" disabled>
+
+			<label for="sticky-word-pools">Sticky Word Pools</label>
+			<input id="sticky-word-pools" type="checkbox" ng-model="stickyWordPools" ng-true-value="true" ng-false-value="false" disabled>
+
+			<label for="fixed-word-pools">Fixed Word Pools</label>
+			<input id="fixed-word-pools" type="checkbox" ng-model="fixedWordPools" ng-true-value="true" ng-false-value="false" disabled>
+
+			<label for="collapsible-word-pools">Collapsible Word Pools</label>
+			<input id="collapsible-word-pools" type="checkbox" ng-model="collapsibleWordPools" ng-true-value="true" ng-false-value="false" disabled>
+
+		</form>
+	</div>
+</div>

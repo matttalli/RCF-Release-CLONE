@@ -1,0 +1,232 @@
+{
+    "compressed": {
+        "mp3": [
+            {
+                "id": "button",
+                "path": "audio/compressed/common/button.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "complete",
+                "path": "audio/compressed/common/complete.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "correct",
+                "path": "audio/compressed/common/correct.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_bad",
+                "path": "audio/compressed/common/crowd_bad.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_bed_fade",
+                "path": "audio/compressed/common/crowd_bed_fade.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_bed_loop",
+                "path": "audio/compressed/common/crowd_bed_loop.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_good2",
+                "path": "audio/compressed/common/crowd_good2.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_great",
+                "path": "audio/compressed/common/crowd_great.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "incorrect",
+                "path": "audio/compressed/common/incorrect.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "intro",
+                "path": "audio/compressed/common/intro.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "long_splat",
+                "path": "audio/compressed/common/long_splat.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "medium_splat",
+                "path": "audio/compressed/common/medium_splat.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "short_splat",
+                "path": "audio/compressed/common/short_splat.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "wheel_start",
+                "path": "audio/compressed/common/wheel_start.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            }
+        ],
+        "ogg": [
+            {
+                "id": "button",
+                "path": "audio/compressed/common/button.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "complete",
+                "path": "audio/compressed/common/complete.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "correct",
+                "path": "audio/compressed/common/correct.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_bad",
+                "path": "audio/compressed/common/crowd_bad.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_bed_fade",
+                "path": "audio/compressed/common/crowd_bed_fade.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_bed_loop",
+                "path": "audio/compressed/common/crowd_bed_loop.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_good2",
+                "path": "audio/compressed/common/crowd_good2.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "crowd_great",
+                "path": "audio/compressed/common/crowd_great.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "incorrect",
+                "path": "audio/compressed/common/incorrect.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "intro",
+                "path": "audio/compressed/common/intro.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "long_splat",
+                "path": "audio/compressed/common/long_splat.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "medium_splat",
+                "path": "audio/compressed/common/medium_splat.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "short_splat",
+                "path": "audio/compressed/common/short_splat.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "wheel_start",
+                "path": "audio/compressed/common/wheel_start.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            }
+        ]
+    }
+}

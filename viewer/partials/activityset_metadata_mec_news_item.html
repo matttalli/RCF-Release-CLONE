@@ -1,0 +1,84 @@
+<div class="desktopContentContainer" ng-controller="MecMetadataNewsController" ng-init="init();">
+	<div class="rcfContentContainer">
+		<form class="form-horizontal metadataForm viewerForm" ng-submit="saveMetaData()">
+			<fieldset>
+				<legend>Activity Set Metadata for LearningMate - News Item</legend>
+
+				<label for="metadata-id">Id</label>
+				<input id="metadata-id" type="text"  ng-model="metadata.id[0]">
+
+				<label for="metadata-title">Title</label>
+				<input id="metadata-title" type="text"  ng-model="metadata.title[0]">
+
+
+				<label for="metadata-description">Description</label>
+				<input id="metadata-description" type="text"  ng-model="metadata.description[0]">
+
+
+				<label>Topics</label>
+				<div class="list" ng-repeat="topic in metadata.topics[0].topic track by $index">
+					<input class="item" ng-model="metadata.topics[0].topic[$index]"><a class="option" ng-click="deleteItem(metadata.topics[0].topic, $index)">x</a>
+				</div>
+				<button ng-click="addItem(metadata.topics[0].topic)">+</button>
+
+				<label for="metadata-groups">Groups</label>
+				<div class="list" ng-repeat="group in metadata.groups[0].group track by $index">
+					<select id="metadata-groups"
+							class="item"
+							ng-model="metadata.groups[0].group[$index]"
+							ng-options="groupOption for groupOption in schema.groups">
+					</select><a class="option" ng-click="deleteItem(metadata.groups[0].group, $index)">x</a>
+				</div>
+				<button ng-click="addItem(metadata.groups[0].group)">+</button>
+
+				<label for="metadata-levels">Levels</label>
+				<div class="list" ng-repeat="group in metadata.levels[0].level track by $index">
+					<select id="metadata-levels"
+							class="item"
+							ng-model="metadata.levels[0].level[$index]"
+							ng-options="levelOption for levelOption in schema.levels">
+					</select><a class="option" ng-click="deleteItem(metadata.levels[0].level, $index)">x</a>
+				</div>
+				<button ng-click="addItem(metadata.levels[0].level)">+</button>
+
+				<label for="metadata-ages">Ages</label>
+				<div class="list" ng-repeat="ages in metadata.ages[0].age track by $index">
+					<select id="metadata-ages"
+							class="item"
+							ng-model="metadata.ages[0].age[$index]"
+							ng-options="ageOption for ageOption in schema.ages">
+					</select><a class="option" ng-click="deleteItem(metadata.ages[0].age, $index)">x</a>
+				</div>
+				<button ng-click="addItem(metadata.ages[0].age)">+</button>
+
+				<label for="metadata-contentSets">Content sets</label>
+				<div class="list" ng-repeat="ages in metadata.contentSets[0].contentSet track by $index">
+					<select id="metadata-contentSets"
+							class="item"
+							ng-model="metadata.contentSets[0].contentSet[$index]"
+							ng-options="contentSetOption for contentSetOption in schema.contentSets">
+					</select><a class="option" ng-click="deleteItem(metadata.contentSets[0].contentSet, $index)">x</a>
+				</div>
+				<button ng-click="addItem(metadata.contentSets[0].contentSet)">+</button>
+
+				<label for="metadata-thumbnail">Thumbnail</label>
+				<div class="thumbChooserContainer">
+					<div class="controls">
+						<input id="meta-data-filtered-thumb" type="text" class="imageChooser" placeholder="choose a thumbnail image" value="{{metadata.thumbnail[0]}}" READONLY/>
+						<input  id="metadata-thumbnail" ng-model="metadata.thumbnail[0]" type="hidden" READONLY/>
+						<span class="singleButton" ng-click="chooseThumbnail(metadata.thumbnail[0])">Choose</span>
+					</div>
+					<div class="imagePreview">
+						<img class="thumbPreview" ng-show="!!metadata.thumbnail[0]" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metadata.thumbnail[0]}}">
+					</div>
+				</div>
+
+
+				<div class="formFooter" ng-show="footerShown">
+					<input type="submit" class="hiddenSubmit viewerSingleButton" value="Save" accesskey="S" ng-disabled="submitButtonDisabled">
+					<span class="viewerSingleButton" ng-click="saveMetadata()">Save</span>
+				</div>
+	 		</fieldset>
+		</form>
+	</div>
+</div>

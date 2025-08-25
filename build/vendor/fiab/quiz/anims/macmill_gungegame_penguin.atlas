@@ -1,0 +1,160 @@
+
+macmill_gungegame_penguin.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+macmil_gungegame_character_penguin_arm_l lower_straight_
+  rotate: false
+  xy: 219, 10
+  size: 37, 84
+  orig: 37, 84
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_arm_l upper_
+  rotate: false
+  xy: 273, 190
+  size: 38, 63
+  orig: 38, 63
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_arm_l_lower_bend_
+  rotate: false
+  xy: 283, 128
+  size: 30, 59
+  orig: 30, 59
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_arm_r_
+  rotate: true
+  xy: 138, 9
+  size: 85, 78
+  orig: 85, 78
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_beak_open_
+  rotate: false
+  xy: 298, 49
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_body_
+  rotate: false
+  xy: 138, 97
+  size: 80, 156
+  orig: 80, 156
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_hair_
+  rotate: true
+  xy: 221, 184
+  size: 69, 49
+  orig: 69, 49
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_head_
+  rotate: false
+  xy: 221, 114
+  size: 59, 67
+  orig: 59, 67
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_leg_l_
+  rotate: false
+  xy: 298, 76
+  size: 38, 49
+  orig: 40, 49
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_leg_r_
+  rotate: false
+  xy: 314, 195
+  size: 57, 58
+  orig: 57, 61
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguin_pupil_
+  rotate: true
+  xy: 1, 1
+  size: 7, 10
+  orig: 7, 10
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguinbeak_closed_
+  rotate: true
+  xy: 325, 49
+  size: 24, 18
+  orig: 24, 18
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguinblink_
+  rotate: true
+  xy: 283, 5
+  size: 40, 23
+  orig: 40, 23
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_penguinhalf_closed_
+  rotate: true
+  xy: 259, 2
+  size: 43, 21
+  orig: 43, 21
+  offset: 0, 0
+  index: -1
+penguin_character_
+  rotate: false
+  xy: 1, 11
+  size: 134, 242
+  orig: 134, 242
+  offset: 0, 0
+  index: -1
+penguin_gunge_Leg_l_
+  rotate: true
+  xy: 309, 11
+  size: 35, 20
+  orig: 35, 20
+  offset: 0, 0
+  index: -1
+penguin_gunge_beak_
+  rotate: false
+  xy: 336, 139
+  size: 15, 17
+  orig: 15, 17
+  offset: 0, 0
+  index: -1
+penguin_gunge_fin_r_
+  rotate: false
+  xy: 346, 162
+  size: 29, 30
+  orig: 29, 30
+  offset: 0, 0
+  index: -1
+penguin_gunge_head_
+  rotate: true
+  xy: 259, 48
+  size: 63, 36
+  orig: 63, 36
+  offset: 0, 0
+  index: -1
+penguin_gunge_leg_r_
+  rotate: true
+  xy: 316, 130
+  size: 26, 17
+  orig: 26, 17
+  offset: 0, 0
+  index: -1
+penguin_gunge_shoulder_l_
+  rotate: false
+  xy: 316, 159
+  size: 27, 33
+  orig: 27, 33
+  offset: 0, 0
+  index: -1
+penguin_gunge_shoulder_r_
+  rotate: true
+  xy: 332, 11
+  size: 35, 20
+  orig: 35, 20
+  offset: 0, 0
+  index: -1

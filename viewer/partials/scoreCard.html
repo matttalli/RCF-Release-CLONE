@@ -1,0 +1,31 @@
+<div class="viewerScoreCard appear" ng-if="layout.marking" ng-show="layout.marking && layout.showScoreCard">
+
+	<style>
+		.penaltyText {
+			font-size: smaller;
+		}
+	</style>
+
+	<button class="scoreCardCloseButton" ng-click="layout.showScoreCard = false">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			focusable="false"
+			aria-hidden="true"
+			role="img"
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			aria-labelledby="titleCloseButton descCloseButton"
+		>
+			<aria-title id="titleCloseButton">Close</aria-title>
+			<desc id="descCloseButton">icon</desc>
+			<path
+				d="M13.4 12l6.3-6.3c0.4-0.4 0.4-1 0-1.4 -0.4-0.4-1-0.4-1.4 0L12 10.6 5.7 4.3c-0.4-0.4-1-0.4-1.4 0 -0.4 0.4-0.4 1 0 1.4l6.3 6.3 -6.3 6.3c-0.4 0.4-0.4 1 0 1.4C4.5 19.9 4.7 20 5 20s0.5-0.1 0.7-0.3l6.3-6.3 6.3 6.3c0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3c0.4-0.4 0.4-1 0-1.4L13.4 12z"
+			></path>
+		</svg>
+	</button>
+	<div class="scoreCardText">
+		You scored {{activity.currentScore}} / {{ activityItemBasedItemId ? activity.scoreOutOf : activity.availablePoints }}
+		<div class="penaltyText" ng-if="penaliseWrongAnswers && activity.currentScore < (activityItemBasedItemId ? activity.scoreOutOf : activity.availablePoints)">(possible penalities !)</div>
+	</div>
+</div>

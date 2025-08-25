@@ -1,0 +1,654 @@
+<contractions>
+	<contraction>
+		<from>{#aint}</from>
+		<to>{am not|are not|is not|has not|have not}</to>
+	</contraction>
+	<contraction>
+		<from>{#arent}</from>
+		<to>{aren't|are not|am not}</to>
+	</contraction>
+	<contraction>
+		<from>{#cant}</from>
+		<to>{can't|cannot}</to>
+	</contraction>
+	<contraction>
+		<from>{#couldve}</from>
+		<to>{could've|could have}</to>
+	</contraction>
+	<contraction>
+		<from>{#couldnt}</from>
+		<to>{couldn't|could not}</to>
+	</contraction>
+	<contraction>
+		<from>{#couldntve}</from>
+		<to>{couldn't've|could not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#didnt}</from>
+		<to>{didn't|did not}</to>
+	</contraction>
+	<contraction>
+		<from>{#doesnt}</from>
+		<to>{doesn't|does not}</to>
+	</contraction>
+	<contraction>
+		<from>{#dont}</from>
+		<to>{don't|do not}</to>
+	</contraction>
+	<contraction>
+		<from>{#hadnt}</from>
+		<to>{hadn't|had not}</to>
+	</contraction>
+	<contraction>
+		<from>{#hadntve}</from>
+		<to>{hadn't've|had not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#hasnt}</from>
+		<to>{hasn't|has not}</to>
+	</contraction>
+	<contraction>
+		<from>{#havent}</from>
+		<to>{haven't|have not}</to>
+	</contraction>
+	<contraction>
+		<from>{#hed}</from>
+		<to>{he'd|he had|he would}</to>
+	</contraction>
+	<contraction>
+		<from>{#hedve}</from>
+		<to>{he'd've|he would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#hell}</from>
+		<to>{he'll|he shall|he will}</to>
+	</contraction>
+	<contraction>
+		<from>{#hes}</from>
+		<to>{he's|he has|he is}</to>
+	</contraction>
+	<contraction>
+		<from>{#howd}</from>
+		<to>{how'd|how did|how would}</to>
+	</contraction>
+	<contraction>
+		<from>{#howll}</from>
+		<to>{how'll|how will}</to>
+	</contraction>
+	<contraction>
+		<from>{#hows}</from>
+		<to>{how's|how has|how is|how does}</to>
+	</contraction>
+	<contraction>
+		<from>{#Id}</from>
+		<to>{I'd|I had|I would}</to>
+	</contraction>
+	<contraction>
+		<from>{#Idve}</from>
+		<to>{I'd|I would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Ill}</from>
+		<to>{I'll|I shall|I will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Im}</from>
+		<to>{I'm|I am}</to>
+	</contraction>
+	<contraction>
+		<from>{#Ive}</from>
+		<to>{I've|I have}</to>
+	</contraction>
+	<contraction>
+		<from>{#isnt}</from>
+		<to>{isn't|is not}</to>
+	</contraction>
+	<contraction>
+		<from>{#itd}</from>
+		<to>{it'd|it had|it would}</to>
+	</contraction>
+	<contraction>
+		<from>{#itdve}</from>
+		<to>{it'd've|it would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#itll}</from>
+		<to>{it'll|it shall|it will}</to>
+	</contraction>
+	<contraction>
+		<from>{#its}</from>
+		<to>{it's|it has|it is}</to>
+	</contraction>
+	<contraction>
+		<from>{#lets}</from>
+		<to>{let's|let us}</to>
+	</contraction>
+	<contraction>
+		<from>{#maam}</from>
+		<to>{ma'am|madam}</to>
+	</contraction>
+	<contraction>
+		<from>{#mightnt}</from>
+		<to>{mightn't|might not}</to>
+	</contraction>
+	<contraction>
+		<from>{#mightntve}</from>
+		<to>{mightn't've|might not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#mightve}</from>
+		<to>{might've|might have}</to>
+	</contraction>
+	<contraction>
+		<from>{#mustnt}</from>
+		<to>{mustn't|must not}</to>
+	</contraction>
+	<contraction>
+		<from>{#mustve}</from>
+		<to>{must've|must have}</to>
+	</contraction>
+	<contraction>
+		<from>{#neednt}</from>
+		<to>{needn't|need not}</to>
+	</contraction>
+	<contraction>
+		<from>{#notve}</from>
+		<to>{not've|not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#oclock}</from>
+		<to>{o'clock|of the clock}</to>
+	</contraction>
+	<contraction>
+		<from>{#shant}</from>
+		<to>{shalln't|shall not}</to>
+	</contraction>
+	<contraction>
+		<from>{#shed}</from>
+		<to>{she'd|she had|she would}</to>
+	</contraction>
+	<contraction>
+		<from>{#shedve}</from>
+		<to>{she'd've|she would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#shell}</from>
+		<to>{she'll|she shall|she will}</to>
+	</contraction>
+	<contraction>
+		<from>{#shes}</from>
+		<to>{she's|she has|she is}</to>
+	</contraction>
+	<contraction>
+		<from>{#shouldve}</from>
+		<to>{should've|should have}</to>
+	</contraction>
+	<contraction>
+		<from>{#shouldnt}</from>
+		<to>{shouldn't|should not}</to>
+	</contraction>
+	<contraction>
+		<from>{#shouldntve}</from>
+		<to>{shouldn't've|should not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#thats}</from>
+		<to>{that's|that has|that is}</to>
+	</contraction>
+	<contraction>
+		<from>{#thered}</from>
+		<to>{there'd|there had|there would}</to>
+	</contraction>
+	<contraction>
+		<from>{#theredve}</from>
+		<to>{there'd've|there would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#theres}</from>
+		<to>{there's|there has|there is}</to>
+	</contraction>
+	<contraction>
+		<from>{#theyd}</from>
+		<to>{they'd|they had|they would}</to>
+	</contraction>
+	<contraction>
+		<from>{#theydve}</from>
+		<to>{they'd've|they would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#theyll}</from>
+		<to>{they'll|they shall|they will}</to>
+	</contraction>
+	<contraction>
+		<from>{#theyre}</from>
+		<to>{they're|they are}</to>
+	</contraction>
+	<contraction>
+		<from>{#theyve}</from>
+		<to>{they've|they have}</to>
+	</contraction>
+	<contraction>
+		<from>{#wasnt}</from>
+		<to>{wasn't|was not}</to>
+	</contraction>
+	<contraction>
+		<from>{#wed}</from>
+		<to>{we'd|we had|we would}</to>
+	</contraction>
+	<contraction>
+		<from>{#wedve}</from>
+		<to>{we'd've|we would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#well}</from>
+		<to>{we'll|we will}</to>
+	</contraction>
+	<contraction>
+		<from>{#were}</from>
+		<to>{we're|we are}</to>
+	</contraction>
+	<contraction>
+		<from>{#weve}</from>
+		<to>{we've|we have}</to>
+	</contraction>
+	<contraction>
+		<from>{#werent}</from>
+		<to>{weren't|were not}</to>
+	</contraction>
+	<contraction>
+		<from>{#whatll}</from>
+		<to>{what'll|what shall|what will}</to>
+	</contraction>
+	<contraction>
+		<from>{#whatre}</from>
+		<to>{what're|what are}</to>
+	</contraction>
+	<contraction>
+		<from>{#whats}</from>
+		<to>{what's|what has|what is|what does}</to>
+	</contraction>
+	<contraction>
+		<from>{#whatve}</from>
+		<to>{what've|what have}</to>
+	</contraction>
+	<contraction>
+		<from>{#whens}</from>
+		<to>{when's|when has|when is}</to>
+	</contraction>
+	<contraction>
+		<from>{#whered}</from>
+		<to>{where'd|where did}</to>
+	</contraction>
+	<contraction>
+		<from>{#wheres}</from>
+		<to>{where's|where has|where is}</to>
+	</contraction>
+	<contraction>
+		<from>{#whereve}</from>
+		<to>{where've|where have}</to>
+	</contraction>
+	<contraction>
+		<from>{#whod}</from>
+		<to>{who'd|who would|who had}</to>
+	</contraction>
+	<contraction>
+		<from>{#wholl}</from>
+		<to>{who'll|who shall|who will}</to>
+	</contraction>
+	<contraction>
+		<from>{#whore}</from>
+		<to>{who're|who are}</to>
+	</contraction>
+	<contraction>
+		<from>{#whos}</from>
+		<to>{who's|who has|who is}</to>
+	</contraction>
+	<contraction>
+		<from>{#whove}</from>
+		<to>{who've|who have}</to>
+	</contraction>
+	<contraction>
+		<from>{#whyll}</from>
+		<to>{why'll|why will}</to>
+	</contraction>
+	<contraction>
+		<from>{#whyre}</from>
+		<to>{why're|why are}</to>
+	</contraction>
+	<contraction>
+		<from>{#whys}</from>
+		<to>{why's|why has|why is}</to>
+	</contraction>
+	<contraction>
+		<from>{#wont}</from>
+		<to>{won't|will not}</to>
+	</contraction>
+	<contraction>
+		<from>{#wouldve}</from>
+		<to>{would've|would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#wouldnt}</from>
+		<to>{wouldn't|would not}</to>
+	</contraction>
+	<contraction>
+		<from>{#wouldntve}</from>
+		<to>{wouldn't've|would not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#youd}</from>
+		<to>{you'd|you had|you would}</to>
+	</contraction>
+	<contraction>
+		<from>{#youdve}</from>
+		<to>{you'd've|you would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#youll}</from>
+		<to>{you'll|you shall|you will}</to>
+	</contraction>
+	<contraction>
+		<from>{#youre}</from>
+		<to>{you're|you are}</to>
+	</contraction>
+	<contraction>
+		<from>{#youve}</from>
+		<to>{you've|you have}</to>
+	</contraction>
+		<contraction>
+		<from>{#Aint}</from>
+		<to>{Am not|Are not|Is not|Has not|Have not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Arent}</from>
+		<to>{Aren't|Are not|Am not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Cant}</from>
+		<to>{Can't|Cannot}</to>
+	</contraction>
+	<contraction>
+		<from>{#Couldve}</from>
+		<to>{Could've|Could have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Couldnt}</from>
+		<to>{Couldn't|Could not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Couldntve}</from>
+		<to>{Couldn't've|Could not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Didnt}</from>
+		<to>{Didn't|Did not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Doesnt}</from>
+		<to>{Doesn't|Does not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Dont}</from>
+		<to>{Don't|Do not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Hadnt}</from>
+		<to>{Hadn't|Had not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Hadntve}</from>
+		<to>{Hadn't've|Had not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Hasnt}</from>
+		<to>{Hasn't|Has not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Havent}</from>
+		<to>{Haven't|Have not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Hed}</from>
+		<to>{He'd|He had|He would}</to>
+	</contraction>
+	<contraction>
+		<from>{#Hedve}</from>
+		<to>{He'd've|He would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Hell}</from>
+		<to>{He'll|He shall|He will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Hes}</from>
+		<to>{He's|He has|He is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Howd}</from>
+		<to>{How'd|How did|How would}</to>
+	</contraction>
+	<contraction>
+		<from>{#Howll}</from>
+		<to>{How'll|How will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Hows}</from>
+		<to>{How's|How has|How is|How does}</to>
+	</contraction>
+	<contraction>
+		<from>{#Isnt}</from>
+		<to>{Isn't|Is not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Itd}</from>
+		<to>{It'd|It had|It would}</to>
+	</contraction>
+	<contraction>
+		<from>{#Itdve}</from>
+		<to>{It'd've|It would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Itll}</from>
+		<to>{It'll|It shall|It will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Its}</from>
+		<to>{It's|It has|It is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Lets}</from>
+		<to>{Let's|Let us}</to>
+	</contraction>
+	<contraction>
+		<from>{#Maam}</from>
+		<to>{Ma'am|Madam}</to>
+	</contraction>
+	<contraction>
+		<from>{#Mightnt}</from>
+		<to>{Mightn't|Might not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Mightntve}</from>
+		<to>{Mightn't've|Might not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Mightve}</from>
+		<to>{Might've|Might have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Mustnt}</from>
+		<to>{Mustn't|Must not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Mustve}</from>
+		<to>{Must've|Must have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Neednt}</from>
+		<to>{Needn't|Need not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Notve}</from>
+		<to>{Not've|Not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Oclock}</from>
+		<to>{O'clock|Of the clock}</to>
+	</contraction>
+	<contraction>
+		<from>{#Shant}</from>
+		<to>{Shalln't|Shall not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Shed}</from>
+		<to>{She'd|She had|She would}</to>
+	</contraction>
+	<contraction>
+		<from>{#Shedve}</from>
+		<to>{She'd've|She would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Shell}</from>
+		<to>{She'll|She shall|She will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Shes}</from>
+		<to>{She's|She has|She is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Shouldve}</from>
+		<to>{Should've|Should have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Shouldnt}</from>
+		<to>{Shouldn't|Should not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Shouldntve}</from>
+		<to>{Shouldn't've|Should not have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Thats}</from>
+		<to>{That's|That has|That is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Thered}</from>
+		<to>{There'd|There had|There would}</to>
+	</contraction>
+	<contraction>
+		<from>{#Theredve}</from>
+		<to>{There'd've|There would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Theres}</from>
+		<to>{There's|There has|There is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Theyd}</from>
+		<to>{They'd|They had|They would}</to>
+	</contraction>
+	<contraction>
+		<from>{#Theydve}</from>
+		<to>{They'd've|They would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Theyll}</from>
+		<to>{They'll|They shall|They will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Theyre}</from>
+		<to>{They're|They are}</to>
+	</contraction>
+	<contraction>
+		<from>{#Theyve}</from>
+		<to>{They've|They have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Wasnt}</from>
+		<to>{Wasn't|Was not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Werent}</from>
+		<to>{Weren't|Were not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whatll}</from>
+		<to>{What'll|What shall|What will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whatre}</from>
+		<to>{What're|What are}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whats}</from>
+		<to>{What's|What has|What is|What does}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whatve}</from>
+		<to>{What've|What have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whens}</from>
+		<to>{When's|When has|When is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whered}</from>
+		<to>{Where'd|Where did}</to>
+	</contraction>
+	<contraction>
+		<from>{#Wheres}</from>
+		<to>{Where's|Where has|Where is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whereve}</from>
+		<to>{Where've|Where have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whod}</from>
+		<to>{Who'd|Who would|Who had}</to>
+	</contraction>
+	<contraction>
+		<from>{#Wholl}</from>
+		<to>{Who'll|Who shall|Who will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whore}</from>
+		<to>{Who're|Who are}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whos}</from>
+		<to>{Who's|Who has|Who is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whove}</from>
+		<to>{Who've|Who have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whyll}</from>
+		<to>{Why'll|Why will}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whyre}</from>
+		<to>{Why're|Why are}</to>
+	</contraction>
+	<contraction>
+		<from>{#Whys}</from>
+		<to>{Why's|Why has|Why is}</to>
+	</contraction>
+	<contraction>
+		<from>{#Wont}</from>
+		<to>{Won't|Will not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Wouldve}</from>
+		<to>{Would've|Would have}</to>
+	</contraction>
+	<contraction>
+		<from>{#Wouldnt}</from>
+		<to>{Wouldn't|Would not}</to>
+	</contraction>
+	<contraction>
+		<from>{#Wouldntve}</from>
+		<to>{Wouldn't've|Would not have}</to>
+	</contraction>
+</contractions>

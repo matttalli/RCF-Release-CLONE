@@ -1,0 +1,452 @@
+<div class="tocPanel " ng-class="{'editPanelOpen': layout.showEditor, 'splitView': layout.splitView, 'tocOpen': layout.showTOCPanel, 'showToc': !showSearchPanel, 'showSearch': showSearchPanel } " >
+
+	<style>
+		.toc ul li span a.hasItems::after {
+			content: ' (' attr(data-navitemcount) ') ';
+			color: red;
+		}
+		ul.navList.itemsList li.item a.navActivityItem {
+			padding-left: 25px;
+		}
+		.loading {
+			height: 100%;
+			min-height: 80vh;
+			width: 100%;
+			background:
+				url('./images/ajax-loader.gif')
+				50% 50%
+				no-repeat;
+
+		}
+		.navList.navBranchList svg {
+			width: 16px;
+			height: 16px;
+		}
+		.navList button {
+			display: flex;
+			flex-direction: row;
+			min-width: 80%;
+			min-height: 30px;
+			justify-content: center;
+			align-items: center;
+		}
+		.toc li.navActivityLink a {
+			display: flex;
+			flex-direction: row;
+		}
+		.toc li.navActivityLink a .linkText {
+			flex: 9;
+		}
+
+		.toc li.navActivityLink.playlistControl a .linkText {
+			flex: 0;
+			white-space: nowrap;
+		}
+
+		.toc li.navActivityLink a span.playerLinkIcon {
+			flex: 1;
+			text-align: right;
+			min-width: 40px;
+			white-space: nowrap;
+			display: inline-flex;
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+
+		.toc li.navActivityLink.playlistControl a span.playerLinkIcon {
+			justify-content: flex-start;
+			margin-left: 10px;
+		}
+
+		.toc li.navActivityLink svg.launchRcfPlayerSvg:hover {
+			animation: pulseSvg 1s infinite;
+		}
+
+		@keyframes pulseSvg {
+			0% {
+				stroke: black;
+			}
+			20% {
+				stroke: blue;
+			}
+
+			50% {
+				stroke: red;
+			}
+
+			100% {
+				stroke: blue
+			}
+		}
+
+		.activityMode-dropdown {
+			display: block;
+			position: relative;
+		}
+
+		.activityMode-dropdown-content {
+			background: white;
+			display: none;
+			position: absolute;
+			overflow: auto;
+			color: black;
+			right: 0;
+			top: 16px;
+			z-index:999;
+			padding: 3px;
+			box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+			text-align: left;
+			border: 1px solid #aaa;
+			width: 120px;
+		}
+		.activityMode-dropdown:hover .activityMode-dropdown-content {
+			display: block;
+		}
+		.activityMode-dropdown-content div {
+			padding: 10px;
+		}
+		.activityMode-dropdown-content div:hover {
+			background: var(--toc-item-active-background);
+			color: var(--toc-item-active-text);
+		}
+	</style>
+
+	<div ng-show="!showSearchPanel && !showPlayerOptions" class="toc">
+		<ul class="navList navBranchList">
+			<!-- show loading spinner if required -->
+			<li ng-if="loadingTocCount != 0" class="loading">&#160;</li>
+
+			<!-- show the toc items when not loading -->
+			<li ng-if="loadingTocCount === 0" ng-repeat="navItem in drillItems" class="{{navItem.class}}">
+				<div ng-if="!navItem.multiStepLink">
+					<a
+						ng-href="#{{navItem.location}}"
+						ng-class="computeNavItemClass(navItem)"
+						data-xmlid="{{navItem.xmlID || 'missing'}}"
+						data-navitemcount="{{navItem.items.length}}"
+						ng-click="setCurrentTocPath(navItem)"
+						title="{{navItem.class==='navActivityLink' ? 'open activity in viewer' : ''}}"
+					>
+						<svg ng-if="navItem.isHtmlContent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="navIcon">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+						</svg>
+
+						<svg ng-if="navItem.isReferenceContent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="navIcon">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+						</svg>
+
+						<span class="linkText">
+							{{ navItem.name }}
+						</span>
+
+						<span class="playerLinkIcon" ng-if="(navItem.type=='activity' || navItem.type=='reference') && navItem.gradableType!='item-based' && navItem.gradableType!='story'">
+							<svg ng-click="openPrintableVersion(navItem.location)" ng-if="layout.isDevMode && navItem.type=='activity'" class="launchRcfPrintVersion" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+								<title>Open printable version</title>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+							</svg>
+							<svg ng-if="navItem.gradebookEntry" xmlns="http://www.w3.org/2000/svg" class="gradebookAnswersSvg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+								<title>Has answers in gradebook</title>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+							</svg>
+							<svg ng-if="navItem.type=='activity'" ng-click="showActivityInPlayer(navItem.location)" xmlns="http://www.w3.org/2000/svg" class="launchRcfPlayerSvg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<title>Open in RCF Player</title>
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+							<svg ng-if="navItem.type=='reference'" ng-click="openSingleActivityPlayer(navItem.xmlID)" xmlns="http://www.w3.org/2000/svg" class="launchRcfPlayerSvg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<title>Open in POPUP player</title>
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+
+						<span ng-if="['item-based', 'story'].includes(navItem.gradableType)" class="playerLinkIcon activityMode-dropdown">
+							<svg ng-if="navItem.gradebookEntry" xmlns="http://www.w3.org/2000/svg" class="gradebookAnswersSvg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+								<title>Has answers in gradebook</title>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" class="launchRcfPlayerSvg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<title>Open in RCF Player</title>
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+							<div class="activityMode-dropdown-content">
+								<div ng-repeat="mode in navItem.activityMode" ng-click="showActivityInPlayer(navItem.location, mode)">
+									{{mode.split('_')[1]}}
+								</div>
+							</div>
+						</span>
+					</a>
+
+				</div>
+
+				<!-- item based links -->
+				<div ng-if="navItem.items && navItem.items.length>0">
+					<ul id="toc_item_{{$index}}" class="navList navBranchList itemsList" ng-class="{expanded: !navItem.shrunk, shrunk: navItem.shrunk}">
+						<li ng-repeat="item in navItem.items" class="item {{navItem.class}}">
+							<span>
+								<a
+									ng-bind="item.id"
+									class="navActivityItem"
+									ng-class="computeItemBasedIdClass(navItem, item.id)"
+									data-xmlid="{{item.id}}"
+									ng-href="#{{navItem.location}}"
+									ng-click="openActivityItemFromToc(item.id, navItem.location)"
+								></a>
+							</span>
+						</li>
+					</ul>
+				</div>
+
+			</li>
+
+			<!-- show the 'playlist' link if not loading -->
+			<!-- <li ng-if="!viewingReferenceFolder && loadingTocCount === 0 && drillItems.length > 0 && currentPath!='/' && currentPath!=''" class="navActivityLink playlistControl"> -->
+			<li ng-if="viewingRcfContentFolder && loadingTocCount === 0 && drillItems.length > 0 && currentPath!='/' && currentPath!=''" class="navActivityLink playlistControl">
+				<div>
+					<a
+						href="javascript:;"
+						data-xmlid="{{navItem.xmlID || 'missing'}}"
+						data-navitemcount="{{navItem.items.length}}"
+						ng-click="showPlaylistInPlayer(currentPath)"
+						title="Open entire activity set as playlist RCF Player"
+					>
+						<span class="linkText">
+							Open as playlist
+						</span>
+						<span class="playerLinkIcon">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+					</a>
+				</div>
+
+				<!-- <div ng-show="inMonoRepoMode"> -->
+				<div ng-show="adminSettings.view == 'godlike'">
+					<a
+						href="javascript:;"
+						data-xmlid="{{navItem.xmlID || 'missing'}}"
+						data-navitemcount="{{navItem.items.length}}"
+						ng-click="openMultipleActivityPlayer(currentPath)"
+						title="Open current table of contents in multiple activity player"
+					>
+						<span class="linkText">
+							Open in multi-activity player (POC)
+						</span>
+						<span class="playerLinkIcon">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+							</svg>
+						</span>
+					</a>
+				</div>
+
+				<div>
+					<a href="javascript:;"
+						data-xmlid="{{navItem.xmlID || 'missing'}}"
+						data-navitemcount="{{navItem.items.length}}"
+						ng-click="openPrintablePlaylist(currentPath)"
+						title="open playlist as printable output"
+					>
+						<span class="linkText">
+							Printable playlist
+						</span>
+						<span class="playerLinkIcon">
+							<svg ng-if="layout.isDevMode" class="launchRcfPrintVersion" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+								<title>Open printable version of playlist</title>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+							</svg>
+						</span>
+					</a>
+				</div>
+
+			</li>
+
+		</ul>
+	</div>
+
+	<div ng-show="showSearchPanel && !showPlayerOptions" class="searchPanelContainer " ng-controller="FindController" ng-init="init()">
+		<form class="viewerFormX" ng-submit="searchActivities()">
+			<h3>Search Activities</h3>
+			<select ng-model="search.level">
+				<option value="all">All Levels</option>
+				<option ng-repeat="searchLevel in search.availableLevels" value="{{searchLevel.location}}">{{searchLevel.name}}</option>
+			</select>
+
+			<input id="searchText" type="text" placeholder="search for..." ng-model="search.text">
+
+			<b>... or....</b>
+
+			<select ng-model="search.interactionText" ng-change="search.interactionText && searchActivities()">
+				<option value="" selected></option>
+				<optgroup label="Typein Interactions">
+					<option value="<typein">Type In</option>
+					<option value="<typeinGroup">Type In Group</option>
+					<option value="<mlTypeIn">Type in (MultiLine)</option>
+					<option value="<verticalCrossword">Vertical Crossword</option>
+					<option value="<textInput">Text Input (Unmarked)</option>
+					<option value="<mlTextInput">Multiline TextInput (Unmarked)</option>
+				</optgroup>
+
+				<optgroup label="Sorting Interactions">
+					<option value="<ordering">Ordering</option>
+					<option value="<complexOrdering">Complex Ordering</option>
+					<option value="<positioning">Positioning</option>
+					<option value="<sentenceBuilder">Sentence Builder</option>
+					<option value="<itemSentenceBuilder">Item based sentence builder</option>
+					<option value="<wordInsert">Word Insert</option>
+					<option value="<itemWordInsert">Item based Word Insert</option>
+				</optgroup>
+
+				<optgroup label="Sentence Builder Interactions">
+					<option value="<sentenceBuilder">Sentence Builder</option>
+					<option value="<itemSentenceBuilder">Item based sentence builder</option>
+					<option value="<wordInsert">Word Insert</option>
+					<option value="<itemWordInsert">Item based Word Insert</option>
+				</optgroup>
+
+				<optgroup label="List type Interactions">
+					<option value="<checkbox">Checkbox</option>
+					<option value="<dropDown">Drop Down</option>
+					<option value="<radio">Radio</option>
+				</optgroup>
+
+				<optgroup label="Droppable Interactions">
+					<option value="<droppable">Droppable</option>
+					<option value="<complexDroppable">Complex Droppable</option>
+				</optgroup>
+
+				<optgroup label="Categorise">
+					<option value="<categorise">Categorise (all)</option>
+					<option value="<complexCategorise">Complex Categorise</option>
+					<option value="radioList">Radio List</option>
+					<option value="radioTable">Radio Table</option>
+					<option value="selectableCat">Selectable Categories</option>
+				</optgroup>
+
+				<optgroup label="Selectable Blocks">
+					<option value="selectableCat">Selectable Categories</option>
+					<option value="selectableWords">Selectable Words</option>
+					<option value="<locating">Locating</option>
+				</optgroup>
+
+				<optgroup label="Games">
+					<option value="<balloo">Balloons</option>
+					<option value="<colouring">Colouring</option>
+					<option value="<crossword">Crossword</option>
+					<option value="<findInImage">Find in image</option>
+					<option value="<fixedCrossword">Fixed Crossword</option>
+					<option value="<fixedWordSearch">Word Search</option>
+					<option value="<hangman">Hang man</option>
+					<option value="<listenAndColour">Listen and Colour</option>
+					<option value="<moving">Moving Targets</option>
+					<option value="<pelmanism">Pelmanism</option>
+					<option value="<story">Story</option>
+					<option value="<verticalCrossword">Vertical Crossword</option>
+					<option value="<wordSearch">Word Search</option>
+					<option value="<wordSnake">Word Snake</option>
+				</optgroup>
+
+				<optgroup label="Matching">
+					<option value="<matching">Matching</option>
+					<option value="<complexMatching">Complex Matching</option>
+				</optgroup>
+
+				<optgroup label="Media">
+					<option value="<audio">Audio</option>
+					<option value="<video">Video</option>
+					<option value="<imageAudio">Image audio</option>
+					<option value="<recording">Recording</option>
+				</optgroup>
+
+				<optgroup label="Item Based">
+					<option value="<itemComplexDrop">Complex Droppable Block</option>
+					<option value="<itemDropDown">Drop Down</option>
+					<option value="<itemRadio">Radio</option>
+					<option value="<itemSelectableText">Selectable Text / words</option>
+					<option value="<itemSentenceBuilder">Sentence Builder</option>
+					<option value="<itemTypein ">Typein</option>
+					<option value="<itemTypeinGroup">Typein Group</option>
+					<option value="<itemWordInsert">Word insert</option>
+				</optgroup>
+
+				<optgroup label="Open Gradable">
+					<option value="<recording">Recording</option>
+					<option value="<writing">Writing</option>
+				</optgroup>
+
+				<optgroup label="UNMARKED">
+					<option value="<answerKey">Answer key</option>
+					<option value="<blendedFlash">Blended flashcards</option>
+					<option value="<canDo">Can Do</option>
+					<option value="<chase">Chase</option>
+					<option value="<collapsibleBlock">Collapsible Block</option>
+					<option value="<interactiveImageSet">Interactive image set</option>
+					<option value="<mlTextInput">Multiline TextInput (Unmarked)</option>
+					<option value="<splitBlock">Split Block</option>
+					<option value="<story">Story</option>
+					<option value="<textInput">Text Input (Unmarked)</option>
+					<option value="<timedMarkupBlock">Timed Markup Block</option>
+				</optgroup>
+
+				<optgroup label="Markup">
+					<option value="<cSpan">cSpan</option>
+					<option value="<sSpan">sSpan</option>
+				</optgroup>
+
+			</select>
+
+			<div class="formFooter">
+				<input type="submit" class="hiddenSubmit viewerSingleButton">
+				<span class="viewerSingleButton" ng-click="searchActivities()">Search</span>
+			</div>
+
+			<div class="searchInProgressDiv"  ng-show="!!searchingActivities">
+				<img src="images/loading.gif">
+			</div>
+
+			<div class="rcfSearchResults">
+				<h3 ng-show="!!searchResults && !searchingActivities">Found {{searchResults.length}} result{{searchResults.length > 1 ? 's' : ''}}</h3>
+				<ul ng-show="!!searchResults">
+					<li ng-repeat="searchResult in searchResults track by $index" ng-class-odd="'searchOdd'" ng-class-even="'searchEven'">
+						<p>({{searchResult.angularLink}}) - {{searchResult.type}} <b><a href="#{{searchResult.angularLink}}" >{{searchResult.result}}</a></b></p>
+						<p class="matches"><code ng-repeat="match in searchResult.matches track by $index">{{match}}</code></p>
+					</li>
+					<li ng-show="!!searchResults && searchResults.length==0 && !searchingActivities"><center><b>NO ACTIVITIES FOUND</b></center></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+
+	<div ng-show="showPlayerOptions && !showSearchPanel" class="playerOptionsContainer" >
+		<form class="viewerFormX" >
+			<h3>RCF Player Options</h3>
+			<div>
+				<h4>User</h4>
+				<select ng-model="playerOptions.userRole">
+					<option value="student">Student</option>
+					<option value="teacher">Teacher</option>
+				</select>
+
+				<h4>Origin</h4>
+				<select ng-model="playerOptions.linkOrigin">
+					<option value="hotspot">Hotspot</option>
+					<option value="homework">Homework</option>
+					<option value="gradebook">Gradebook</option>
+				</select>
+
+				<h4>Language</h4>
+				<select ng-model="playerOptions.language">
+					<option value="en">English</option>
+					<option value="es">Spanish</option>
+				</select>
+
+				<h4>Theme</h4>
+				<select ng-model="playerOptions.theme">
+					<option ng-repeat="(key, theme) in playerOptions.availableThemes" value="{{theme}}">{{key}}</option>
+				</select>
+				<hr></hr>
+				<h4>Gradebook</h4>
+				<a ng-href="#/gradebook" class="viewerSingleButton">View gradebook</a>
+			</div>
+		</form>
+	</div>
+</div>

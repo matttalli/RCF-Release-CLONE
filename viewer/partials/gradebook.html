@@ -1,0 +1,79 @@
+<style>
+	.gradebookTable {
+		width: 100%;
+	}
+	.gradebookTable .gradebookHeaderRow,
+	.gradebookTable .gradebookHeaderRow th {
+		background-color: var(--dark-bar-2);
+		color: var(--text-with-dark-background);
+	}
+	.gradebookTable .titleCell {
+		width: 99%;
+	}
+
+	.gradebookTable .actionsCell,
+	.gradebookTable .scoreCell {
+		white-space: nowrap;
+	}
+	.gradebookTable .scoreCell {
+		text-align: right;
+	}
+
+	.desktopContentContainer .form-horizontal.gradebookForm {
+		max-width: 100%;
+		margin-right: 30px;
+		min-height: 90%;
+	}
+
+	.gradebookForm .toolsContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+
+</style>
+<div class="desktopContentContainer" ng-controller="GradebookController"  ng-init="init()">
+	<div class="rcfContentContainer">
+		<form class="form-horizontal metadataForm viewerForm gradebookForm">
+			<h1>Gradebook </h1>
+			<table class="gradebookTable">
+				<tr class="gradebookHeaderRow">
+					<th>
+						Location
+					</th>
+					<th class="titleCell"">
+						Title
+					</th>
+					<th class="scoreCell">
+						Score
+					</th>
+					<th class="actionsCell">
+
+					</th>
+				</tr>
+				<tr ng-if="gradebook.length > 0" ng-repeat="item in gradebook track by $index" ng-class="$index % 2 ==0 ? 'even' : 'odd'">
+					<td>
+						<a ng-href="#{{item.location}}">{{item.location}}</a>
+					</td>
+					<td class="titleCell">
+						{{item.title}}
+					</td>
+					<td class="scoreCell">
+						{{item.score}} / {{item.maxScore}}
+					</td>
+					<td class="actionsCell">
+						<span class="viewerSingleButton" ng-click="deleteItemFromGradebook(item.id)">delete</span>
+						<span class="viewerSingleButton" ng-click="showActivityInPlayer(item.location, 'gradebook')">view</span>
+					</td>
+				</tr>
+				<tr ng-if="!gradebook || gradebook.length < 1 " class="odd">
+					<td colspan="4"><center>Gradebook is empty</center></td>
+				</tr>
+			</table>
+			<div class="toolsContainer">
+				<span ng-if="gradebook && gradebook.length >0 " class="viewerSingleButton" ng-click="clearGradebook()">Clear Gradebook</span>
+			</div>
+		</form>
+	</div>
+</div>

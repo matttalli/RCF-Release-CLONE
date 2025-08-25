@@ -1,0 +1,5 @@
+<!-- output any json answer errors -->
+<div class="jsonErrorDetails" ng-show="!!layout.hasJsonErrors">
+	<h2>Invalid answers generated for this activity !</h2>
+	<h3 ng-repeat="jsonError in layout.jsonErrors">{{jsonError.error}}</h3>
+</div>

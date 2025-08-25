@@ -1,0 +1,181 @@
+
+macmill_gungegame_rabbit.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+macmil_gungegame_character_rabbit_arm_lower_point_
+  rotate: true
+  xy: 283, 1
+  size: 19, 57
+  orig: 19, 57
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_arm_r_lower_
+  rotate: true
+  xy: 343, 1
+  size: 20, 53
+  orig: 20, 53
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_arm_r_upper_
+  rotate: false
+  xy: 478, 2
+  size: 15, 46
+  orig: 15, 46
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_body_
+  rotate: false
+  xy: 401, 39
+  size: 47, 87
+  orig: 47, 87
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_ear_l_
+  rotate: false
+  xy: 512, 52
+  size: 31, 74
+  orig: 31, 74
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_ear_r_
+  rotate: false
+  xy: 546, 55
+  size: 31, 71
+  orig: 31, 71
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_eye_l_
+  rotate: false
+  xy: 446, 26
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_eye_r_
+  rotate: false
+  xy: 608, 11
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_eyelid_l_
+  rotate: false
+  xy: 587, 3
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_eyelid_r_
+  rotate: false
+  xy: 459, 33
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_hat_
+  rotate: true
+  xy: 580, 72
+  size: 54, 31
+  orig: 54, 31
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_head_
+  rotate: true
+  xy: 331, 24
+  size: 102, 67
+  orig: 102, 67
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_leg_bent_
+  rotate: false
+  xy: 451, 51
+  size: 58, 75
+  orig: 58, 75
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_leg_straight_
+  rotate: false
+  xy: 283, 23
+  size: 45, 103
+  orig: 45, 103
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_muzzle_
+  rotate: true
+  xy: 556, 13
+  size: 39, 28
+  orig: 39, 28
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_neck_
+  rotate: true
+  xy: 401, 25
+  size: 11, 26
+  orig: 11, 26
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_nose_
+  rotate: false
+  xy: 603, 55
+  size: 17, 14
+  orig: 17, 14
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_pendant_
+  rotate: true
+  xy: 399, 1
+  size: 20, 43
+  orig: 20, 43
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_pose_001_
+  rotate: true
+  xy: 1, 7
+  size: 119, 279
+  orig: 119, 279
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_rabbit_teeth_
+  rotate: true
+  xy: 430, 25
+  size: 11, 13
+  orig: 11, 13
+  offset: 0, 0
+  index: -1
+rabbit_gunge_hat_
+  rotate: false
+  xy: 496, 4
+  size: 57, 44
+  orig: 57, 44
+  offset: 0, 0
+  index: -1
+rabbit_gunge_knee_
+  rotate: false
+  xy: 618, 30
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+rabbit_gunge_nose_
+  rotate: false
+  xy: 580, 55
+  size: 20, 14
+  orig: 20, 14
+  offset: 0, 0
+  index: -1
+rabbit_gunge_shoulder_l_
+  rotate: true
+  xy: 445, 2
+  size: 20, 30
+  orig: 20, 30
+  offset: 0, 0
+  index: -1
+rabbit_gunge_shoulder_r_
+  rotate: false
+  xy: 587, 24
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1

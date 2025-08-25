@@ -1,0 +1,48 @@
+<div class="desktopContentContainer" ng-controller="MetadataController" ng-init="init();">
+	<div class="rcfContentContainer">
+		<form class="form-horizontal metadataForm viewerForm" ng-submit="saveMetaData()">
+			<fieldset>
+				<legend>Activity Set Metadata</legend>
+
+				<label for="meta-data-id">ID</label>
+				<span id="meta-data-id">{{metaData.id}}</span>
+
+				<label for="meta-data-title">Title</label>
+				<input id="meta-data-title" type="text"  ng-model="metaData.title">
+
+				<label for="meta-data-subtitle">Subtitle</label>
+			<input id="meta-data-subtitle" type="text"  ng-model="metaData.subtitle">
+
+				<label for="meta-data-description">Description</label>
+				<textarea id="meta-data-description" class="input-xxlarge" id="meta-data-description"  ng-model="metaData.description"></textarea>
+
+	 			<label for="meta-data-thumb">Thumbnail</label>
+				<div class="thumbChooserContainer">
+					<div class="controls">
+						<input id="meta-data-filtered-thumb" type="text" class="imageChooser" placeholder="choose a thumbnail image" value="{{metaData.thumb}}" READONLY></input>
+						<input  id="meta-data-thumb" ng-model="metaData.thumb" type="hidden" READONLY></input>
+						<span class="viewerSingleButton" ng-click="chooseThumbnail(metaData.thumb)">Choose</span>
+					</div>
+					<div class="imagePreview">
+						<img class="thumbPreview" ng-show="!!metaData.thumb" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.thumb}}">
+					</div>
+				</div>
+				<div ng-show="!!metaData.referenceItems" class="referenceContainer">
+					<b>Reference Content</b>
+					<div ng-repeat="referenceItem in metaData.referenceItems">
+						<a ng-href="#/L{{currentLevel}}/R0/{{referenceItem.id}}" ng-bind="referenceItem.id">{{referenceItem}}</a>
+					</div>
+				</div>
+				<div ng-if="projectType==='blink-spk'" ng-include="'partials/activityset_spk_metadata.html'"></div>
+				<br>
+				<br>
+				<div ng-if="projectType==='pbf' || projectType==='abc'" ng-include="'partials/activityset_metadata_pbf.html'"></div>
+				<div class="formFooter" ng-show="footerShown">
+					<input type="submit" class="hiddenSubmit viewerSingleButton" value="Save" accesskey="S" ng-disabled="submitButtonDisabled">
+					<span class="viewerSingleButton" ng-click="saveMetaData()">Save</span>
+				</div>
+	 		</fieldset>
+
+		</form>
+	</div>
+</div>

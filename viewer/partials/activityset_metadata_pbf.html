@@ -1,0 +1,105 @@
+<br>
+<div class="pbfMetadata">
+
+    <div class="noInheritance">
+        <label for="meta-data-noInheritance">No Inheritance</label>
+        <input id="meta-data-noInheritance" type="checkbox" ng-name="metaData.noInheritance" ng-model="metaData.noInheritance"><span ng-click="metaData.noInheritance=!metaData.noInheritance">&#160;</span>
+    </div>
+
+    <div class="printPageReferenceContainer">
+        <label for="meta-data-printPageReference">Print Page Reference</label>
+        <input ng-if="projectType==='pbf'" id="meta-data-printPageReference" type="text"  ng-model="metaData.printPageReference" only-numbers>
+        <input ng-if="projectType==='abc'" id="meta-data-printPageReference" type="text"  ng-model="metaData.printPageReference" only-numbers-and-roman-numerals>
+    </div>
+
+    <div class="printActivityNumberContainer">
+        <label for="meta-data-printActivityNumber">Print Activity Number</label>
+        <input id="meta-data-printActivityNumber" type="text"  ng-model="metaData.printActivityNumber">
+    </div>
+
+    <div class="inTLPContainer">
+        <label for="meta-data-inTLP">In TLP</label>
+        <input id="meta-data-inTLP" type="checkbox" ng-name="metaData.inTLP" ng-model="metaData.inTLP"><span ng-click="metaData.inTLP=!metaData.inTLP">&#160;Include activity set in TLP?</span>
+    </div>
+
+    <div class="alternativeSourceTypesContainer">
+        <label for="meta-data-alternativeSourceTypes">Alternative Source Types</label>
+        <select id="meta-data-alternativeSourceTypes" ng-model="metaData.alternativeSourceTypes" ng-disabled="alternativeSourceTypes.length === 0">
+            <option></option>
+            <option ng-repeat="sourceType in alternativeSourceTypes track by $index" >{{sourceType}}</option>
+        </select>
+    </div>
+
+    <div class="activityRepresentationTypeContainer">
+        <label for="meta-data-activityRepresentationType">Activity Representation Type</label>
+        <select id="meta-data-activityRepresentationType" ng-model="metaData.activityRepresentationType">
+            <option></option>
+            <option ng-repeat="representationType in allowableRepresentationTypes track by $index" >{{representationType}}</option>
+        </select>
+    </div>
+
+    <div class="skillContainer">
+        <label>Skill</label>
+        <div ng-repeat="item in metaData.skill track by $index">
+            <input id="meta-data-skill-desc-{{$index}}" class="listInput" type="text"
+                   name="meta-data-description-{{$index}}" ng-model="metaData.skill[$index].desc">
+            <span class="viewerSingleButton" ng-click="metaData.skill.splice($index, 1)">Remove</span>
+
+        </div>
+        <span class="viewerSingleButton" ng-click="metaData.skill.push({desc: ''})">Add</span>
+    </div>
+
+    <div class="objectiveContainer">
+        <label>Learning Objective</label>
+        <div ng-repeat="item in metaData.learningObjective track by $index">
+            <input id="meta-data-learningObjective-desc-{{$index}}" class="listInput" type="text"
+                   name="meta-data-description-{{$index}}" ng-model="metaData.learningObjective[$index].desc">
+            <span class="viewerSingleButton" ng-click="metaData.learningObjective.splice($index, 1)">Remove</span>
+
+        </div>
+        <span class="viewerSingleButton" ng-click="metaData.learningObjective.push({desc: ''})">Add</span>
+    </div>
+
+    <div class="grammarPronPointContainer">
+        <label>Grammar or Pron Point</label>
+        <div ng-repeat="item in metaData.grammarPronPoint track by $index">
+            <input id="meta-data-grammarPronPoint-desc-{{$index}}" class="listInput" type="text"
+                   name="meta-data-description-{{$index}}" ng-model="metaData.grammarPronPoint[$index].desc">
+            <span class="viewerSingleButton" ng-click="metaData.grammarPronPoint.splice($index, 1)">Remove</span>
+        </div>
+        <span class="viewerSingleButton" ng-click="metaData.grammarPronPoint.push({desc: ''})">Add</span>
+    </div>
+
+    <div class="lexicalSetContainer">
+        <label>Lexical Set</label>
+        <div ng-repeat="item in metaData.lexicalSet track by $index">
+            <input id="meta-data-lexicalSet-desc-{{$index}}" class="listInput" type="text"
+                   name="meta-data-description-{{$index}}" ng-model="metaData.lexicalSet[$index].desc">
+            <span class="viewerSingleButton" ng-click="metaData.lexicalSet.splice($index, 1)">Remove</span>
+
+        </div>
+        <span class="viewerSingleButton" ng-click="metaData.lexicalSet.push({desc: ''})">Add</span>
+    </div>
+
+    <div class="vocabularyItemsContainer">
+        <label>Vocabulary Items</label>
+        <div ng-repeat="item in metaData.vocabularyItems track by $index">
+            <input id="meta-data-vocabularyItems-desc-{{$index}}" class="listInput" type="text"
+                   name="meta-data-description-{{$index}}" ng-model="metaData.vocabularyItems[$index].desc">
+            <span class="viewerSingleButton" ng-click="metaData.vocabularyItems.splice($index, 1)">Remove</span>
+
+        </div>
+        <span class="viewerSingleButton" ng-click="metaData.vocabularyItems.push({desc: ''})">Add</span>
+    </div>
+
+    <div class="keyCourseAim">
+        <label>Key Course Aim</label>
+        <div ng-repeat="item in metaData.keyCourseAim track by $index">
+            <input id="meta-data-keyCourseAim-desc-{{$index}}" class="listInput" type="text"
+                   name="meta-data-description-{{$index}}" ng-model="metaData.keyCourseAim[$index].desc">
+            <span class="viewerSingleButton" ng-click="metaData.keyCourseAim.splice($index, 1)">Remove</span>
+
+        </div>
+        <span class="viewerSingleButton" ng-click="metaData.keyCourseAim.push({desc: ''})">Add</span>
+    </div>
+</div>

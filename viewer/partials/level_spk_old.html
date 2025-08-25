@@ -1,0 +1,22 @@
+<hr />
+<div class="spkMetadata">
+    <h3>SPK metadata</h3>
+    <label for="meta-data-coverImage">Cover Image</label>
+    <input id="meta-data-coverImage" ng-model="metaData.coverImage" class="imageChooser" placeholder="choose a cover image" type="text" READONLY>
+    <span class="viewerSingleButton" ng-click="chooseCoverImage()">Choose</span>
+    <br>
+    <img ng-show="!!metaData.coverImage" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.coverImage}}">
+
+    <label for="meta-data-layout-default">Default layout</label>
+    <input ng-model="metaData.spkLayout" class="splitDisplay" type="radio" id="meta-data-layout-default" name="meta-data-layout" value="0">
+    <label for="meta-data-layout-intro">Intro unit on top</label>
+    <input ng-model="metaData.spkLayout" class="splitDisplay" type="radio" id="meta-data-layout-intro" name="meta-data-layout" value="1">
+    <label for="meta-data-theme">SPK Theme</label>
+    <select ng-model="metaData.spkTheme" id="meta-data-theme" class="splitDisplay" >
+        <option value="0">default</option>
+        <option value="1">light (white logo + white credits)</option>
+        <option value="2">dark (black logo + black credits)</option>
+    </select>
+    <label for="meta-data-dictionary">Dictionary</label>
+    <input id="meta-data-dictionary" type="checkbox" ng-model="metaData.dictionary" ng-true-value="1" ng-false-value="0">
+</div>

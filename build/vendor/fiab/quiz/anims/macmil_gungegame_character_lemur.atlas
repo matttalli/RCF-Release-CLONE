@@ -1,0 +1,153 @@
+
+macmil_gungegame_character_lemur.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lemur_gunge_ear_l_
+  rotate: true
+  xy: 105, 3
+  size: 26, 19
+  orig: 26, 19
+  offset: 0, 0
+  index: -1
+lemur_gunge_ear_r_
+  rotate: true
+  xy: 347, 11
+  size: 22, 13
+  orig: 22, 13
+  offset: 0, 0
+  index: -1
+lemur_gunge_head_
+  rotate: false
+  xy: 250, 3
+  size: 43, 29
+  orig: 43, 29
+  offset: 0, 0
+  index: -1
+lemur_gunge_knee_
+  rotate: false
+  xy: 216, 6
+  size: 31, 23
+  orig: 31, 23
+  offset: 0, 0
+  index: -1
+lemur_gunge_nose_
+  rotate: true
+  xy: 349, 169
+  size: 13, 11
+  orig: 13, 11
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_arm_l_lower_
+  rotate: true
+  xy: 305, 127
+  size: 55, 41
+  orig: 55, 41
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_arm_l_upper_
+  rotate: false
+  xy: 348, 62
+  size: 36, 62
+  orig: 36, 62
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_arm_r_lower-2_
+  rotate: false
+  xy: 305, 185
+  size: 43, 69
+  orig: 43, 69
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_arm_r_lower_
+  rotate: true
+  xy: 363, 8
+  size: 33, 43
+  orig: 33, 43
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_blink_
+  rotate: false
+  xy: 173, 6
+  size: 40, 23
+  orig: 40, 23
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_body_
+  rotate: false
+  xy: 1, 4
+  size: 60, 119
+  orig: 60, 119
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_ear_l_
+  rotate: true
+  xy: 296, 1
+  size: 32, 48
+  orig: 32, 48
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_ear_r_
+  rotate: false
+  xy: 127, 5
+  size: 43, 24
+  orig: 43, 24
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_half_close_
+  rotate: false
+  xy: 348, 44
+  size: 41, 15
+  orig: 41, 15
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_head_
+  rotate: true
+  xy: 281, 36
+  size: 87, 64
+  orig: 87, 64
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_leg_l_
+  rotate: false
+  xy: 236, 35
+  size: 42, 88
+  orig: 42, 88
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_leg_r_
+  rotate: false
+  xy: 64, 7
+  size: 38, 116
+  orig: 38, 116
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_nose_
+  rotate: true
+  xy: 349, 142
+  size: 9, 8
+  orig: 9, 8
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_pose_001_
+  rotate: true
+  xy: 1, 126
+  size: 128, 301
+  orig: 128, 301
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_pupil_
+  rotate: false
+  xy: 349, 154
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_lemur_tail_
+  rotate: true
+  xy: 105, 32
+  size: 91, 128
+  orig: 91, 128
+  offset: 0, 0
+  index: -1

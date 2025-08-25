@@ -1,0 +1,116 @@
+.viewerButtonBar {
+    text-align: center;
+    /* background: #ccc; */
+    background: var(--dark-bar-2);
+    border-top: 1px solid #bbb;
+    font-size: .8em;
+    padding: 15px 50px;
+    min-height: 40px;
+    align-items: center;
+}
+
+/* RCF-11392 workaround for plyr fullscreen on ios in the rcf-player */
+.desktopContentContainer:has(.plyr--fullscreen-fallback) .viewerButtonBar {
+    z-index: 0;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1030px) {
+    .viewerButtonBar.dev {
+    padding: 10px 50px;
+    height: 50px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .viewerButtonBar {
+        padding: 6px 50px;
+        height: 58px;
+    }
+}
+
+.tocOpen .viewerButtonBar,
+.editPanelOpen .viewerButtonBar{
+/*     padding: 10px 50px;
+    height: 50px; */
+}
+
+.viewerSingleButton.devModeButton {
+    background: #497383;
+    color: white;
+}
+
+.viewerButtonBar .buttons .viewerSingleButton {
+    transition: all 0.2s linear;
+}
+
+.viewerButtonBar .buttons .viewerSingleButton:not(.inactive):hover {
+    background: #216f8f;
+}
+
+.rcf-monorepo .viewerButtonBar .buttons .viewerSingleButton:not(.inactive):hover {
+    background: #343434;
+}
+
+/*.viewerButtonBar .buttons .viewerSingleButton.resetButton {
+    margin-right: 15px;
+}*/
+
+.viewerButtonBar .buttons .viewerSingleButton.resetButton:hover {
+    -webkit-animation: pulse .5s linear infinite;
+}
+
+.viewerButtonBar .buttons .tryAgainButton {
+    /*display:none;*/
+}
+
+.viewerButtonBar .buttons .tryAgainButton.inMarking {
+    display: inline-block;
+    -webkit-animation: pulse .5s linear infinite;
+}
+
+/* .rcfContentContainer {
+    margin-bottom: 65px;
+}
+ */
+
+ .previousActivityNav,
+ .nextActivityNav {
+     max-height: 50px;
+ }
+
+.previousActivityNav img {
+    min-height: 48px;
+    max-height: 48px;
+    min-width: 48px;
+    max-width: 48px;
+}
+
+.nextActivityNav img {
+    min-height: 48px;
+    max-height: 48px;
+    min-width: 48px;
+    max-width: 48px;
+}
+
+.nextActivityNav:hover, .previousActivityNav:hover {
+    -webkit-animation: pulse 1s linear infinite;
+    -moz-animation: pulse 1s linear infinite;
+    -o-animation: pulse 1s linear infinite;
+    animation: pulse 1s linear infinite;
+}
+
+.pauseActivityButton:before {
+    content: "\2590\00A0\258C"; /* 'pause' symbol  */
+}
+
+.pauseActivityButton {
+    min-width:40px;
+}
+
+.resumeActivityButton {
+    min-width:40px;
+}
+
+.resumeActivityButton:before {
+    content: "\25b6" /* play symbol */
+}

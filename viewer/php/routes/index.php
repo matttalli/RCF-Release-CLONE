@@ -1,0 +1,13 @@
+<?php
+require_once('toc.php');
+require_once('breadcrumbs.php');
+require_once('activity.php');
+require_once('metadata.php');
+require_once('search.php');
+require_once('section.php');
+require_once('lesson.php');
+require_once('level.php');
+require_once('admin.php');
+require_once('manifest.php');
+require_once('playlist.php');
+require_once('project.php');

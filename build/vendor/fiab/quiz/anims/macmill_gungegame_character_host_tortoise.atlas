@@ -1,0 +1,125 @@
+
+macmill_gungegame_character_host_tortoise.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+macmil_gungegame_character_host_tortoise_arm_l_
+  rotate: false
+  xy: 458, 4
+  size: 138, 86
+  orig: 138, 86
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_arm_l_rear_
+  rotate: true
+  xy: 588, 393
+  size: 117, 86
+  orig: 117, 86
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_arm_r_
+  rotate: true
+  xy: 460, 371
+  size: 139, 125
+  orig: 139, 125
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_arm_r_shadow_
+  rotate: true
+  xy: 572, 121
+  size: 159, 99
+  orig: 171, 103
+  offset: 3, 4
+  index: -1
+macmil_gungegame_character_host_tortoise_blink_
+  rotate: false
+  xy: 263, 5
+  size: 73, 50
+  orig: 73, 50
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_bowtie_
+  rotate: true
+  xy: 374, 21
+  size: 64, 30
+  orig: 64, 30
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_eyelids_half_
+  rotate: true
+  xy: 339, 16
+  size: 69, 32
+  orig: 69, 32
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_hair_
+  rotate: false
+  xy: 1, 1
+  size: 134, 54
+  orig: 134, 54
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_head_front_
+  rotate: true
+  xy: 588, 292
+  size: 98, 91
+  orig: 98, 91
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_head_rear_
+  rotate: false
+  xy: 458, 93
+  size: 111, 181
+  orig: 111, 181
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_leg_l_
+  rotate: true
+  xy: 460, 283
+  size: 85, 119
+  orig: 85, 119
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_leg_r_
+  rotate: true
+  xy: 599, 22
+  size: 96, 130
+  orig: 96, 130
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_pupil_
+  rotate: false
+  xy: 294, 66
+  size: 16, 19
+  orig: 16, 19
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_shell_front_
+  rotate: false
+  xy: 294, 88
+  size: 161, 186
+  orig: 161, 186
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_shell_rear_
+  rotate: false
+  xy: 294, 277
+  size: 163, 233
+  orig: 163, 233
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_host_tortoise_tail_
+  rotate: false
+  xy: 138, 7
+  size: 122, 48
+  orig: 122, 48
+  offset: 0, 0
+  index: -1
+tortoise_host_
+  rotate: false
+  xy: 1, 58
+  size: 290, 452
+  orig: 290, 452
+  offset: 0, 0
+  index: -1

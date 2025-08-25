@@ -1,0 +1,248 @@
+{
+	"frames": {
+		"life": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"lost_life": {
+			"frame": {
+				"x": 40,
+				"y": 0,
+				"w": 40,
+				"h": 40
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"horizontal_action_1": {
+			"frame": {
+				"x": 0,
+				"y": 40,
+				"w": 150,
+				"h": 200
+			},
+			"anchor": { "x": 0.5, "y": 1.0}
+		},
+		"horizontal_action_2": {
+			"frame": {
+				"x": 150,
+				"y": 40,
+				"w": 150,
+				"h": 200
+			},
+			"anchor": { "x": 0.5, "y": 1.0}
+		},
+		"horizontal_action_3": {
+			"frame": {
+				"x": 300,
+				"y": 40,
+				"w": 150,
+				"h": 200
+			},
+			"anchor": { "x": 0.5, "y": 1.0}
+		},
+		"vertical_action_1": {
+			"frame": {
+				"x": 0,
+				"y": 240,
+				"w": 150,
+				"h": 200
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"vertical_action_2": {
+			"frame": {
+				"x": 150,
+				"y": 240,
+				"w": 150,
+				"h": 200
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"vertical_action_3": {
+			"frame": {
+				"x": 300,
+				"y": 240,
+				"w": 150,
+				"h": 200
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"idle_1": {
+			"frame": {
+				"x": 0,
+				"y": 440,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"idle_2": {
+			"frame": {
+				"x": 150,
+				"y": 440,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"fail_1": {
+			"frame": {
+				"x": 0,
+				"y": 590,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"fail_2": {
+			"frame": {
+				"x": 150,
+				"y": 590,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"bounce_back": {
+			"frame": {
+				"x": 300,
+				"y": 590,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"start": {
+			"frame": {
+				"x": 0,
+				"y": 740,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"finish": {
+			"frame": {
+				"x": 150,
+				"y": 740,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"empty": {
+			"frame": {
+				"x": 300,
+				"y": 740,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"background_1": {
+			"frame": {
+				"x": 0,
+				"y": 890,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"background_2": {
+			"frame": {
+				"x": 150,
+				"y": 890,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"background_3": {
+			"frame": {
+				"x": 300,
+				"y": 890,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"platform_1": {
+			"frame": {
+				"x": 0,
+				"y": 1040,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"platform_2": {
+			"frame": {
+				"x": 150,
+				"y": 1040,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"platform_3": {
+			"frame": {
+				"x": 300,
+				"y": 1040,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"fail_platform_1": {
+			"frame": {
+				"x": 0,
+				"y": 1190,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"fail_platform_2": {
+			"frame": {
+				"x": 150,
+				"y": 1190,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"fail_platform_3": {
+			"frame": {
+				"x": 300,
+				"y": 1190,
+				"w": 150,
+				"h": 150
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		},
+		"transparent": {
+			"frame": {
+				"x": 448,
+				"y": 0,
+				"w": 1,
+				"h": 1
+			},
+			"anchor": { "x": 0.5, "y": 1.0 }
+		}
+	},
+	"meta": {
+		"app": "https://www.leshylabs.com/apps/sstool/",
+		"version": "Leshy SpriteSheet Tool v0.8.4",
+		"image": "spritesheet.png",
+		"size": {
+			"w": 450,
+			"h": 1340
+		},
+		"scale": 1
+	}
+}

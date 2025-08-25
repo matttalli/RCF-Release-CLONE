@@ -1,0 +1,236 @@
+{
+    "compressed": [
+        {
+            "id": "back_button",
+            "path": "images/compressed/common/back_button.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "back_button_hover",
+            "path": "images/compressed/common/back_button_hover.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "back_button_press",
+            "path": "images/compressed/common/back_button_press.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "button_next",
+            "path": "images/compressed/common/button_next.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "button_next_hover",
+            "path": "images/compressed/common/button_next_hover.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "button_prev",
+            "path": "images/compressed/common/button_prev.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "button_prev_hover",
+            "path": "images/compressed/common/button_prev_hover.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "fade",
+            "path": "images/compressed/common/fade.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "game_bg",
+            "path": "images/compressed/common/game_bg.jpg",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_instruction_panel",
+            "path": "images/compressed/common/macmil_tt_ui_instruction_panel.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_instruction_panel_small",
+            "path": "images/compressed/common/macmil_tt_ui_instruction_panel_small.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_number_panel",
+            "path": "images/compressed/common/macmil_tt_ui_number_panel.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_black",
+            "path": "images/compressed/common/macmil_tt_ui_wof_black.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_blue",
+            "path": "images/compressed/common/macmil_tt_ui_wof_blue.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_dkblue",
+            "path": "images/compressed/common/macmil_tt_ui_wof_dkblue.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_green",
+            "path": "images/compressed/common/macmil_tt_ui_wof_green.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_orange",
+            "path": "images/compressed/common/macmil_tt_ui_wof_orange.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_pink",
+            "path": "images/compressed/common/macmil_tt_ui_wof_pink.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_pointer_active",
+            "path": "images/compressed/common/macmil_tt_ui_wof_pointer_active.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_pointer_glow",
+            "path": "images/compressed/common/macmil_tt_ui_wof_pointer_glow.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_pointer_inactive",
+            "path": "images/compressed/common/macmil_tt_ui_wof_pointer_inactive.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_purple",
+            "path": "images/compressed/common/macmil_tt_ui_wof_purple.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_red",
+            "path": "images/compressed/common/macmil_tt_ui_wof_red.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_white",
+            "path": "images/compressed/common/macmil_tt_ui_wof_white.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_tt_ui_wof_yellow",
+            "path": "images/compressed/common/macmil_tt_ui_wof_yellow.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "particle_sparkle",
+            "path": "images/compressed/common/particle_sparkle.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "play_button",
+            "path": "images/compressed/common/play_button.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "play_button_hover",
+            "path": "images/compressed/common/play_button_hover.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "play_button_press",
+            "path": "images/compressed/common/play_button_press.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        }
+    ]
+}

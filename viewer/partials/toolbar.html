@@ -1,0 +1,168 @@
+<div class="toolbar actControls "
+	ng-class="{'dev': layout.isDevMode}"
+	ng-show="false"
+	ng-init="init()" ng-controller="ToolbarController">
+
+<!--
+	TODO !
+
+	- Move the toolbar controller code to a 'sidebar' controller
+	- refactor the toolbar controller so that the nav buttons work in a separate controller
+-->
+<!--
+<style>
+		.toolbar.actControls .labelSpan {
+			font-size: 12px;
+			font-weight: bold;
+			color: white;
+		}
+		.labelAndDropDown {
+			white-space: nowrap;
+		}
+		.buttonGroupOne {
+			display: inline-flex;
+			flex-direction: row;;
+		}
+	</style>
+-->
+<!--
+	<span class="standardGroup">
+		<button id="editButton"
+			ng-if="showDeveloperModeButtons()"
+			ng-click="(!activity.jsonContent) || toggleEditor()"
+			class="viewerSingleButton"
+			title="Toggle Edit Mode"
+			ng-class="{ 'inactive': (!activity.jsonContent), 'selected' : layout.showEditor }" >Edit</button>
+
+		<button id="popupButton"
+			ng-class="{'inactive': (!activity.jsonContent) }"
+			ng-click="showPopupPlayer()"
+			class="viewerSingleButton"
+			title="Popup"
+		>Popup</button>
+
+		<button class="findButton viewerSingleButton"
+			ng-click="layout.showTOCPanel && (showSearchPanel=!showSearchPanel)"
+			ng-class="{'selected': showSearchPanel, 'inactive': !layout.showTOCPanel}">Search</button>
+
+		<button id="splitButton"
+			ng-click="!layout.showEditor || ( layout.splitView = !layout.splitView )"
+			class="viewerSingleButton"
+			ng-if="showDeveloperModeButtons()"
+			title="Split Edit View"
+			ng-class="{'inactive': !layout.showEditor, 'selected': layout.splitView }"
+			>Split</button>
+	</span> -->
+<!--
+	<span class="editorGroup editorTypeButtons" ng-show="!!adminSettings.view && adminSettings.view!='joepublic'">
+		<button ng-class="{'selected': editing.xml && layout.showEditor, 'inactive': !layout.showEditor }"
+			class="xmlButton leftButton deviceModeButton"
+			title="Edit XML"
+			ng-click="editXML()"
+		>
+			XML
+		</button>
+		<button ng-show="activity.hasItems"
+			ng-class="{'selected': editing.itemsXml && layout.showEditor, 'inactive': !layout.showEditor }"
+			class="itemsXmlButton middleButton deviceModeButton"
+			title="Edit Items Xml"
+			ng-click="editItemsXml()"
+		>
+			Items
+		</button>
+		<button ng-show="!!adminSettings.view && (adminSettings.view=='godlike' || adminSettings.view=='demo') "
+			ng-class="{'selected': editing.css && layout.showEditor, 'inactive': !layout.showEditor  }"
+			class="cssButton middleButton  deviceModeButton"
+			title="Edit Mobile-First CSS"
+			ng-click="editCSS()"
+		>
+			CSS
+		</button>
+		<button ng-show="!!adminSettings.view && (adminSettings.view=='godlike' || adminSettings.view=='demo') "
+			ng-class="{'selected': editing.css768 && layout.showEditor, 'inactive': !layout.showEditor }"
+			class="cssDesktopButton rightButton  deviceModeButton"
+			title="Edit Desktop CSS"
+			ng-click="editCSS768()"
+		>
+			CSS 768
+		</button>
+	</span>
+
+	<span class="editorGroup deviceModeButtons">
+		<button id="desktopView"
+			ng-class="{'selected' : layout.isDesktopMode } "
+			class="leftButton deviceModeButton"
+			title="Desktop View"
+			ng-click="setDeviceMode('desktop')"
+		>
+			<img src="images/desktop-icon.png"></img>
+		</button>
+		<button id="mobileView"
+			ng-class="{'selected' : !layout.isDesktopMode }"
+			class="rightButton deviceModeButton"
+			title="Mobile View"
+			ng-click="setDeviceMode('mobile')"
+		>
+			<img src="images/mobile-icon.png"></img>
+		</button>
+	</span> -->
+
+	<!-- <span class="feedbackGroup feedbackOptions" ng-if="layout.feedbackEnabled && !reloadingActivity">
+		<span class="feedbackToggleButton viewerSingleButton"
+			ng-class="{'selected' : layout.feedbackActivated }"
+			ng-click="layout.feedbackActivated = !layout.feedbackActivated">Instant feedback</span>
+	</span> -->
+
+	<!--
+		ng-if creates its own scope so we have to use $parent in the ng-model
+	-->
+<!--
+	<span class="openGradableGroup" ng-if="gradableType==='open-gradable' && !reloadingActivity">
+		<select
+			id="openGradableFeedbackOptions"
+			name="openGradableFeedbackOptions"
+			ng-model="$parent.openGradableFeedbackOption"
+			class="actControls viewerSingleButton"
+			title="open-gradable feedback mode"
+		>
+			<option value="default">Default</option>
+			<option value="leaveTeacherFeedback">Leave teacher feedback</option>
+			<option value="reviewTeacherFeedback">Review teacher feedback</option>
+			<option value="answerKeyMode">Answer Key Mode</option>
+		</select>
+
+		<button
+			id="replaceAudioButton"
+			name="replaceAudioButton"
+			ng-class="{'selected': replaceRecordingAudio}"
+			class="replaceAudioButton viewerSingleButton"
+			ng-click="toggleReplaceAudioValue()"
+		>
+			Replace Audio
+		</button>
+	</span>
+
+	<span class="itemBasedGroup" ng-if="!!activity.itemsToc && !reloadingActivity">
+		<span class="labelAndDropdown">
+			<span class="labelSpan">Item mode:</span>
+			<select name="itemPlayMode" class="actControls viewerSingleButton" ng-show="!!activity.itemsToc" ng-model="$parent.playingMode.current">
+				<option ng-repeat="mode in playingMode.available" value="{{mode}}">{{mode}}</option>
+			</select>
+		</span>
+	</span>
+
+	<span class="storyGroup" ng-if="!!activity.playingStory && !reloadingActivity" >
+		<span class="labelAndDropdown">
+			<span class="labelSpan">Story:</span>
+			<select name="storyPlayingMode" class="actControls viewerSingleButton" ng-show="!!activity.playingStory" ng-model="storyPlayingMode.current">
+				<option ng-repeat="mode in storyPlayingMode.available" value="{{mode}}">{{mode}}</option>
+			</select>
+		</span>
+	</span> -->
+<!--
+	<span class="logo" ng-click="resetCache()">
+		<span ng-show="projectType">Project type '{{projectType}}', </span>
+		RCF Version {{RCFVersion}}
+	</span>
+-->
+</div>

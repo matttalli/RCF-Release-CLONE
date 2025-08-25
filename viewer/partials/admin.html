@@ -1,0 +1,24 @@
+<div class="desktopContentContainer" ng-controller="AdminController" ng-init="init();">
+	<div class="rcfContentContainer">
+		<form class="form-horizontal metadataForm viewerForm " >
+			<fieldset>
+				<legend>Admin Options</legend>
+
+				<label for="admin-views">View Mode</label>
+				<input id="opt-1" type="radio" ng-model="adminSettings.view" name="admin-views" value="godlike"><label for="opt-1" class="radioLabel"> God Like (everything)</label></input><br>
+				<input id="opt-2" type="radio" ng-model="adminSettings.view" name="admin-views" value="demo"><label for="opt-2" class="radioLabel"> Demo - no saving</label></input><br>
+				<input id="opt-3" type="radio" ng-model="adminSettings.view" name="admin-views" value="editor"><label for="opt-3" class="radioLabel"> Editor (no CSS access)</label></input><br>
+				<input id="opt-4" type="radio" ng-model="adminSettings.view" name="admin-views" value="joepublic"><label for="opt-4" class="radioLabel"> Joe Public (no editor access at all / read + view only)</label></input><br>
+
+				<label for="admin-generate-guid">Generate Unique ID</label>
+				<input class="imageChooser" ng-model="guid" type="text" size="32" maxLength="32" id="textGuid">
+				<span class="viewerSingleButton" ng-click="generateGUID()">Generate</span>
+				<label for="admin-rebuild-cache">Rebuild Cache</label>
+				<span class="viewerSingleButton" ng-click="rebuildCache()">Rebuild</span>
+				<div class="formFooter">
+					<span class="viewerSingleButton" ng-click="saveAdminData()">Save</span>
+				</div>
+	 		</fieldset>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,201 @@
+<link type="text/css" href="../viewer/style/activity.css" rel="stylesheet"/>
+
+<style>
+	.activityToolbar {
+		height: auto;
+		background-color: var(--dark-bar-3);
+		font-size: 12px;
+		display: flex;
+		height: 44px;
+		min-height: 44px;
+		flex-direction: row;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.spacer {
+		width: 5px;
+	}
+
+	.activityToolbar button {
+		min-width: 35px;
+		background: transparent;
+		border: none;
+		outline: none;
+		color: rgba(255,255,255,0.6);
+		cursor: pointer;
+		padding: 5px;
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.activityToolbar  button.selected {
+		color: rgba(255,255,255,1);
+		background-color: var(--selection-background);
+	}
+	.activityToolbar svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.activityToolbar span {
+		color: white;
+	}
+	.activityToolbar div {
+		height: 100%;
+	}
+
+	.activityToolbar button {
+		height: 100%;
+	}
+
+	.activityToolbar button:hover,
+	.activityToolbar button.selected {
+		color: rgba(255,255,255,1);
+		background: var(--selection-background);
+		cursor: pointer;
+	}
+
+	.activityToolbar .devModeToggleContainer {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.activityToolbar .devModeToggleButton {
+		width: 60px;
+	}
+
+	.activityToolbar .devModeToggleButton svg {
+		max-width: 25px;
+	}
+
+	.activityToolbar .captionButton {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.activityToolbar .captionButton span {
+		padding: 5px
+	}
+
+	.activityToolbar .buttonGroup {
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+	}
+
+	.devToolbarContainer {
+		background-color: var(--dark-bar-3);
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+	}
+
+	.viewerButtonBar .navActivityLink {
+		background: transparent;
+		color: rgba(255,255,255,0.6);
+	}
+
+	.viewerButtonBar .navActivityLink:hover,
+	.viewerButtonBar .navActivityLink:focus {
+		color: rgba(255,255,255,0.95);
+	}
+
+	.viewerButtonBar svg {
+		height: 48px;
+		width: 48px;
+	}
+
+	/* RCF Overrides ! */
+	.panelsContainer .fixedWordBox,
+	.panelsContainer.tocOpen .fixedWordBox,
+	.panelsContainer.editPanelOpen .fixedWordBox,
+	.panelsContainer.editPanelOpen.tocOpen .fixedWordBox {
+		left: 15px;
+		right: 15px;
+	}
+
+	.panelsContainer .fixedWordBox {
+		bottom: 75px;
+	}
+	.panelsContainer.editPanelOpen.tocOpen .fixedWordBox {
+		left: 15px;
+		right: 15px;
+	}
+
+	.rcf-contents {
+		display: flex;
+		flex: 1 1 auto;
+		overflow: auto;
+	}
+
+	@media only screen and (min-width: 200px) and (max-width: 768px) {
+		.activityToolbar {
+			font-size: 12px;
+		}
+		.activityToolbar button {
+			height: auto;
+			min-width: auto;
+		}
+		.activityToolbar button svg {
+			height: 24px;
+			width: 24px;
+		}
+		.activityToolbar .zenModeButton,
+		.activityToolbar .captionButton,
+		.activityToolbar .devModeToggleButton {
+			display: none;
+		}
+		.activityToolbar .labelAndDropdown .labelSpan {
+			display: none;
+		}
+
+		.activityToolbar select {
+			font-size: 10px;
+		}
+
+		.viewerButtonBar {
+			padding: 6px 0px;
+		}
+		.viewerButtonBar svg {
+			height: 24px;
+			width: 24px;
+		}
+		.devModeToggleContainer {
+			font-size: 10px;
+		}
+	}
+
+</style>
+
+<div class="desktopContentContainer">
+
+	<rcf-activity-toolbar></rcf-activity-toolbar>
+	<!-- output any reference content links in a separate toolbar -->
+	<rcf-reference-content-toolbar></rcf-reference-content-toolbar>
+
+	<rcf-feedback-container></rcf-feedback-container>
+
+	<div class="rcf-contents">
+
+		<div class="rcfContentContainer activityContent"
+			ng-class="{'correctAnswers': layout.correctAnswers, '': !layout.correctAnswers, 'hasJsonErrors': layout.hasJsonErrors}"
+			style="{{getBackgroundStyle()}}"
+		>
+			<!-- output any json answer errors -->
+			<rcf-json-errors></rcf-json-errors>
+
+			<!-- container for the rcf activity html -->
+			<div class="rcfActivityContentContainer">
+				<!-- replaced at runtime -->
+			</div>
+		</div>
+		<!-- output the developer toolbar -->
+		<rcf-developer-toolbar></rcf-developer-toolbar>
+	</div>
+	<!-- button bar -->
+	<rcf-player-toolbar></rcf-player-toolbar>
+</div>

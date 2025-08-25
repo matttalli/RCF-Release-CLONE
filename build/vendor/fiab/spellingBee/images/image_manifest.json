@@ -1,0 +1,836 @@
+{
+    "compressed": [
+        {
+            "id": "audio_prompt_icon",
+            "path": "images/compressed/common/audio_prompt_icon.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "delete_icon",
+            "path": "images/compressed/common/delete_icon.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "fade",
+            "path": "images/compressed/common/fade.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "handle",
+            "path": "images/compressed/common/handle.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "hex",
+            "path": "images/compressed/common/hex.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "hex_hover",
+            "path": "images/compressed/common/hex_hover.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "hex_old",
+            "path": "images/compressed/common/hex_old.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "hex_press",
+            "path": "images/compressed/common/hex_press.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "loading_spinner",
+            "path": "images/compressed/common/loading_spinner.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "particle_sparkle",
+            "path": "images/compressed/common/particle_sparkle.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "space_icon",
+            "path": "images/compressed/common/space_icon.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "ui_keyboard_function_active",
+            "path": "images/compressed/common/ui_keyboard_function_active.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "ui_keyboard_function_hover",
+            "path": "images/compressed/common/ui_keyboard_function_hover.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "ui_keyboard_function_press",
+            "path": "images/compressed/common/ui_keyboard_function_press.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_1_player",
+            "path": "images/compressed/skin/default/1_player.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_1_player_hover",
+            "path": "images/compressed/skin/default/1_player_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_1_player_press",
+            "path": "images/compressed/skin/default/1_player_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_2_player",
+            "path": "images/compressed/skin/default/2_player.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_2_player_hover",
+            "path": "images/compressed/skin/default/2_player_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_2_player_press",
+            "path": "images/compressed/skin/default/2_player_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_3_player",
+            "path": "images/compressed/skin/default/3_player.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_3_player_hover",
+            "path": "images/compressed/skin/default/3_player_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_3_player_press",
+            "path": "images/compressed/skin/default/3_player_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_4_player",
+            "path": "images/compressed/skin/default/4_player.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_4_player_hover",
+            "path": "images/compressed/skin/default/4_player_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_4_player_press",
+            "path": "images/compressed/skin/default/4_player_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_avatar_1",
+            "path": "images/compressed/skin/default/avatar_1.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_avatar_2",
+            "path": "images/compressed/skin/default/avatar_2.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_avatar_3",
+            "path": "images/compressed/skin/default/avatar_3.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_avatar_4",
+            "path": "images/compressed/skin/default/avatar_4.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_avatar_5",
+            "path": "images/compressed/skin/default/avatar_5.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_avatar_6",
+            "path": "images/compressed/skin/default/avatar_6.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_avatar_holder",
+            "path": "images/compressed/skin/default/avatar_holder.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_background_city_fg_left",
+            "path": "images/compressed/skin/default/background_city_fg_left.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_background_city_fg_right",
+            "path": "images/compressed/skin/default/background_city_fg_right.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_background_meadow_fg_left",
+            "path": "images/compressed/skin/default/background_meadow_fg_left.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_background_meadow_fg_right",
+            "path": "images/compressed/skin/default/background_meadow_fg_right.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_back_button",
+            "path": "images/compressed/skin/default/back_button.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_back_button_hover",
+            "path": "images/compressed/skin/default/back_button_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_back_button_press",
+            "path": "images/compressed/skin/default/back_button_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_bee_particle",
+            "path": "images/compressed/skin/default/bee_particle.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_button_next",
+            "path": "images/compressed/skin/default/button_next.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_button_next_hover",
+            "path": "images/compressed/skin/default/button_next_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_button_next_press",
+            "path": "images/compressed/skin/default/button_next_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_button_previous",
+            "path": "images/compressed/skin/default/button_previous.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_button_previous_hover",
+            "path": "images/compressed/skin/default/button_previous_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_button_previous_press",
+            "path": "images/compressed/skin/default/button_previous_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_game_bg",
+            "path": "images/compressed/skin/default/game_bg.jpg",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_honey_hex_particle",
+            "path": "images/compressed/skin/default/honey_hex_particle.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_life_icon",
+            "path": "images/compressed/skin/default/life_icon.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_life_lost_icon",
+            "path": "images/compressed/skin/default/life_lost_icon.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_answer_gradient",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_answer_gradient.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_correct_icon_large",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_correct_icon_large.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_incorrect_icon_large",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_incorrect_icon_large.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_prompttoggle_image_active_",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_prompttoggle_image_active_.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_prompttoggle_image_hover_",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_prompttoggle_image_hover_.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_prompttoggle_image_press_",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_prompttoggle_image_press_.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_prompttoggle_text_active_",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_prompttoggle_text_active_.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_prompttoggle_text_hover_",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_prompttoggle_text_hover_.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_prompttoggle_text_press_",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_prompttoggle_text_press_.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_prompt_panel_portrait",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_prompt_panel_portrait.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_textupdate_prompt_panel_landscape_",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_textupdate_prompt_panel_landscape_.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_macmil_spellbee_ui_textupdate_prompt_panel_portrait_",
+            "path": "images/compressed/skin/default/macmil_spellbee_ui_textupdate_prompt_panel_portrait_.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_menu_bg",
+            "path": "images/compressed/skin/default/menu_bg.jpg",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ok_button",
+            "path": "images/compressed/skin/default/ok_button.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ok_button_hover",
+            "path": "images/compressed/skin/default/ok_button_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ok_button_press",
+            "path": "images/compressed/skin/default/ok_button_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_panel_tiny",
+            "path": "images/compressed/skin/default/panel_tiny.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_play_active",
+            "path": "images/compressed/skin/default/play_active.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_play_hover",
+            "path": "images/compressed/skin/default/play_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_play_press",
+            "path": "images/compressed/skin/default/play_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_podium",
+            "path": "images/compressed/skin/default/podium.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_result_divider_h",
+            "path": "images/compressed/skin/default/result_divider_h.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_result_divider_v",
+            "path": "images/compressed/skin/default/result_divider_v.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_result_points",
+            "path": "images/compressed/skin/default/result_points.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_timer_bg",
+            "path": "images/compressed/skin/default/timer_bg.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_timer_markers",
+            "path": "images/compressed/skin/default/timer_markers.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_timer_mask",
+            "path": "images/compressed/skin/default/timer_mask.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_timer_overlay",
+            "path": "images/compressed/skin/default/timer_overlay.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_answer_panel_landscape",
+            "path": "images/compressed/skin/default/ui_answer_panel_landscape.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_answer_panel_landscape_correct",
+            "path": "images/compressed/skin/default/ui_answer_panel_landscape_correct.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_answer_panel_landscape_incorrect",
+            "path": "images/compressed/skin/default/ui_answer_panel_landscape_incorrect.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_answer_panel_portrait",
+            "path": "images/compressed/skin/default/ui_answer_panel_portrait.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_answer_panel_portrait_correct",
+            "path": "images/compressed/skin/default/ui_answer_panel_portrait_correct.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_answer_panel_portrait_incorrect",
+            "path": "images/compressed/skin/default/ui_answer_panel_portrait_incorrect.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_audio_prompt_button_active",
+            "path": "images/compressed/skin/default/ui_audio_prompt_button_active.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_audio_prompt_button_hover",
+            "path": "images/compressed/skin/default/ui_audio_prompt_button_hover.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_audio_prompt_button_press",
+            "path": "images/compressed/skin/default/ui_audio_prompt_button_press.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_life_panel",
+            "path": "images/compressed/skin/default/ui_life_panel.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_round_result_panel_landscape",
+            "path": "images/compressed/skin/default/ui_round_result_panel_landscape.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_round_result_panel_portrait",
+            "path": "images/compressed/skin/default/ui_round_result_panel_portrait.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_score_panel",
+            "path": "images/compressed/skin/default/ui_score_panel.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_text_panel_landscape",
+            "path": "images/compressed/skin/default/ui_text_panel_landscape.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "default_ui_text_panel_portrait",
+            "path": "images/compressed/skin/default/ui_text_panel_portrait.png",
+            "classes": [
+                "skin",
+                "default"
+            ],
+            "parentImage": null
+        }
+    ]
+}

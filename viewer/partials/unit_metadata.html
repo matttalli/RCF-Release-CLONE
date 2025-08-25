@@ -1,0 +1,60 @@
+<div class="desktopContentContainer" ng-controller="MetadataController" ng-init="init();metaData.type='unit';">
+	<div class="rcfContentContainer">
+		<form class="form-horizontal metadataForm viewerForm " ng-submit="saveMetaData()">
+			<fieldset>
+				<legend>Unit Metadata</legend>
+
+				<label for="meta-data-title">Title</label>
+				<input id="meta-data-title" type="text"  ng-model="metaData.title">
+
+				<label for="meta-data-subtitle">Subtitle</label>
+				<input id="meta-data-subtitle" type="text"  ng-model="metaData.subtitle">
+
+				<label for="meta-data-label">Label</label>
+				<input id="meta-data-label" type="text" ng-model="metaData.label">
+
+				<label for="meta-data-description">Description</label>
+				<textarea id="meta-data-description" class="input-xxlarge" id="meta-data-description"   ng-model="metaData.description"></textarea>
+
+
+				<div class="thumbChooserContainer ">
+					<label for="meta-data-backgroundimage">Background Image</label>
+					<div class="controls">
+						<input id="meta-data-backgroundimage" class="imageChooser" type="text" placeholder="choose a background image" ng-model="metaData.backgroundImage" READONLY>
+						<span class="viewerSingleButton" ng-click="chooseBackgroundImage(metaData.backgroundImage)">Choose</span>
+					</div>
+					<div class="imagePreview">
+						<img class="thumbPreview" ng-show="!!metaData.backgroundImage" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.backgroundImage}}">
+					</div>
+				</div>
+				<br>
+				<div class="thumbChooserContainer">
+	 				<label for="meta-data-thumb">Thumbnail</label>
+					<div class="controls">
+						<input id="meta-data-thumb" class="imageChooser" type="text" placeholder="choose a thumbnail image" ng-model="metaData.thumb"  READONLY>
+						<span class="viewerSingleButton" ng-click="chooseThumbnail(metaData.thumb)">Choose</span>
+					</div>
+					<div class="imagePreview">
+						<img class="thumbPreview" ng-show="!!metaData.thumb" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.thumb}}">
+					</div>
+				</div>
+				<br>
+
+				<div ng-if="projectType==='pbf' || projectType==='abc'" ng-include="'partials/unit_metadata_pbf.html'"></div>
+
+				<div class="island" ng-if="projectType==='pbf'">
+					<label for="meta-data-island">Island</label>
+					<input id="meta-data-island" type="text"  ng-model="metaData.island" only-integers>
+				</div>
+
+				<div ng-if="projectType==='blink-spk'" ng-include="'partials/unit_spk_metadata.html'"></div>
+				<div ng-if="projectType==='old-spk'" ng-include="'partials/unit_spk_old.html'"></div>
+				<div class="formFooter" ng-show="footerShown">
+					<input type="submit" class="hiddenSubmit viewerSingleButton" value="Save" accesskey="S" ng-disabled="submitButtonDisabled">
+					<span class="viewerSingleButton" ng-click="saveMetaData()">Save</span>
+				</div>
+	 		</fieldset>
+
+		</form>
+	</div>
+</div>

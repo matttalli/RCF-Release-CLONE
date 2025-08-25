@@ -1,0 +1,155 @@
+<div class="desktopContentContainer" ng-controller="MetadataController" ng-init="init();metaData.type='lesson';">
+	<div class="rcfContentContainer">
+		<form class="form-horizontal metadataForm viewerForm " ng-submit="saveMetaData()">
+			<fieldset>
+				<legend>Lesson Metadata</legend>
+
+				<label for="meta-data-title">Title</label>
+				<input id="meta-data-title" type="text" ng-model="metaData.title">
+
+				<label for="meta-data-subtitle">Subtitle</label>
+				<input id="meta-data-subtitle" type="text" ng-model="metaData.subtitle">
+
+				<label for="meta-data-description">Description</label>
+				<textarea id="meta-data-description" class="input-xxlarge" id="meta-data-description" ng-model="metaData.description"></textarea>
+
+				<label for="meta-data-is-news-item" ng-show="{{(metaData.isNewsItem || !metaData.isNewsItem) && projectType === 'mec'}}">
+					<input id="meta-data-is-news-item" type="checkbox" class="input-xxlarge" name="meta-data-is-news-item" ng-model="metaData.isNewsItem" />
+					<span ng-click="metaData.isNewsItem=!metaData.isNewsItem">&#160;</span>
+					Is News Item?
+				</label>
+
+				<label for="meta-data-expiry-date" ng-show="projectType === 'mec'">
+					Expiry Date
+					<input id="meta-data-expiry-date" type="text" ng-model="metaData.expiryDate">
+				</label>
+
+				<label for="meta-data-thumb">Thumbnail</label>
+				<div class="thumbChooserContainer">
+					<div class="controls">
+						<input id="meta-data-thumb" class="imageChooser" type="text" placeholder="choose a thumbnail image" ng-model="metaData.thumb"
+						 READONLY>
+						<span class="viewerSingleButton" ng-click="chooseThumbnail(metaData.thumb)">Choose</span>
+					</div>
+					<div class="imagePreview">
+						<img class="thumbPreview" ng-show="!!metaData.thumb" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.thumb}}">
+					</div>
+				</div>
+
+				<br>
+
+				<div class="lessonLabelContainer">
+					<label>Lesson Label</label>
+					{{metaData.label}}
+				</div>
+				<div class="educationalAlignmentContainer">
+					<label>Educational Alignment</label>
+					<div ng-repeat="item in metaData.educationalAlignment track by $index">
+						<input id="meta-data-educationalAlignment-desc-{{$index}}" class="listInput" type="text" name="meta-data-description-{{$index}}"
+						 ng-model="metaData.educationalAlignment[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.educationalAlignment.splice($index, 1)">Remove</span>
+
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.educationalAlignment.push({desc: ''})">Add</span>
+				</div>
+
+				<div class="keyCourseAimContainer">
+					<label>Key Course Aim</label>
+					<div ng-repeat="item in metaData.keyCourseAim track by $index">
+						<input id="meta-data-keyCourseAim-desc-{{$index}}" class="listInput" type="text" name="meta-data-description-{{$index}}"
+						 ng-model="metaData.keyCourseAim[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.keyCourseAim.splice($index, 1)">Remove</span>
+
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.keyCourseAim.push({desc: ''})">Add</span>
+				</div>
+
+				<div class="skillContainer">
+					<label>Skill</label>
+					<div ng-repeat="item in metaData.skill track by $index">
+						<input id="meta-data-skill-desc-{{$index}}" class="listInput" type="text" name="meta-data-description-{{$index}}"
+						 ng-model="metaData.skill[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.skill.splice($index, 1)">Remove</span>
+
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.skill.push({desc: ''})">Add</span>
+				</div>
+
+
+				<div class="objectiveContainer">
+					<label>Learning Objective</label>
+					<div ng-repeat="item in metaData.learningObjective track by $index">
+						<input id="meta-data-learningObjective-desc-{{$index}}" class="listInput" type="text" name="meta-data-description-{{$index}}"
+						 ng-model="metaData.learningObjective[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.learningObjective.splice($index, 1)">Remove</span>
+
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.learningObjective.push({desc: ''})">Add</span>
+				</div>
+
+				<div class="grammarPronPointContainer">
+					<label>Grammar or Pron Point</label>
+					<div ng-repeat="item in metaData.grammarPronPoint track by $index">
+						<input id="meta-data-grammarPronPoint-desc-{{$index}}" class="listInput" type="text" name="meta-data-description-{{$index}}"
+						 ng-model="metaData.grammarPronPoint[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.grammarPronPoint.splice($index, 1)">Remove</span>
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.grammarPronPoint.push({desc: ''})">Add</span>
+				</div>
+
+				<div class="lexicalSetContainer">
+					<label>Lexical Set</label>
+					<div ng-repeat="item in metaData.lexicalSet track by $index">
+						<input id="meta-data-lexicalSet-desc-{{$index}}" class="listInput" type="text" name="meta-data-description-{{$index}}"
+						 ng-model="metaData.lexicalSet[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.lexicalSet.splice($index, 1)">Remove</span>
+
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.lexicalSet.push({desc: ''})">Add</span>
+				</div>
+
+				<div class="coreVocabularyItems">
+					<label>Core Vocabulary Items</label>
+					<div ng-repeat="item in metaData.coreVocabularyItems track by $index">
+						<input id="meta-data-coreVocabularyItems-desc-{{$index}}" class="listInput" type="text" name="meta-data-description-{{$index}}"
+						 ng-model="metaData.coreVocabularyItems[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.coreVocabularyItems.splice($index, 1)">Remove</span>
+
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.coreVocabularyItems.push({desc: ''})">Add</span>
+				</div>
+
+				<div class="recycledVocabularyItems">
+					<label>Recycled Vocabulary Items</label>
+					<div ng-repeat="item in metaData.recycledVocabularyItems track by $index">
+						<input id="meta-data-recycledVocabularyItems-desc-{{$index}}" class="listInput" type="text" name="meta-data-description-{{$index}}"
+						 ng-model="metaData.recycledVocabularyItems[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.recycledVocabularyItems.splice($index, 1)">Remove</span>
+
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.recycledVocabularyItems.push({desc: ''})">Add</span>
+				</div>
+
+				<div class="printPagesReferenceContainer">
+					<label>Print Page Reference</label>
+					<div ng-repeat="item in metaData.printPagesReference track by $index">
+						<input ng-if="projectType==='pbf'" id="meta-data-printPagesReference-desc-{{$index}}" class="listInput" type="text"
+						 only-numbers name="meta-data-description-{{$index}}" ng-model="metaData.printPagesReference[$index].desc">
+						<input ng-if="projectType==='abc'" id="meta-data-printPagesReference-desc-{{$index}}" class="listInput" type="text"
+						 only-numbers-and-roman-numerals name="meta-data-description-{{$index}}" ng-model="metaData.printPagesReference[$index].desc">
+						<span class="viewerSingleButton" ng-click="metaData.printPagesReference.splice($index, 1)">Remove</span>
+
+					</div>
+					<span class="viewerSingleButton" ng-click="metaData.printPagesReference.push({desc: ''})">Add</span>
+				</div>
+
+				<div class="formFooter" ng-show="footerShown">
+					<input type="submit" class="hiddenSubmit viewerSingleButton" value="Save" accesskey="S" ng-disabled="submitButtonDisabled">
+					<span class="viewerSingleButton" ng-click="saveMetaData()">Save</span>
+				</div>
+
+			</fieldset>
+
+		</form>
+	</div>
+</div>

@@ -1,0 +1,149 @@
+<div class="activityToolbar">
+	<rcf-navarrows></rcf-navarrows>
+
+	<!-- device mode buttons -->
+	<button id="desktopView"
+		ng-class="{'selected': layout.isDesktopMode}"
+		title="desktop view"
+		ng-click="setDeviceMode('desktop')"
+		>
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+		</svg>
+	</button>
+	<button id="mobileView"
+		ng-class="{'selected': !layout.isDesktopMode}"
+		title="mobile view"
+		ng-click="setDeviceMode('mobile')"
+		>
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+		</svg>
+	</button>
+
+	<div class="spacer"></div>
+
+	<!-- onClick="document.body.requestFullscreen()"  -->
+	<button ng-if="!!adminSettings.view && adminSettings.view != 'joepublic'" class="zenModeButton"
+		ng-click="layout.zenMode = !layout.zenMode"
+		ng-class="{'selected': layout.zenMode}"
+		title="{{ !layout.zenMode ? 'zen mode / full screen view' : 'exit zen/full screen view' }}"
+	>
+		<svg ng-if="!layout.zenMode" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+		</svg>
+		<svg ng-if="layout.zenMode" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" />
+		</svg>
+	</button>
+
+	<div class="spacer"></div>
+
+	<button class="feedbackToggleButton" id="feedbackButton"
+		ng-if="layout.feedbackEnabled && !reloadingActivity"
+		ng-class="{'selected': !layout.feedbackActivated}"
+		ng-click="layout.feedbackActivated = !layout.feedbackActivated"
+	>
+		<span>Instant feedback</span>
+	</button>
+
+	<button title="edit activity" ng-click="toggleEditor()"
+		ng-if="showDeveloperModeButtons() && !!activity.jsonContent"
+		ng-class="{ 'inactive': (!activity.jsonContent), 'selected' : layout.showEditor }"
+		class="captionButton"
+	>
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+		</svg>
+		<span>{{ adminSettings.view == 'demo' ? 'View XML' : 'Edit'}}</span>
+	</button>
+
+
+	<button ng-if="!layout.zenMode" title="popup" ng-click="showPopupPlayer()" ng-if="!!activity.jsonContent" class="captionButton">
+		<!-- popup -->
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+		</svg>
+		<span>Popup</span>
+	</button>
+
+	<div class="spacer"></div>
+
+	<div
+		ng-if="gradableType==='open-gradable' && !reloadingActivity"
+		class="buttonGroup"
+	>
+		<select
+			id="openGradableFeedbackOptions"
+			name="openGradableFeedbackOptions"
+			ng-model="$parent.$parent.openGradableFeedbackOption"
+			class="actControls viewerSingleButton"
+			title="open-gradable feedback mode"
+		>
+			<option value="default">Default</option>
+			<option value="leaveTeacherFeedback">Leave teacher feedback</option>
+			<option value="reviewTeacherFeedback">Review teacher feedback</option>
+			<option value="answerKeyMode">Answer Key Mode</option>
+		</select>
+
+		<button
+			id="replaceAudioButton"
+			name="replaceAudioButton"
+			ng-class="{'selected': replaceRecordingAudio}"
+
+			ng-click="toggleReplaceAudioValue()"
+			class="captionButton"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+			</svg>
+			<span>Replace Audio</span>
+		</button>
+	</div>
+
+	<!-- item based -->
+	<div ng-if="!!activity.itemsToc && !reloadingActivity" class="buttonGroup">
+		<span class="labelAndDropdown">
+			<span class="labelSpan">Item mode:</span>
+			<select name="itemPlayMode" class="actControls viewerSingleButton" ng-show="!!activity.itemsToc" ng-model="$parent.playingMode.current">
+				<option ng-repeat="mode in playingMode.available" value="{{mode}}">{{mode}}</option>
+			</select>
+		</span>
+	</div>
+
+	<!-- story -->
+	<div ng-if="!!activity.playingStory && !reloadingActivity" class="buttonGroup">
+		<span class="labelAndDropdown">
+			<span class="labelSpan">Story:</span>
+			<select name="storyPlayingMode" class="actControls viewerSingleButton" ng-show="!!activity.playingStory" ng-model="storyPlayingMode.current">
+				<option ng-repeat="mode in storyPlayingMode.available" value="{{mode}}">{{mode}}</option>
+			</select>
+		</span>
+	</div>
+
+	<!-- developer mode button toggle -->
+	<div ng-if="!!adminSettings.view && adminSettings.view != 'joepublic'"
+		class="devModeToggleContainer"
+	>
+		<span class="activityMetaData"
+			ng-if="!!currentActivity && activityLoaded"
+		>
+			<span class="activityAvailablePoints">
+				{{ activity.gradable === 'item-based' ? 'item points' : 'activity points'}}
+				<span class="points">{{activity.gradable === 'item-based' ? getItemPointsAvailableForCurrentItem() : activity.availablePoints}}</span>, </span>
+			<span class="activityGradable">{{activity.gradable}}</span>
+		</span>
+		<button
+			class="devModeToggleButton"
+			ng-class="{'selected': layout.showDevButtons}"
+			ng-click="layout.showDevButtons = !layout.showDevButtons"
+			title="developer / advanced options"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+			</svg>
+		</button>
+	</div>
+
+</div>

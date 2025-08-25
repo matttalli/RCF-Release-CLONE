@@ -1,0 +1,4255 @@
+/*! Built on 15/08/2025 15:51 */
+/* player.css */
+:root {
+  --controls_height: 0;
+}
+
+.player__has_controls--1sKJx {
+  --controls_height: 60px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonts/OpenSans-Regular.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonts/OpenSans-Italic.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonts/OpenSans-SemiBold.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonts/OpenSans-SemiBoldItalic.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonts/OpenSans-Bold.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonts/OpenSans-BoldItalic.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DejaVuSans";
+  src: url(fonts/DejaVuSans.woff2) format("woff2");
+  font-display: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DejaVuSans";
+  src: url(fonts/DejaVuSans-Bold.woff2) format("woff2");
+  font-display: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Castledown";
+  src: url(fonts/Castledown-Regular-Web.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Castledown";
+  src: url(fonts/Castledown-Bold-Web.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Castledown";
+  src: url(fonts/Castledown-Heavy-Web.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Castledown-Regular";
+  src: url(fonts/Castledown-Regular-Web.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(fonts/OpenSans-Regular.woff2) format("woff2");
+  font-display: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Control bar */
+.player__controls--3BaRR {
+  /* placeholder */
+}
+
+/* Parent div of rcf activity content */
+.player__content--20_mI {
+  /* placeholder */
+}
+
+/* Scorecard */
+.player__scoreCard--1dqo7 {
+  /* placeholder */
+}
+
+/* TitleBar */
+.player__titleBar--2W4t1 {
+  /* placeholder */
+}
+
+/* Generic styles */
+.player__standardButton--GGXcb,
+.player__standardIcon--2FrHS,
+.player__toggleButton--1jVls {
+  /* placeholder */
+}
+
+/* placeholder for buttons and controls */
+.player__activitySetNavigation--1CyFL,
+.player__extendedActivitySetNavigation--mItGY,
+.player__activitySetNavigation_closeButton--1FBCT,
+.player__activitySetNavigation_nextButton--37w4d,
+.player__activitySetNavigation_paginationText--r9FKO,
+.player__activitySetNavigation_previousButton--2WJwu,
+.player__checkAnswersButton--246E1,
+.player__storyDoneButton--2mSTK,
+.player__resetActivityButton--2d1hS,
+.player__showOneByOneButton--1njc2,
+.player__showAllButton--1mwbF,
+.player__showAllItemButton--fHWok,
+.player__showAnswers_Text--15PpT,
+.player__titleBar_activitySetTitle--11ud5,
+.player__titleBar_closeButton--2lUX8,
+.player__titleBar_fullscreenToggleButton--1nsKa,
+.player__tryAgainButton--J9p5K,
+.player__nextActivitySetButton--2_lVo,
+.player__multiStepNextActivitySetButton--3I4ne,
+.player__multiStepPreviousActivitySetButton--3WSUJ,
+.player__itemBasedNextButton--1Lb-V,
+.player__itemBasedPreviousButton--3rjyM,
+.player__itemBasedFinishButton--1Y_c2,
+.player__multiStepSubmitButton--CFZpi,
+.player__endPlaylistButton--2Xmmu,
+.player__endAssessmentButton--3-BuM,
+.player__timedPlaylistTimer--1Nxkm,
+.player__endSingleActivityButton--3uNyf {
+  /* placeholder */
+}
+
+/* css classes added to top-level div */
+.player__itemBased_test--LMtuu,
+.player__itemBased_practice--1JKBp,
+.player__itemBased_challenge--pcogn,
+.player__has_flashcard--3g0cJ,
+.player__has_story_reading--3sUfZ,
+.player__has_story_comprehension--2UHy0,
+.player__itemBased_review--3Z5FM,
+.player__progressBar_wrong--3hEYc,
+.player__progressBar_partiallyCorrect--1GXuu,
+.player__progressBar_correct--2aTOs,
+.player__progressBar_attempted--lZfBz,
+.player__has_activitySetNavigation--13wLZ,
+.player__has_content--3lN-0,
+.player__has_scoreCard--2uMJL,
+.player__has_controls--1sKJx,
+.player__has_titleBar--2hJ1s,
+.player__has_itemBasedHeader--2JdGD,
+.player__has_itemBasedCoverScreen--K9cnf,
+.player__has_controlsMarking--3Lfow,
+.player__has_controlsNavigation--fsiYS,
+.player__has_controlsReset--1cN1B,
+.player__has_controlsShowAnswers--vjkpV,
+.player__has_rcfActivityActivitySetTitle--3dy9u,
+.player__has_checkAnswersButton--Zy1V7,
+.player__has_disabledCheckAnswersButton--36G6c,
+.player__has_storyDoneButton--3m152,
+.player__has_submitButton--2JmoY .player__has_tryAgainButton--1CpjF,
+.player__has_editButton--2xnuE,
+.player__has_endPlaylistButton--1n6Lh,
+.player__has_endAssessmentButton--3dss1,
+.player__has_endSingleActivityButton--BCS3A,
+.player__has_itemBasedFinishButton--_nMaI,
+.player__has_itemBasedNextButton--3b70u,
+.player__has_itemBasedPreviousButton--1g4j1,
+.player__has_itemBasedStartButton--2rgAF,
+.player__has_nextActivitySetButton--3Op4-,
+.player__has_controls_reset--2znlW,
+.player__has_resetActivityButton--2zHyI,
+.player__has_itemBasedResetActivityButton--3WiMP,
+.player__has_multiStepResetActivityButton--hyMe_,
+.player__has_showAnswersText--33h_K,
+.player__has_answersToggleButton--2Cny3,
+.player__has_showAllButton--10tnb,
+.player__has_showAnswersButton--3PGB1,
+.player__has_showOneByOneButton--1_Ujj,
+.player__has_fixedWordBox--2lYbP,
+.player__has_multiStepStartButton--2SgaS,
+.player__has_multiStepNextActivitySetButton--3pcSR,
+.player__has_multiStepPreviousActivitySetButton--1n4zZ,
+.player__has_multiStepPreviousActivityButton--1B5w6,
+.player__has_multiStepNextActivityButton--SVsXi,
+.player__has_multiStepSubmitButton--3Y5yE,
+.player__has_multiStepHeader--JcUg1,
+.player__has_pendingMarks--2QUf3,
+.player__has_noAttemptAvailable--dCzPm,
+.player__devContainerWindow--1qrZU,
+.player__devContainerDiv--29U6G {
+  /* placeholder */
+}
+
+/* css classes for score screen */
+.player__score_text--3NYp0,
+.player__score_percentage--1WxG2,
+.player__score_correct_text--kLyjx {
+  /* placeholder */
+}
+
+/* My Special Placeholders */
+.player__activitySetNavigation--1CyFL,
+.player__navigationArrowsContainer--2JCTo,
+.player__navigationArrows--1KXSd,
+.player__activitySetNavigation_closeButton--1FBCT,
+.player__standardIcon--2FrHS,
+.player__activitySetNavigation_nextButton--37w4d,
+.player__activitySetNavigation_paginationText--r9FKO,
+.player__activitySetNavigation_previousButton--2WJwu,
+.player__controls_marking--2srOJ,
+.player__controls_navigation--1OlXq,
+.player__controls_reset--2kp_k,
+.player__controls_showAnswers--215q6,
+.player__showAnswers_buttons--2BfpV,
+.player__controls--3BaRR,
+.player__checkAnswersButton--246E1,
+.player__storyDoneButton--2mSTK,
+.player__standardButton--GGXcb,
+.player__tryAgainButton--J9p5K,
+.player__endPlaylistButton--2Xmmu,
+.player__endAssessmentButton--3-BuM,
+.player__timedPlaylistTimer--1Nxkm,
+.player__itemBasedFinishButton--1Y_c2,
+.player__itemBasedNextButton--1Lb-V,
+.player__itemBasedPreviousButton--3rjyM,
+.player__itemBasedStartButton--3VueE,
+.player__nextActivitySetButton--2_lVo,
+.player__resetActivityButton--2d1hS,
+.player__answersToggleButton--26-z0,
+.player__toggleButton--1jVls,
+.player__markedAnswers--2jmmW,
+.player__correctAnswers--15Yzw,
+.player__buttonStyle--3ZUQO,
+.player__showAnswers_Text--15PpT,
+.player__showOneByOneButton--1njc2,
+.player__itemBasedCoverScreen_container--1beBe,
+.player__itemBasedCoverScreen_activitySetTitle--a0a6w,
+.player__currentActivity--3aJ1a.player__activitySet--1MH8T.player__title--3RyTM,
+.player__coverScreen_activityModeLabel--2sJBJ,
+.player__currentActivity--3aJ1a.player__activitySet--1MH8T.player__activityMode--1p3Rd,
+.player__itemBasedHeader--2dU8a,
+.player__itemBasedHeader_backButton--3H4yP,
+.player__itemBasedProgressBar_lives--3VqwM,
+.player__listAllItems--3Ohie,
+.player__itemBasedProgressBar_practiceProgress--39Ke7,
+.player__listItems--Nh0m8,
+.player__itemBasedProgressBar_reviewProgress--2bCGf,
+.player__itemClass--2o82Y,
+.player__itemBasedProgressBar_testProgress--2SGyc,
+.player__rewardObject--16Hb9.player__completionText--aq3FY,
+.player__playerStyles--2TxO0,
+.player__reward_text--2cDjR,
+.player__rewardObject--16Hb9.player__rewardText--2KEpk,
+.player__reward_badge--29GNb,
+.player__countCorrect--1CMa7,
+.player__countWrong--1Tsdv,
+.player__rcfActivity_activitySetTitle--2Ba5_,
+.player__className--3jhKd,
+.player__scoreCard--1dqo7,
+.player__scoreCard_closeButton--3PLTT,
+.player__scoreCard_scoreText--1BB-m,
+.player__componentTable--2pTzH,
+.player__developmentDialog--3BX5f,
+.player__titleBar--2W4t1,
+.player__titleBar_buttons--3qkMC,
+.player__titleBar_activitySetTitle--11ud5,
+.player__titleBar_closeButton--2lUX8,
+.player__titleBar_fullscreenToggleButton--1nsKa,
+.player__titleBar_dotsGridIcon--1EQuK,
+.player__multiStepNextActivitySetButton--3I4ne,
+.player__multiStepPreviousActivitySetButton--3WSUJ,
+.player__multiStepSubmitButton--CFZpi,
+.player__multiStepPreviousActivityButton--2OVGp,
+.player__multiStepStartButton--2uzHV {
+  /* placeholder */
+}
+
+/* TODO - MISSING STYLES */
+/* itemBasedCoverScreen/index.js:22:67 refers to  playerStyles[activityMode] , all the following styles are missing */
+.player__review--2dBid,
+.player__no-activity-controls--1qKwB,
+.player__standAloneMedia_audio--3QIrm,
+.player__standAloneMedia_video--19jA-,
+.player__flashcard--25wOG,
+.player__story_comprehension--2QMge,
+.player__story_reading--3Oj4i {
+  /* placeholder */
+}
+
+.player__coverScreen_rules--MuFMl,
+.player__coverScreen_rulesForChallenge--3aSXP,
+.player__coverScreen_rulesForPractice--2tm2W,
+.player__coverScreen_rulesFortest--2F6w- {
+  /* placeholder */
+}
+
+.player__coverScreen_promptContainer--q8D2H,
+.player__coverScreen_promptForChallenge--3Ttvq,
+.player__coverScreen_promptForPractice--1Cn9r,
+.player__coverScreen_promptForTest--gK3O_ {
+  /* placeholder */
+}
+
+.player__timedPlaylistSubmitted--2oQ-l,
+.player__timedPlaylistTimedOut--2qhUc,
+.player__timedPlaylistFinish--eXRMW {
+  /* placeholder */
+}
+
+/* Control group placeholders */
+.player__controls_marking--2srOJ,
+.player__controls_navigation--1OlXq,
+.player__controls_reset--2kp_k,
+.player__controls_showAnswers--215q6,
+.player__navigationArrowsContainer--2JCTo,
+.player__showAnswers_buttons--2BfpV,
+.player__titleBar_buttons--3qkMC {
+  /* placeholder */
+}
+
+.player__challengeMode_progressive--zf-Dt,
+.player__challengeMode_random--1ylsJ {
+  /* placeholder */
+}
+
+.player__has_multiStepCoverScreen--3_4vz,
+.player__multiStepCoverScreen_container--3VSBb,
+.player__multiStepCoverScreen--7Oda-,
+.player__coverScreen_activitySetTitle--15eZa,
+.player__coverScreen_multiStepsLabel--3NnBo,
+.player__coverScreen_activitySetDetails--27FHP,
+.player__coverScreen_activitySetDescriptionContainer--1T2Iw,
+.player__coverScreen_activitySetDescription--_DiUF {
+  /* placeholder */
+}
+
+.player__is_leftSide--3xAZj,
+.player__is_rightSide--1MNOY,
+.player__scoreValue--11xti,
+.player__scoreOpenGradable--AL18x,
+.player__scoreWrong--3_yWb,
+.player__scoreCorrect--2W2_u,
+.player__score_youScoreText--Xsus3,
+.player__score_percentageValue--2V8Po,
+.player__score_percentageChar--1VfN3,
+.player__score_correctText--h_UBr,
+.player__scoreStatus--fSK3O,
+.player__openGradable--3FGKG {
+  /* placeholder */
+}
+
+.player__has_itemBasedScoreScreen--NS-Td,
+.player__has_multiStepScoreScreen--11eRI,
+.player__scoreScreen_container--3Vjlg,
+.player__scoreScreen--28djo,
+.player__scoreScreen_itemBased--2TXOk,
+.player__scoreScreen_multiStep--24_KA,
+.player__scoreScreen_activitySetTitle--3YcGd,
+.player__scoreScreen_score_percentageContainer--3Sahd,
+.player__scoreScreen_score_percentageContent--5L_q6,
+.player__scoreScreen_livesContainer--sQHKi,
+.player__scoreScreen_lives--1FJn7,
+.player__scoreScreen_score--3qhTe,
+.player__scoreScreen_correctContainer--2M2PS,
+.player__scoreScreen_correctText--FWpjf,
+.player__scoreScreen_correctIcon--3UEyf,
+.player__scoreScreen_wrongContainer--qE_rl,
+.player__scoreScreen_wrongText--13T_P,
+.player__scoreScreen_wrongIcon--20tsS,
+.player__scoreScreen_reward--gCUi5,
+.player__scoreScreen_completionText--3UlCf,
+.player__scoreScreen_individualScoreDetails--2eGnp,
+.player__scoreScreen_teacherMarkPendingNotice--1e4Wl {
+  /* placeholder */
+}
+
+.player__hostedByScorm--EHvyq {
+  /* placeholder */
+}
+
+.player__theme_1--1ArVv,
+.player__theme_2--3zLbz,
+.player__theme_3--37_q8 {
+  /* placeholder */
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
+@supports (-webkit-touch-callout: none) {
+  body {
+    height: -webkit-fill-available;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Disable Rubber-Band / Elastic Scroll in macOS */
+html {
+  overflow: hidden;
+}
+
+/* Disable android's chrome pull-down-to-refresh feature */
+body {
+  overscroll-behavior: contain;
+}
+
+/* Override of content's sliding Container size to fit in the RCF player */
+html.rcf_slidingPanelOpenRight .player__content--20_mI::-webkit-scrollbar,
+html.rcf_slidingPanelOpenLeft .player__content--20_mI::-webkit-scrollbar {
+  z-index: -10;
+}
+
+.player__content--20_mI .slidingBlock {
+  height: auto;
+}
+
+.player__content--20_mI .slidingContainer .slidingPanel .slidingContent {
+  overflow: auto;
+  padding-top: 9px;
+  margin-bottom: 0;
+  transform: translateZ(0);
+}
+
+/*hide box until redesing*/
+.player__itemBasedCoverScreen_challengeReward--3iMU7 {
+  display: none;
+}
+
+/*polyfill electron's chromium missing full-screen min-width styles*/
+:-webkit-full-screen {
+  object-fit: contain;
+  position: fixed !important;
+  top: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  box-sizing: border-box !important;
+  min-width: 0px !important;
+  max-width: none !important;
+  min-height: 0px !important;
+  max-height: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  transform: none !important;
+  margin: 0px !important;
+}
+
+/* Development template only */
+.player__componentTable--2pTzH {
+  font-size: xx-small;
+  overflow-y: scroll;
+  line-height: 1rem;
+}
+.player__componentTable--2pTzH button,
+.player__componentTable--2pTzH div {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+/* Development-dialog template only */
+.player__developmentDialog--3BX5f {
+  background: white;
+}
+
+/* open-gradable player's styles */
+.activity .overallScore {
+  display: none;
+}
+
+.activity.reviewTeacherFeedback .overallScore {
+  display: block;
+}
+
+/* fixedWordBox styles */
+/* Mac X wordBox styles*/
+.player__content--20_mI [data-fixedwordpools=y] .categorise .wordBox,
+.player__content--20_mI [data-fixedwordpools=y] .sentenceBuilderContainer .sentenceBuilderWordBox,
+.player__content--20_mI [data-fixedwordpools=y] .fixedWordBox {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: auto;
+  right: var(--rcfPlayer_fixedPositionOffset_right);
+  bottom: var(--rcfPlayer_fixedPositionOffset_bottom);
+  left: var(--rcfPlayer_fixedPositionOffset_left);
+  opacity: 1;
+  opacity: var(--rcfPlayer_wordBox_opacity);
+}
+
+/* RCF Mask */
+.player__content--20_mI .rcfMask,
+.player__content--20_mI .rcfInteractiveMask {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.player__fullScreen--QeZe9 .player__content--20_mI .rcfMask,
+.player__fullScreen--QeZe9 .player__content--20_mI .rcfInteractiveMask {
+  top: -48px;
+}
+
+.player__content--20_mI .rcfMask.show {
+  display: block;
+  background: transparent;
+  z-index: auto;
+}
+
+.player__content--20_mI .rcfMask:after,
+.player__content--20_mI .rcfInteractiveMask:after {
+  content: "";
+  background-color: #000;
+  opacity: 0.7 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.player__windowed--1GbfZ .player__content--20_mI .rcfMask:after,
+.player__windowed--1GbfZ .player__content--20_mI .rcfInteractiveMask:after {
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+}
+
+/* Hide items in an item-based activity not currently on-screen.
+   Don't use display-none so items retain dimensions (required for RCF to dynamically calculate sizes of some display elements)  */
+.itemBasedItem:not(.active) {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/*fix non scrollable content hidden behind wordpools in safari*/
+.player__has_fixedWordBox--2lYbP #activity .activityContainer {
+  height: fit-content;
+  padding-bottom: 1px;
+}
+
+/* fix disabled story button opacity */
+.activity.disabled .story .navigation ul .button {
+  opacity: 0.3;
+}
+
+/*disable student's audio recording while waiting for teacher's feedback*/
+/*WP is adding this to their styles to avoid overwrites*/
+/*:global .disabled .largeAudioRecording:not(.teacherRecording) .largeAudioRecordingPanel .audioRecordingControls .audioRecordButton,
+:global .disabled .largeAudioRecording:not(.teacherRecording) .largeAudioRecordingPanel .audioRecordingControls .audioStopRecordButton {
+	pointer-events: none;
+	background-color: $secondary;
+}*/
+#top-level-details.player__has_content--3lN-0 #activity-content:has(.plyr--fullscreen-fallback) {
+  overflow: revert;
+  z-index: 2;
+}
+
+#top-level-details.player__has_content--3lN-0 > [data-template]:has(.plyr--fullscreen-fallback) {
+  z-index: 1;
+}
+
+html {
+  font-size: var(--base_fontsize);
+}
+
+*[class^=player__],
+button[class^=player__] {
+  font-size: 1rem;
+  font-family: var(--base_fontfamily);
+}
+
+.player__noAttemptAvailable--1wskN h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--noAttemptAvailable);
+}
+
+.player__coverScreen--1gbqD .player__coverScreen_activitySetTitle--15eZa,
+.player__scoreScreen--28djo .player__scoreScreen_activitySetTitle--3YcGd,
+.player__scoreScreen--28djo .player__scoreScreen_completionText--3UlCf p {
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+}
+
+.player__scoreScreen--28djo .player__scoreScreen_individualScoreDetails--2eGnp span,
+.player__scoreScreen--28djo .player__scoreScreen_teacherMarkPendingNotice--1e4Wl p {
+  font-size: 1.125rem;
+}
+
+.player__scoreScreen_completionText--3UlCf p {
+  line-height: 1;
+}
+
+.player__scoreScreen_score--3qhTe .player__scoreScreen_correctContainer--2M2PS > * {
+  font-size: 1rem;
+}
+
+:root {
+  --base_fontsize: 16px;
+  --base_fontfamily: "OpenSans", "DejaVuSans", Arial, Helvetica, sans-serif;
+  --button_border_width: 1px;
+  --button_border-radius: 30px;
+  --primary: #1b60f4;
+  --primary_border: #1b60f4;
+  --primary_content: #fff;
+  --primary_active: #0b4ddc;
+  --primary_border_active: #0062cc;
+  --primary_content_active: #fff;
+  --primary_hover: #0b4ddc;
+  --primary_border_hover: #0062cc;
+  --primary_disabled: #8daff9;
+  --primary_border_disabled: #8daff9;
+  --primary_content_disabled: #fff;
+  --primary_focused: #0b4ddc;
+  --primary_border_focused: #0062cc;
+  --primary_focused_outline: #c6d7fc;
+  --primaryOutline: #fff;
+  --primaryOutline_border: #1b60f4;
+  --primaryOutline_content: #1b60f4;
+  --primaryOutline_active: #8daff9;
+  --primaryOutline_border_active: #0b4ddc;
+  --primaryOutline_content_active: #0b4ddc;
+  --primaryOutline_disabled: #fff;
+  --primaryOutline_border_disabled: #8daff9;
+  --primaryOutline_content_disabled: #8daff9;
+  --secondary: #fff;
+  --secondary_border: #8b8b8b;
+  --secondary_content: #000;
+  --secondary_active: #f6f6f6;
+  --secondary_border_active: #8b8b8b;
+  --secondary_content_active: #212529;
+  --secondary_hover: #fff;
+  --secondary_border_hover: #8b8b8b;
+  --secondary_disabled: #fff;
+  --secondary_border_disabled: #c7c7c7;
+  --secondary_content_disabled: #8b8b8b;
+  --secondary_focused: #fff;
+  --secondary_border_focused: #8b8b8b;
+  --secondary_focused_outline: #8daff9;
+  --secondaryOutline: #fff;
+  --secondaryOutline_border: #8b8b8b;
+  --secondaryOutline_content: #000;
+  --secondaryOutline_active: #f6f6f6;
+  --secondaryOutline_border_active: #8b8b8b;
+  --secondaryOutline_content_active: #212529;
+  --secondaryOutline_disabled: #fff;
+  --secondaryOutline_border_disabled: #c7c7c7;
+  --secondaryOutline_content_disabled: #8b8b8b;
+  --icon: #fff;
+  --icon_active: #e2e2e2;
+  --icon_hover: #e2e2e2;
+  --icon_disabled: #fff;
+  --icon_focused: #e2e2e2;
+  --icon_content: #000;
+  --icon_content_active: #000;
+  --icon_content_hover: #000;
+  --icon_content_disabled: #e2e2e2;
+  --icon_content_focused: #000;
+  --icon_focused_outline: #c6d7fc;
+  --buttonFocus: #8b8b8b;
+  --noAttemptAvailable: #1a051d;
+  --progressBarActive: #fcdb4a;
+  --itemBasedProgressBarProgress: #d1d1d1;
+  --progressBar_correct: #00a417;
+  --progressBar_wrong: #eb0104;
+  --progressBar_pendingMarks: #fed119;
+  --progressBar_partiallyCorrect: #eb0104;
+  --itemBasedProgressBar_timerContainer_green: #00a417;
+  --itemBasedProgressBar_timerContainer_orange: #f0ab35;
+  --itemBasedProgressBar_timerContainer_red: #eb0104;
+  --itemBasedProgressBar_lives: #1b60f4;
+  --itemBasedProgressBar_correctCounter: #1b60f4;
+  --timedPlaylistTimer_red: #eb0104;
+  --paginationBar: #f1f1f1;
+  --paginationBar_attempted: #b1c5ed;
+  --paginationBar_active: #3c6ed2;
+  --paginationBar_hover: #000;
+  --coverScoreScreen_rules_text: #1b60f4;
+  --coverScoreScreen_rules_border: #8b8b8b;
+  --coverScoreScreen_rules_background: #f6f6f6;
+  --coverScoreScreen_reviewMode_text: #fff;
+  --coverScoreScreen_reviewMode_background: #1b60f4;
+  --coverScoreScreen_icons: #1b60f4;
+  --coverScoreScreen_linkStep: #1b60f4;
+  --coverScoreScreen_backgroundGradient_1: #0f597c;
+  --coverScoreScreen_backgroundGradient_2: #da1b2c;
+  --coverScoreScreen_challenge_backgroundGradient_1: #da1b2c;
+  --coverScoreScreen_challenge_backgroundGradient_2: #fed119;
+  --coverScoreScreen_svg_mobile: 118px;
+  --coverScoreScreen_svg_desktop: 168px;
+  --scoreCard_text: #fff;
+  --scoreCard_background: #4a4a4a;
+  --scoreCard_hover_text: #212529;
+  --scoreCard_hover_background: #e2e2e2;
+  --navigationArrowsContainer_separator: #c7c7c7;
+  --dragHandle_background_image: url(images/default_dragCornerTopLeft.svg), url(images/default_dragCornerTopRight.svg),
+  	url(images/default_dragCornerBottomRight.svg), url(images/default_dragCornerBottomLeft.svg),
+  	url(images/default_dragGutter.svg), url(images/default_dragGutter.svg), url(images/default_dragGutter.svg),
+  	url(images/default_dragGutter.svg);
+  --ux-surface-container-border-light: #c7c7c7;
+  --ux-surface-container: #fff;
+}
+
+.player__theme_1--1ArVv,
+.theme_1 {
+  --base_fontsize: 16px;
+  --base_fontfamily: "OpenSans", "DejaVuSans", Arial, Helvetica, sans-serif;
+  --button_border_width: 2px;
+  --button_border-radius: 4px;
+  --primary: #3c6ed2;
+  --primary_border: #3c6ed2;
+  --primary_content: #fff;
+  --primary_active: #24427e;
+  --primary_border_active: #24427e;
+  --primary_content_active: #fff;
+  --primary_hover: #000;
+  --primary_border_hover: #000;
+  --primary_disabled: #b1c5ed;
+  --primary_border_disabled: #b1c5ed;
+  --primary_content_disabled: #fff;
+  --primary_focused: #3c6ed2;
+  --primary_border_focused: #3c6ed2;
+  --primary_focused_outline: #060b15;
+  --primaryOutline: #fff;
+  --primaryOutline_border: #1b60f4;
+  --primaryOutline_content: #1b60f4;
+  --primaryOutline_active: #8daff9;
+  --primaryOutline_border_active: #0b4ddc;
+  --primaryOutline_content_active: #0b4ddc;
+  --primaryOutline_disabled: #fff;
+  --primaryOutline_border_disabled: #8daff9;
+  --primaryOutline_content_disabled: #8daff9;
+  --secondary: #fff;
+  --secondary_border: #3c6ed2;
+  --secondary_content: #000;
+  --secondary_active: #fff;
+  --secondary_border_active: #24427e;
+  --secondary_content_active: #000;
+  --secondary_hover: #fff;
+  --secondary_border_hover: #060b15;
+  --secondary_disabled: #fff;
+  --secondary_border_disabled: #b1c5ed;
+  --secondary_content_disabled: #8e8e8e;
+  --secondary_focused: #fff;
+  --secondary_border_focused: #3c6ed2;
+  --secondary_focused_outline: #060b15;
+  --secondaryOutline: #fff;
+  --secondaryOutline_border: #8b8b8b;
+  --secondaryOutline_content: #000;
+  --secondaryOutline_active: #f6f6f6;
+  --secondaryOutline_border_active: #8b8b8b;
+  --secondaryOutline_content_active: #212529;
+  --secondaryOutline_disabled: #fff;
+  --secondaryOutline_border_disabled: #c7c7c7;
+  --secondaryOutline_content_disabled: #8b8b8b;
+  --icon: #fff;
+  --icon_active: #e2e2e2;
+  --icon_hover: #e2e2e2;
+  --icon_disabled: #fff;
+  --icon_focused: #e2e2e2;
+  --icon_content: #000;
+  --icon_content_active: #000;
+  --icon_content_hover: #000;
+  --icon_content_disabled: #e2e2e2;
+  --icon_content_focused: #000;
+  --icon_focused_outline: #060b15;
+  --buttonFocus: #c6d7fc;
+  --noAttemptAvailable: #1a051d;
+  --progressBarActive: #fcdb4a;
+  --itemBasedProgressBarProgress: #d1d1d1;
+  --progressBar_correct: #00a417;
+  --progressBar_wrong: #eb0104;
+  --progressBar_pendingMarks: #fed119;
+  --progressBar_partiallyCorrect: #eb0104;
+  --itemBasedProgressBar_timerContainer_green: #00a417;
+  --itemBasedProgressBar_timerContainer_orange: #f0ab35;
+  --itemBasedProgressBar_timerContainer_red: #eb0104;
+  --itemBasedProgressBar_lives: #1b60f4;
+  --itemBasedProgressBar_correctCounter: #1b60f4;
+  --timedPlaylistTimer_red: #eb0104;
+  --paginationBar: #f1f1f1;
+  --paginationBar_attempted: #b1c5ed;
+  --paginationBar_active: #3c6ed2;
+  --paginationBar_hover: #000;
+  --coverScoreScreen_rules_text: #1b60f4;
+  --coverScoreScreen_rules_border: #8b8b8b;
+  --coverScoreScreen_rules_background: #f6f6f6;
+  --coverScoreScreen_teachersMode_text: #fff;
+  --coverScoreScreen_teachersMode_background: #1b60f4;
+  --coverScoreScreen_icons: #1b60f4;
+  --coverScoreScreen_linkStep: #1b60f4;
+  --coverScoreScreen_backgroundGradient_1: #f1f1f1;
+  --coverScoreScreen_backgroundGradient_2: #f1f1f1;
+  --coverScoreScreen_challenge_backgroundGradient_1: #f1f1f1;
+  --coverScoreScreen_challenge_backgroundGradient_2: #f1f1f1;
+  --coverScoreScreen_svg_mobile: 188px;
+  --coverScoreScreen_svg_desktop: 188px;
+  --scoreCard_text: #fff;
+  --scoreCard_background: #4a4a4a;
+  --scoreCard_hover_text: #212529;
+  --scoreCard_hover_background: #e2e2e2;
+  --navigationArrowsContainer_separator: #c7c7c7;
+}
+
+.player__theme_4--3pCKn,
+.theme_4 {
+  --base_fontsize: 18px;
+  --base_fontfamily: "Comic Sans MS", "Comic Sans", "DejaVuSans", Arial, Helvetica, sans-serif;
+  --button_border_width: 1px;
+  --button_border-radius: 30px;
+  --primary: #ff1a1a;
+  --primary_border: #ff1a1a;
+  --primary_content: #fff;
+  --primary_active: #e60000;
+  --primary_border_active: #cc0000;
+  --primary_content_active: #fff;
+  --primary_hover: #ff8080;
+  --primary_border_hover: #ff8080;
+  --primary_disabled: #8daff9;
+  --primary_border_disabled: #8daff9;
+  --primary_content_disabled: #fff;
+  --primary_focused: #0b4ddc;
+  --primary_border_focused: #0062cc;
+  --primary_focused_outline: #c6d7fc;
+  --primaryOutline: #fff;
+  --primaryOutline_border: #ff1a1a;
+  --primaryOutline_content: #ff1a1a;
+  --primaryOutline_active: #ff8080;
+  --primaryOutline_border_active: #e60000;
+  --primaryOutline_content_active: #e60000;
+  --primaryOutline_disabled: #fff;
+  --primaryOutline_border_disabled: #ff8080;
+  --primaryOutline_content_disabled: #ff8080;
+  --secondary: #8b8b8b;
+  --secondary_border: #c7c7c7;
+  --secondary_content: #fff;
+  --secondary_active: #4a4a4a;
+  --secondary_border_active: #c7c7c7;
+  --secondary_content_active: #fff;
+  --secondary_hover: #ff8080;
+  --secondary_border_hover: #ff8080;
+  --secondary_disabled: #c7c7c7;
+  --secondary_border_disabled: #c7c7c7;
+  --secondary_content_disabled: #e2e2e2;
+  --secondary_focused: #fff;
+  --secondary_border_disabled: #c7c7c7;
+  --secondary_focused_outline: #8daff9;
+  --secondaryOutline: #fff;
+  --secondaryOutline_border: #8b8b8b;
+  --secondaryOutline_content: #000;
+  --secondaryOutline_active: #f6f6f6;
+  --secondaryOutline_border_active: #8b8b8b;
+  --secondaryOutline_content_active: #212529;
+  --secondaryOutline_disabled: #fff;
+  --secondaryOutline_border_disabled: #c7c7c7;
+  --secondaryOutline_content_disabled: #8b8b8b;
+  --icon: #fff;
+  --icon_active: #e2e2e2;
+  --icon_hover: #e2e2e2;
+  --icon_disabled: #fff;
+  --icon_focused: #e2e2e2;
+  --icon_content: #000;
+  --icon_content_active: #000;
+  --icon_content_hover: #000;
+  --icon_content_disabled: #e2e2e2;
+  --icon_content_focused: #000;
+  --icon_focused_outline: #c6d7fc;
+  --buttonFocus: #c6d7fc;
+  --noAttemptAvailable: #1a051d;
+  --progressBarActive: #fcdb4a;
+  --itemBasedProgressBarProgress: #d1d1d1;
+  --progressBar_correct: #00a417;
+  --progressBar_wrong: #eb0104;
+  --progressBar_pendingMarks: #fed119;
+  --progressBar_partiallyCorrect: #eb0104;
+  --itemBasedProgressBar_timerContainer_green: #00a417;
+  --itemBasedProgressBar_timerContainer_orange: #f0ab35;
+  --itemBasedProgressBar_timerContainer_red: #eb0104;
+  --itemBasedProgressBar_lives: #1b60f4;
+  --itemBasedProgressBar_correctCounter: #1b60f4;
+  --timedPlaylistTimer_red: #eb0104;
+  --paginationBar: #f1f1f1;
+  --paginationBar_attempted: #b1c5ed;
+  --paginationBar_active: #3c6ed2;
+  --paginationBar_hover: #000;
+  --coverScoreScreen_rules_text: #1b60f4;
+  --coverScoreScreen_rules_border: #8b8b8b;
+  --coverScoreScreen_rules_background: #f6f6f6;
+  --coverScoreScreen_reviewMode_text: #fff;
+  --coverScoreScreen_reviewMode_background: #1b60f4;
+  --coverScoreScreen_icons: #1b60f4;
+  --coverScoreScreen_linkStep: #1b60f4;
+  --coverScoreScreen_backgroundGradient_1: #0f597c;
+  --coverScoreScreen_backgroundGradient_2: #da1b2c;
+  --coverScoreScreen_challenge_backgroundGradient_1: #da1b2c;
+  --coverScoreScreen_challenge_backgroundGradient_2: #fed119;
+  --coverScoreScreen_svg_mobile: 118px;
+  --coverScoreScreen_svg_desktop: 168px;
+  --scoreCard_text: #fff;
+  --scoreCard_background: #4a4a4a;
+  --scoreCard_hover_text: #212529;
+  --scoreCard_hover_background: #e2e2e2;
+  --navigationArrowsContainer_separator: #c7c7c7;
+}
+
+.player__theme_calmBlue--1tO91,
+.theme_calmBlue {
+  --base_fontsize: 16px;
+  --base_fontfamily: "Castledown", "DejaVuSans", Arial, Helvetica, sans-serif;
+  --button_border_width: 2px;
+  --button_border-radius: 8px;
+  --ux-color-primary-hover: #060b15;
+  --ux-color-primary: #3c6ed2;
+  --ux-color-primary-disabled: #b1c5ed;
+  --ux-color-primary-pressed: #24427e;
+  --ux-on-primary: #ffffff;
+  --ux-b950: #060b15;
+  --ux-n0: #ffffff;
+  --ux-n100: #e3e3e3;
+  --ux-n1000: #000000;
+  --ux-n400: #8e8e8e;
+  --ux-n50: #f1f1f1;
+  --ux-b50: #ecf1fb;
+  --ux-b200: #b1c5ed;
+  --ux-background-colour: var(--ux-b50);
+  --ux-icon-colour-dark: var(--ux-color-primary);
+  --ux-icon-colour-light: var(--ux-b200);
+  --ux-item-active: #b1c5ed;
+  --primary: var(--ux-color-primary);
+  --primary_border: var(--ux-color-primary);
+  --primary_content: var(--ux-n0);
+  --primary_active: var(--ux-color-primary-pressed);
+  --primary_border_active: var(--ux-color-primary-pressed);
+  --primary_content_active: var(--ux-n0);
+  --primary_hover: var(--ux-color-primary-hover);
+  --primary_border_hover: var(--ux-color-primary-hover);
+  --primary_disabled: var(--ux-color-primary-disabled);
+  --primary_border_disabled: var(--ux-color-primary-disabled);
+  --primary_content_disabled: var(--ux-n0);
+  --primary_focused: var(--ux-color-primary);
+  --primary_border_focused: var(--ux-color-primary);
+  --primary_focused_outline: var(--ux-b950);
+  --primaryOutline: #fff;
+  --primaryOutline_border: #1b60f4;
+  --primaryOutline_content: #1b60f4;
+  --primaryOutline_active: #8daff9;
+  --primaryOutline_border_active: #0b4ddc;
+  --primaryOutline_content_active: #0b4ddc;
+  --primaryOutline_disabled: #fff;
+  --primaryOutline_border_disabled: #8daff9;
+  --primaryOutline_content_disabled: #8daff9;
+  --secondary: var(--ux-n0);
+  --secondary_border: var(--ux-color-primary);
+  --secondary_content: var(--ux-n1000);
+  --secondary_active: var(--ux-n0);
+  --secondary_border_active: var(--ux-color-primary-pressed);
+  --secondary_content_active: var(--ux-n1000);
+  --secondary_hover: var(--ux-n0);
+  --secondary_border_hover: var(--ux-b950);
+  --secondary_disabled: var(--ux-n0);
+  --secondary_border_disabled: var(--ux-color-primary-disabled);
+  --secondary_content_disabled: var(--ux-n400);
+  --secondary_focused: var(--ux-n0);
+  --secondary_border_focused: var(--ux-color-primary);
+  --secondary_focused_outline: var(--ux-b950);
+  --secondaryOutline: var(--ux-n0);
+  --secondaryOutline_border: #8b8b8b;
+  --secondaryOutline_content: var(--ux-n1000);
+  --secondaryOutline_active: #f6f6f6;
+  --secondaryOutline_border_active: #8b8b8b;
+  --secondaryOutline_content_active: #212529;
+  --secondaryOutline_disabled: var(--ux-n0);
+  --secondaryOutline_border_disabled: #c7c7c7;
+  --secondaryOutline_content_disabled: #8b8b8b;
+  --icon: #fff;
+  --icon_active: #e2e2e2;
+  --icon_hover: #e2e2e2;
+  --icon_disabled: #fff;
+  --icon_focused: #e2e2e2;
+  --icon_content: #000;
+  --icon_content_active: #000;
+  --icon_content_hover: #000;
+  --icon_content_disabled: #e2e2e2;
+  --icon_content_focused: #000;
+  --icon_focused_outline: var(--ux-b950);
+  --buttonFocus: #c6d7fc;
+  --noAttemptAvailable: #1a051d;
+  --progressBarActive: #fcdb4a;
+  --itemBasedProgressBarProgress: #d1d1d1;
+  --progressBar_correct: #00a417;
+  --progressBar_wrong: #eb0104;
+  --progressBar_pendingMarks: #fed119;
+  --progressBar_partiallyCorrect: #eb0104;
+  --itemBasedProgressBar_timerContainer_green: #00a417;
+  --itemBasedProgressBar_timerContainer_orange: #f0ab35;
+  --itemBasedProgressBar_timerContainer_red: #eb0104;
+  --itemBasedProgressBar_lives: #1b60f4;
+  --itemBasedProgressBar_correctCounter: #1b60f4;
+  --timedPlaylistTimer_red: #eb0104;
+  --paginationBar: var(--ux-n50);
+  --paginationBar_attempted: var(--ux-color-primary-disabled);
+  --paginationBar_active: var(--ux-color-primary);
+  --paginationBar_hover: #000;
+  --coverScoreScreen_rules_text: #1b60f4;
+  --coverScoreScreen_rules_border: #8b8b8b;
+  --coverScoreScreen_rules_background: #f6f6f6;
+  --coverScoreScreen_teachersMode_text: #fff;
+  --coverScoreScreen_teachersMode_background: #1b60f4;
+  --coverScoreScreen_icons: #1b60f4;
+  --coverScoreScreen_linkStep: #1b60f4;
+  --coverScoreScreen_backgroundGradient_1: var(--ux-background-colour);
+  --coverScoreScreen_backgroundGradient_2: var(--ux-background-colour);
+  --coverScoreScreen_challenge_backgroundGradient_1: var(--ux-background-colour);
+  --coverScoreScreen_challenge_backgroundGradient_2: var(--ux-background-colour);
+  --coverScoreScreen_svg_mobile: 188px;
+  --coverScoreScreen_svg_desktop: 188px;
+  --scoreCard_text: #fff;
+  --scoreCard_background: #4a4a4a;
+  --scoreCard_hover_text: #212529;
+  --scoreCard_hover_background: #e2e2e2;
+  --navigationArrowsContainer_separator: #c7c7c7;
+  --dragHandle_background_image: url(images/calmBlue_dragCornerTopLeft.svg), url(images/calmBlue_dragCornerTopRight.svg),
+  	url(images/calmBlue_dragCornerBottomRight.svg), url(images/calmBlue_dragCornerBottomLeft.svg),
+  	url(images/calmBlue_dragGutter.svg), url(images/calmBlue_dragGutter.svg), url(images/calmBlue_dragGutter.svg),
+  	url(images/calmBlue_dragGutter.svg);
+}
+
+.player__theme_purpleSky--UIu58,
+.theme_purpleSky {
+  --base_fontsize: 16px;
+  --base_fontfamily: "Castledown", "DejaVuSans", Arial, Helvetica, sans-serif;
+  --button_border_width: 2px;
+  --button_border-radius: 8px;
+  --ux-color-primary-hover: #0f0912;
+  --ux-color-primary: #915ab7;
+  --ux-color-primary-disabled: #d3bde2;
+  --ux-color-primary-pressed: #57366e;
+  --ux-on-primary: #ffffff;
+  --ux-b950: #060b15;
+  --ux-n0: #ffffff;
+  --ux-n100: #e3e3e3;
+  --ux-n1000: #000000;
+  --ux-n400: #8e8e8e;
+  --ux-n50: #f1f1f1;
+  --ux-p50: #f4eef8;
+  --ux-p200: #d3bde2;
+  --ux-background-colour: var(--ux-p50);
+  --ux-icon-colour-dark: var(--ux-color-primary);
+  --ux-icon-colour-light: var(--ux-p200);
+  --ux-item-active: #d3bde2;
+  --primary: var(--ux-color-primary);
+  --primary_border: var(--ux-color-primary);
+  --primary_content: var(--ux-n0);
+  --primary_active: var(--ux-color-primary-pressed);
+  --primary_border_active: var(--ux-color-primary-pressed);
+  --primary_content_active: var(--ux-n0);
+  --primary_hover: var(--ux-color-primary-hover);
+  --primary_border_hover: var(--ux-color-primary-hover);
+  --primary_disabled: var(--ux-color-primary-disabled);
+  --primary_border_disabled: var(--ux-color-primary-disabled);
+  --primary_content_disabled: var(--ux-n0);
+  --primary_focused: var(--ux-color-primary);
+  --primary_border_focused: var(--ux-color-primary);
+  --primary_focused_outline: var(--ux-b950);
+  --primaryOutline: #fff;
+  --primaryOutline_border: #1b60f4;
+  --primaryOutline_content: #1b60f4;
+  --primaryOutline_active: #8daff9;
+  --primaryOutline_border_active: #0b4ddc;
+  --primaryOutline_content_active: #0b4ddc;
+  --primaryOutline_disabled: #fff;
+  --primaryOutline_border_disabled: #8daff9;
+  --primaryOutline_content_disabled: #8daff9;
+  --secondary: var(--ux-n0);
+  --secondary_border: var(--ux-color-primary);
+  --secondary_content: var(--ux-n1000);
+  --secondary_active: var(--ux-n0);
+  --secondary_border_active: var(--ux-color-primary-pressed);
+  --secondary_content_active: var(--ux-n1000);
+  --secondary_hover: var(--ux-n0);
+  --secondary_border_hover: var(--ux-b950);
+  --secondary_disabled: var(--ux-n0);
+  --secondary_border_disabled: var(--ux-color-primary-disabled);
+  --secondary_content_disabled: var(--ux-n400);
+  --secondary_focused: var(--ux-n0);
+  --secondary_border_focused: var(--ux-color-primary);
+  --secondary_focused_outline: var(--ux-b950);
+  --secondaryOutline: var(--ux-n0);
+  --secondaryOutline_border: #8b8b8b;
+  --secondaryOutline_content: var(--ux-n1000);
+  --secondaryOutline_active: #f6f6f6;
+  --secondaryOutline_border_active: #8b8b8b;
+  --secondaryOutline_content_active: #212529;
+  --secondaryOutline_disabled: var(--ux-n0);
+  --secondaryOutline_border_disabled: #c7c7c7;
+  --secondaryOutline_content_disabled: #8b8b8b;
+  --icon: #fff;
+  --icon_active: #e2e2e2;
+  --icon_hover: #e2e2e2;
+  --icon_disabled: #fff;
+  --icon_focused: #e2e2e2;
+  --icon_content: #000;
+  --icon_content_active: #000;
+  --icon_content_hover: #000;
+  --icon_content_disabled: #e2e2e2;
+  --icon_content_focused: #000;
+  --icon_focused_outline: var(--ux-b950);
+  --buttonFocus: #c6d7fc;
+  --noAttemptAvailable: #1a051d;
+  --progressBarActive: #fcdb4a;
+  --itemBasedProgressBarProgress: #d1d1d1;
+  --progressBar_correct: #00a417;
+  --progressBar_wrong: #eb0104;
+  --progressBar_pendingMarks: #fed119;
+  --progressBar_partiallyCorrect: #eb0104;
+  --itemBasedProgressBar_timerContainer_green: #00a417;
+  --itemBasedProgressBar_timerContainer_orange: #f0ab35;
+  --itemBasedProgressBar_timerContainer_red: #eb0104;
+  --itemBasedProgressBar_lives: #1b60f4;
+  --itemBasedProgressBar_correctCounter: #1b60f4;
+  --timedPlaylistTimer_red: #eb0104;
+  --paginationBar: var(--ux-n50);
+  --paginationBar_attempted: var(--ux-color-primary-disabled);
+  --paginationBar_active: var(--ux-color-primary);
+  --paginationBar_hover: #000;
+  --coverScoreScreen_rules_text: #1b60f4;
+  --coverScoreScreen_rules_border: #8b8b8b;
+  --coverScoreScreen_rules_background: #f6f6f6;
+  --coverScoreScreen_teachersMode_text: #fff;
+  --coverScoreScreen_teachersMode_background: #1b60f4;
+  --coverScoreScreen_icons: #1b60f4;
+  --coverScoreScreen_linkStep: #1b60f4;
+  --coverScoreScreen_backgroundGradient_1: var(--ux-background-colour);
+  --coverScoreScreen_backgroundGradient_2: var(--ux-background-colour);
+  --coverScoreScreen_challenge_backgroundGradient_1: var(--ux-background-colour);
+  --coverScoreScreen_challenge_backgroundGradient_2: var(--ux-background-colour);
+  --coverScoreScreen_svg_mobile: 188px;
+  --coverScoreScreen_svg_desktop: 188px;
+  --scoreCard_text: #fff;
+  --scoreCard_background: #4a4a4a;
+  --scoreCard_hover_text: #212529;
+  --scoreCard_hover_background: #e2e2e2;
+  --navigationArrowsContainer_separator: #c7c7c7;
+  --dragHandle_background_image: url(images/purpleSky_dragCornerTopLeft.svg), url(images/purpleSky_dragCornerTopRight.svg),
+  	url(images/purpleSky_dragCornerBottomRight.svg), url(images/purpleSky_dragCornerBottomLeft.svg),
+  	url(images/purpleSky_dragGutter.svg), url(images/purpleSky_dragGutter.svg), url(images/purpleSky_dragGutter.svg),
+  	url(images/purpleSky_dragGutter.svg);
+}
+
+.player__theme_turtleBay--1gz-T,
+.theme_turtleBay {
+  --base_fontsize: 16px;
+  --base_fontfamily: "Castledown", "DejaVuSans", Arial, Helvetica, sans-serif;
+  --button_border_width: 2px;
+  --button_border-radius: 8px;
+  --ux-color-primary-hover: #030d0a;
+  --ux-color-primary: #1d8166;
+  --ux-color-primary-disabled: #a5cdc2;
+  --ux-color-primary-pressed: #114d3d;
+  --ux-on-primary: #ffffff;
+  --ux-b950: #060b15;
+  --ux-n0: #ffffff;
+  --ux-n100: #e3e3e3;
+  --ux-n1000: #000000;
+  --ux-n400: #8e8e8e;
+  --ux-n50: #f1f1f1;
+  --ux-t50: #e8f2f0;
+  --ux-t200: #a5cdc2;
+  --ux-background-colour: var(--ux-t50);
+  --ux-icon-colour-dark: var(--ux-color-primary);
+  --ux-icon-colour-light: var(--ux-t200);
+  --ux-item-active: #a5cdc2;
+  --primary: var(--ux-color-primary);
+  --primary_border: var(--ux-color-primary);
+  --primary_content: var(--ux-n0);
+  --primary_active: var(--ux-color-primary-pressed);
+  --primary_border_active: var(--ux-color-primary-pressed);
+  --primary_content_active: var(--ux-n0);
+  --primary_hover: var(--ux-color-primary-hover);
+  --primary_border_hover: var(--ux-color-primary-hover);
+  --primary_disabled: var(--ux-color-primary-disabled);
+  --primary_border_disabled: var(--ux-color-primary-disabled);
+  --primary_content_disabled: var(--ux-n0);
+  --primary_focused: var(--ux-color-primary);
+  --primary_border_focused: var(--ux-color-primary);
+  --primary_focused_outline: var(--ux-b950);
+  --primaryOutline: #fff;
+  --primaryOutline_border: #1b60f4;
+  --primaryOutline_content: #1b60f4;
+  --primaryOutline_active: #8daff9;
+  --primaryOutline_border_active: #0b4ddc;
+  --primaryOutline_content_active: #0b4ddc;
+  --primaryOutline_disabled: #fff;
+  --primaryOutline_border_disabled: #8daff9;
+  --primaryOutline_content_disabled: #8daff9;
+  --secondary: var(--ux-n0);
+  --secondary_border: var(--ux-color-primary);
+  --secondary_content: var(--ux-n1000);
+  --secondary_active: var(--ux-n0);
+  --secondary_border_active: var(--ux-color-primary-pressed);
+  --secondary_content_active: var(--ux-n1000);
+  --secondary_hover: var(--ux-n0);
+  --secondary_border_hover: var(--ux-b950);
+  --secondary_disabled: var(--ux-n0);
+  --secondary_border_disabled: var(--ux-color-primary-disabled);
+  --secondary_content_disabled: var(--ux-n400);
+  --secondary_focused: var(--ux-n0);
+  --secondary_border_focused: var(--ux-color-primary);
+  --secondary_focused_outline: var(--ux-b950);
+  --secondaryOutline: var(--ux-n0);
+  --secondaryOutline_border: #8b8b8b;
+  --secondaryOutline_content: var(--ux-n1000);
+  --secondaryOutline_active: #f6f6f6;
+  --secondaryOutline_border_active: #8b8b8b;
+  --secondaryOutline_content_active: #212529;
+  --secondaryOutline_disabled: var(--ux-n0);
+  --secondaryOutline_border_disabled: #c7c7c7;
+  --secondaryOutline_content_disabled: #8b8b8b;
+  --icon: #fff;
+  --icon_active: #e2e2e2;
+  --icon_hover: #e2e2e2;
+  --icon_disabled: #fff;
+  --icon_focused: #e2e2e2;
+  --icon_content: #000;
+  --icon_content_active: #000;
+  --icon_content_hover: #000;
+  --icon_content_disabled: #e2e2e2;
+  --icon_content_focused: #000;
+  --icon_focused_outline: var(--ux-b950);
+  --buttonFocus: #c6d7fc;
+  --noAttemptAvailable: #1a051d;
+  --progressBarActive: #fcdb4a;
+  --itemBasedProgressBarProgress: #d1d1d1;
+  --progressBar_correct: #00a417;
+  --progressBar_wrong: #eb0104;
+  --progressBar_pendingMarks: #fed119;
+  --progressBar_partiallyCorrect: #eb0104;
+  --itemBasedProgressBar_timerContainer_green: #00a417;
+  --itemBasedProgressBar_timerContainer_orange: #f0ab35;
+  --itemBasedProgressBar_timerContainer_red: #eb0104;
+  --itemBasedProgressBar_lives: #1b60f4;
+  --itemBasedProgressBar_correctCounter: #1b60f4;
+  --timedPlaylistTimer_red: #eb0104;
+  --paginationBar: var(--ux-n50);
+  --paginationBar_attempted: var(--ux-color-primary-disabled);
+  --paginationBar_active: var(--ux-color-primary);
+  --paginationBar_hover: #000;
+  --coverScoreScreen_rules_text: #1b60f4;
+  --coverScoreScreen_rules_border: #8b8b8b;
+  --coverScoreScreen_rules_background: #f6f6f6;
+  --coverScoreScreen_teachersMode_text: #fff;
+  --coverScoreScreen_teachersMode_background: #1b60f4;
+  --coverScoreScreen_icons: #1b60f4;
+  --coverScoreScreen_linkStep: #1b60f4;
+  --coverScoreScreen_backgroundGradient_1: var(--ux-background-colour);
+  --coverScoreScreen_backgroundGradient_2: var(--ux-background-colour);
+  --coverScoreScreen_challenge_backgroundGradient_1: var(--ux-background-colour);
+  --coverScoreScreen_challenge_backgroundGradient_2: var(--ux-background-colour);
+  --coverScoreScreen_svg_mobile: 188px;
+  --coverScoreScreen_svg_desktop: 188px;
+  --scoreCard_text: #fff;
+  --scoreCard_background: #4a4a4a;
+  --scoreCard_hover_text: #212529;
+  --scoreCard_hover_background: #e2e2e2;
+  --navigationArrowsContainer_separator: #c7c7c7;
+  --dragHandle_background_image: url(images/turtleBay_dragCornerTopLeft.svg), url(images/turtleBay_dragCornerTopRight.svg),
+  	url(images/turtleBay_dragCornerBottomRight.svg), url(images/turtleBay_dragCornerBottomLeft.svg),
+  	url(images/turtleBay_dragGutter.svg), url(images/turtleBay_dragGutter.svg), url(images/turtleBay_dragGutter.svg),
+  	url(images/turtleBay_dragGutter.svg);
+}
+
+#top-level-details {
+  width: 100vw;
+  height: 100vh;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
+  display: flex;
+  flex-direction: column;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@supports (-webkit-touch-callout: none) {
+  #top-level-details {
+    height: auto;
+    background-color: #fff;
+  }
+}
+#top-level-details > [data-template],
+#top-level-details .player__noAttemptAvailable--1wskN {
+  flex-grow: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: 0;
+}
+#top-level-details.player__has_multiStepCoverScreen--3_4vz > [data-template], #top-level-details.player__has_itemBasedCoverScreen--K9cnf > [data-template], #top-level-details.player__has_multiStepScoreScreen--11eRI > [data-template], #top-level-details.player__has_itemBasedScoreScreen--NS-Td > [data-template], #top-level-details.player__has_timedPlaylistEndScreen--273Lk > [data-template] {
+  min-height: 60px;
+  flex-grow: 0;
+  height: 0;
+}
+#top-level-details:not(.player__windowed--1GbfZ) > * {
+  width: 100%;
+}
+#top-level-details.player__hostedByScorm--EHvyq {
+  border: 1px solid #9a9a9a;
+}
+
+.player__windowed--1GbfZ {
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--dragHandle_background_image);
+  background-position: top left, top right, bottom right, bottom left, top center, right center, bottom center, left center;
+  background-size: auto, auto, auto, auto, 8px, 8px, 8px, 8px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-y, repeat-x, repeat-y, repeat;
+}
+.player__windowed--1GbfZ > * {
+  margin: 0 8px 0 8px;
+  width: calc(100% - 16px);
+}
+.player__windowed--1GbfZ > *:first-child {
+  margin: 8px 8px 0 8px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.player__windowed--1GbfZ > *:last-child {
+  margin: 0 8px 8px 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.player__windowed--1GbfZ > *:only-child {
+  margin: 8px 8px 8px 8px;
+}
+.player__windowed--1GbfZ#top-level-details {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.windowDragHandle {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 64px;
+  height: 64px;
+}
+
+.windowDragHandle path {
+  stroke: var(--ux-color-primary);
+}
+
+.windowDragHandle polygon {
+  fill: var(--ux-color-primary);
+}
+
+@media only screen and (max-width: 275px) {
+  .player__windowed--1GbfZ > * {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+  }
+}
+@media only screen and (max-height: 250px) {
+  .player__windowed--1GbfZ:not([data-activity-mode=standAloneMedia_audio]) > * {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+  }
+}
+
+:root {
+  --rcfPlayer_wordBox_opacity: 0;
+  --rcfPlayer_offset: 0px;
+  --rcfPlayer_inset-top: env(safe-area-inset-top);
+  --rcfPlayer_inset-bottom: env(safe-area-inset-bottom);
+}
+@supports not (top: env(safe-area-inset-top)) {
+  :root {
+    --rcfPlayer_inset-top: 0px;
+  }
+}
+@supports not (top: env(safe-area-inset-bottom)) {
+  :root {
+    --rcfPlayer_inset-bottom: 0px;
+  }
+}
+
+.player__windowed--1GbfZ {
+  --rcfPlayer_offset: 8px;
+  --rcfPlayer_inset-top: 0px;
+  --rcfPlayer_inset-bottom: 0px;
+}
+
+.player__fullScreen--QeZe9,
+.player__maximized--3eKcd {
+  --rcfPlayer_offset: 0px;
+}
+
+.player__hostedByScorm--EHvyq {
+  --rcfPlayer_offset: 1px;
+}
+
+.player__hostedByScorm--EHvyq.player__windowed--1GbfZ {
+  --rcfPlayer_offset: calc(8px + 1px);
+}
+
+.topLevelDetails {
+  --rcfPlayer_fixedPositionOffset_top: calc(var(--rcfPlayer_offset) + var(--rcfPlayer_inset-top));
+  --rcfPlayer_fixedPositionOffset_right: var(--rcfPlayer_offset);
+  --rcfPlayer_fixedPositionOffset_bottom: calc(var(--rcfPlayer_offset) + var(--rcfPlayer_inset-bottom));
+  --rcfPlayer_fixedPositionOffset_left: var(--rcfPlayer_offset);
+}
+
+.player__has_activitySetNavigation--13wLZ {
+  --rcfPlayer_fixedPositionOffset_top: calc(var(--rcfPlayer_offset) + 48px + var(--rcfPlayer_inset-top));
+}
+
+.player__has_titleBar--2hJ1s {
+  --rcfPlayer_fixedPositionOffset_bottom: calc(var(--rcfPlayer_offset) + 48px + var(--rcfPlayer_inset-bottom));
+}
+
+.player__has_controls--1sKJx {
+  --rcfPlayer_fixedPositionOffset_bottom: calc(var(--rcfPlayer_offset) + 60px + var(--rcfPlayer_inset-bottom));
+  --rcfPlayer_wordBox_opacity: 1;
+}
+
+.player__has_controls--1sKJx.player__has_titleBar--2hJ1s {
+  --rcfPlayer_fixedPositionOffset_bottom: calc(var(--rcfPlayer_offset) + 108px + var(--rcfPlayer_inset-bottom));
+}
+
+.player__fullScreen--QeZe9 .player__loader--1fQNI {
+  --rcfPlayer_fixedPositionOffset_top: calc(var(--rcfPlayer_offset) + 48px + var(--rcfPlayer_inset-top));
+}
+
+.player__has_titleBar--2hJ1s .player__titleBar--2W4t1:first-child ~ * {
+  --rcfPlayer_fixedPositionOffset_top: calc(var(--rcfPlayer_offset) + 48px + var(--rcfPlayer_inset-top));
+  --rcfPlayer_fixedPositionOffset_bottom: calc(var(--rcfPlayer_offset) + var(--rcfPlayer_inset-bottom));
+}
+.player__has_titleBar--2hJ1s.player__has_controls--1sKJx .player__titleBar--2W4t1:first-child ~ * {
+  --rcfPlayer_fixedPositionOffset_bottom: calc(var(--rcfPlayer_offset) + 60px + var(--rcfPlayer_inset-bottom));
+}
+.player__has_titleBar--2hJ1s.player__has_activitySetNavigation--13wLZ .player__titleBar--2W4t1:first-child ~ * {
+  --rcfPlayer_fixedPositionOffset_top: calc(var(--rcfPlayer_offset) + 96px + var(--rcfPlayer_inset-top));
+}
+
+/* Common Container (Content) Styles */
+.player__content--20_mI,
+.slidingContainer .slidingBlock {
+  width: auto;
+  max-width: 100%;
+}
+
+.player__content--20_mI .slidingContainer .slidingBlock {
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: var(--rcfPlayer_fixedPositionOffset_top);
+  right: var(--rcfPlayer_fixedPositionOffset_right);
+  bottom: var(--rcfPlayer_fixedPositionOffset_bottom);
+  left: var(--rcfPlayer_fixedPositionOffset_left);
+}
+
+.player__windowed--1GbfZ [data-template]:first-child .slidingContainer .slidingHeader {
+  border-top-right-radius: 4px;
+}
+.player__windowed--1GbfZ [data-template]:last-child .slidingContainer .slidingBlock {
+  border-bottom-right-radius: 4px;
+}
+
+/* Content Container Styles */
+.player__content--20_mI {
+  margin: 0 auto;
+  overflow-y: auto;
+  flex-grow: 1;
+  width: 100%;
+  height: calc(100% - var(--controls_height));
+  position: relative;
+  z-index: 1;
+}
+.player__has_rcfActivityActivitySetTitle--3dy9u .player__content--20_mI .player__rcfActivity_activitySetTitle--2Ba5_ ~ #activity {
+  min-height: calc(100% - 48px);
+  height: calc(100% - 48px);
+}
+
+.player__contentInner--QYWr8 {
+  position: relative;
+}
+
+.player__hidden--v3CeV,
+.player__hidden--v3CeV *:before,
+.player__hidden--v3CeV *:after,
+.player__hidden--v3CeV * {
+  visibility: hidden !important;
+  transition: none !important;
+}
+
+.player__noAttemptAvailable--1wskN .player__hidden--v3CeV {
+  display: none;
+}
+
+/* GradeBook No Attempt Available Text */
+.player__noAttemptAvailable--1wskN {
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+.player__noAttemptAvailable--1wskN .player__noAttemptAvailable_text--3gpWL {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player__noAttemptAvailable--1wskN h2 {
+  margin: 0;
+  text-align: center;
+}
+.player__noAttemptAvailable--1wskN .player__rcfActivity_activitySetTitle--2Ba5_ {
+  width: 100%;
+}
+
+button[class^=player__]:not(:disable) {
+  cursor: pointer;
+}
+
+.player__standardButton--GGXcb {
+  font-weight: 700;
+  background-color: var(--secondary);
+  border: var(--button_border_width) solid var(--secondary_border);
+  border-radius: var(--button_border-radius);
+  color: var(--secondary_content);
+  fill: var(--secondary_content);
+  cursor: pointer;
+  max-width: 136px;
+  width: 100%;
+  height: 36px;
+  padding: 0 15px;
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.player__standardButton--GGXcb:focus:not(:disabled), .player__standardButton--GGXcb:hover:not(:disabled) {
+  transition: all 0.3s ease;
+}
+.player__standardButton--GGXcb svg {
+  position: absolute;
+  right: 5px;
+  top: calc(4px - var(--button_border_width) + 2px);
+}
+.player__standardButton--GGXcb:active:not(:disabled) {
+  background-color: var(--secondary_active);
+  border-color: var(--secondary_border_active);
+  color: var(--secondary_content);
+  fill: var(--secondary_content);
+}
+@media (hover: hover) {
+  .player__standardButton--GGXcb:hover:not(:disabled) {
+    background-color: var(--secondary_hover);
+    border-color: var(--secondary_border_hover);
+    color: var(--secondary_content);
+    fill: var(--secondary_content);
+  }
+}
+.player__standardButton--GGXcb:focus:not(:disabled) {
+  outline: 2px solid var(--secondary_focused_outline);
+  outline-offset: 2px;
+}
+.player__standardButton--GGXcb:disabled {
+  cursor: default;
+  background-color: var(--secondary_disabled);
+  border-color: var(--secondary_border_disabled);
+  color: var(--secondary_content_disabled);
+  fill: var(--secondary_content_disabled);
+}
+.player__standardButton--GGXcb + .player__standardButton--GGXcb {
+  margin-left: 4px;
+}
+@media (min-width: 350px) {
+  .player__standardButton--GGXcb + .player__standardButton--GGXcb {
+    margin-left: 8px;
+  }
+}
+@media (min-width: 550px) {
+  .player__standardButton--GGXcb + .player__standardButton--GGXcb {
+    margin-left: 16px;
+  }
+}
+
+.player__primaryButton--I8s-b,
+.player__checkAnswersButton--246E1,
+:not(.player__has_checkAnswersButton--Zy1V7).player__controls_marking--2srOJ .player__storyDoneButton--2mSTK,
+.player__has_disabledCheckAnswersButton--36G6c.player__controls_marking--2srOJ .player__storyDoneButton--2mSTK,
+.player__itemBasedStartButton--3VueE,
+.player__itemBasedNextButton--1Lb-V,
+.player__itemBasedFinishButton--1Y_c2,
+.player__itemBasedEndPlaylistButton--25ZyG,
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__nextActivitySetButton--2_lVo,
+.player__has_pendingMarks--2QUf3 .player__nextActivitySetButton--2_lVo,
+.player__has_tryAgainButton--1CpjF ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo,
+.player__has_disabledCheckAnswersButton--36G6c ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo,
+.player__multiStepStartButton--2uzHV,
+.player__multiStepNextActivityButton--1Mo5P:not(:disabled),
+.player__multiStepSubmitButton--CFZpi:not(:disabled),
+.player__tryAgainButton--J9p5K,
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__endPlaylistButton--2Xmmu,
+.player__timedPlaylistSubmitButton--2_b3p,
+.player__timedPlaylistFinishButton--s59Wb,
+.player__nextTimedPlaylistActivitySetButton--1qbpT,
+.player__submitAnswersButton--1dxN6,
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__controls--3BaRR:not(.player__has_controlsMarking--3Lfow) .player__multiStepSubmitButton--CFZpi,
+.player__submitButton--2U4ov,
+.player__controls--3BaRR:not(:has(.player__has_tryAgainButton--1CpjF ~ .player__has_endSingleActivityButton--BCS3A)) .player__endSingleActivityButton--3uNyf {
+  background-color: var(--primary);
+  border-color: var(--primary_border);
+  color: var(--primary_content);
+  fill: var(--primary_content);
+}
+.player__primaryButton--I8s-b:active:not(:disabled),
+.player__checkAnswersButton--246E1:active:not(:disabled),
+:not(.player__has_checkAnswersButton--Zy1V7).player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:active:not(:disabled),
+.player__has_disabledCheckAnswersButton--36G6c.player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:active:not(:disabled),
+.player__itemBasedStartButton--3VueE:active:not(:disabled),
+.player__itemBasedNextButton--1Lb-V:active:not(:disabled),
+.player__itemBasedFinishButton--1Y_c2:active:not(:disabled),
+.player__itemBasedEndPlaylistButton--25ZyG:active:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__nextActivitySetButton--2_lVo:active:not(:disabled),
+.player__has_pendingMarks--2QUf3 .player__nextActivitySetButton--2_lVo:active:not(:disabled),
+.player__has_tryAgainButton--1CpjF ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:active:not(:disabled),
+.player__has_disabledCheckAnswersButton--36G6c ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:active:not(:disabled),
+.player__multiStepStartButton--2uzHV:active:not(:disabled),
+.player__multiStepNextActivityButton--1Mo5P:not(:disabled):active:not(:disabled),
+.player__multiStepSubmitButton--CFZpi:not(:disabled):active:not(:disabled),
+.player__tryAgainButton--J9p5K:active:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__endPlaylistButton--2Xmmu:active:not(:disabled),
+.player__timedPlaylistSubmitButton--2_b3p:active:not(:disabled),
+.player__timedPlaylistFinishButton--s59Wb:active:not(:disabled),
+.player__nextTimedPlaylistActivitySetButton--1qbpT:active:not(:disabled),
+.player__submitAnswersButton--1dxN6:active:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__controls--3BaRR:not(.player__has_controlsMarking--3Lfow) .player__multiStepSubmitButton--CFZpi:active:not(:disabled),
+.player__submitButton--2U4ov:active:not(:disabled),
+.player__controls--3BaRR:not(:has(.player__has_tryAgainButton--1CpjF ~ .player__has_endSingleActivityButton--BCS3A)) .player__endSingleActivityButton--3uNyf:active:not(:disabled) {
+  background-color: var(--primary_active);
+  border-color: var(--primary_border_active);
+  color: var(--primary_content);
+  fill: var(--primary_content);
+}
+@media (hover: hover) {
+  .player__primaryButton--I8s-b:hover:not(:disabled),
+  .player__checkAnswersButton--246E1:hover:not(:disabled),
+  :not(.player__has_checkAnswersButton--Zy1V7).player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:hover:not(:disabled),
+  .player__has_disabledCheckAnswersButton--36G6c.player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:hover:not(:disabled),
+  .player__itemBasedStartButton--3VueE:hover:not(:disabled),
+  .player__itemBasedNextButton--1Lb-V:hover:not(:disabled),
+  .player__itemBasedFinishButton--1Y_c2:hover:not(:disabled),
+  .player__itemBasedEndPlaylistButton--25ZyG:hover:not(:disabled),
+  .player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__nextActivitySetButton--2_lVo:hover:not(:disabled),
+  .player__has_pendingMarks--2QUf3 .player__nextActivitySetButton--2_lVo:hover:not(:disabled),
+  .player__has_tryAgainButton--1CpjF ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:hover:not(:disabled),
+  .player__has_disabledCheckAnswersButton--36G6c ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:hover:not(:disabled),
+  .player__multiStepStartButton--2uzHV:hover:not(:disabled),
+  .player__multiStepNextActivityButton--1Mo5P:not(:disabled):hover:not(:disabled),
+  .player__multiStepSubmitButton--CFZpi:not(:disabled):hover:not(:disabled),
+  .player__tryAgainButton--J9p5K:hover:not(:disabled),
+  .player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__endPlaylistButton--2Xmmu:hover:not(:disabled),
+  .player__timedPlaylistSubmitButton--2_b3p:hover:not(:disabled),
+  .player__timedPlaylistFinishButton--s59Wb:hover:not(:disabled),
+  .player__nextTimedPlaylistActivitySetButton--1qbpT:hover:not(:disabled),
+  .player__submitAnswersButton--1dxN6:hover:not(:disabled),
+  .player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__controls--3BaRR:not(.player__has_controlsMarking--3Lfow) .player__multiStepSubmitButton--CFZpi:hover:not(:disabled),
+  .player__submitButton--2U4ov:hover:not(:disabled),
+  .player__controls--3BaRR:not(:has(.player__has_tryAgainButton--1CpjF ~ .player__has_endSingleActivityButton--BCS3A)) .player__endSingleActivityButton--3uNyf:hover:not(:disabled) {
+    background-color: var(--primary_hover);
+    border-color: var(--primary_border_hover);
+    color: var(--primary_content);
+    fill: var(--primary_content);
+  }
+}
+.player__primaryButton--I8s-b:focus:not(:disabled),
+.player__checkAnswersButton--246E1:focus:not(:disabled),
+:not(.player__has_checkAnswersButton--Zy1V7).player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:focus:not(:disabled),
+.player__has_disabledCheckAnswersButton--36G6c.player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:focus:not(:disabled),
+.player__itemBasedStartButton--3VueE:focus:not(:disabled),
+.player__itemBasedNextButton--1Lb-V:focus:not(:disabled),
+.player__itemBasedFinishButton--1Y_c2:focus:not(:disabled),
+.player__itemBasedEndPlaylistButton--25ZyG:focus:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__nextActivitySetButton--2_lVo:focus:not(:disabled),
+.player__has_pendingMarks--2QUf3 .player__nextActivitySetButton--2_lVo:focus:not(:disabled),
+.player__has_tryAgainButton--1CpjF ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:focus:not(:disabled),
+.player__has_disabledCheckAnswersButton--36G6c ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:focus:not(:disabled),
+.player__multiStepStartButton--2uzHV:focus:not(:disabled),
+.player__multiStepNextActivityButton--1Mo5P:not(:disabled):focus:not(:disabled),
+.player__multiStepSubmitButton--CFZpi:not(:disabled):focus:not(:disabled),
+.player__tryAgainButton--J9p5K:focus:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__endPlaylistButton--2Xmmu:focus:not(:disabled),
+.player__timedPlaylistSubmitButton--2_b3p:focus:not(:disabled),
+.player__timedPlaylistFinishButton--s59Wb:focus:not(:disabled),
+.player__nextTimedPlaylistActivitySetButton--1qbpT:focus:not(:disabled),
+.player__submitAnswersButton--1dxN6:focus:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__controls--3BaRR:not(.player__has_controlsMarking--3Lfow) .player__multiStepSubmitButton--CFZpi:focus:not(:disabled),
+.player__submitButton--2U4ov:focus:not(:disabled),
+.player__controls--3BaRR:not(:has(.player__has_tryAgainButton--1CpjF ~ .player__has_endSingleActivityButton--BCS3A)) .player__endSingleActivityButton--3uNyf:focus:not(:disabled) {
+  outline: 2px solid var(--secondary_focused_outline);
+  outline-offset: 2px;
+}
+.player__primaryButton--I8s-b:hover:not(:disabled), .player__primaryButton--I8s-b:focus:not(:disabled),
+.player__checkAnswersButton--246E1:hover:not(:disabled),
+.player__checkAnswersButton--246E1:focus:not(:disabled),
+:not(.player__has_checkAnswersButton--Zy1V7).player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:hover:not(:disabled),
+:not(.player__has_checkAnswersButton--Zy1V7).player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:focus:not(:disabled),
+.player__has_disabledCheckAnswersButton--36G6c.player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:hover:not(:disabled),
+.player__has_disabledCheckAnswersButton--36G6c.player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:focus:not(:disabled),
+.player__itemBasedStartButton--3VueE:hover:not(:disabled),
+.player__itemBasedStartButton--3VueE:focus:not(:disabled),
+.player__itemBasedNextButton--1Lb-V:hover:not(:disabled),
+.player__itemBasedNextButton--1Lb-V:focus:not(:disabled),
+.player__itemBasedFinishButton--1Y_c2:hover:not(:disabled),
+.player__itemBasedFinishButton--1Y_c2:focus:not(:disabled),
+.player__itemBasedEndPlaylistButton--25ZyG:hover:not(:disabled),
+.player__itemBasedEndPlaylistButton--25ZyG:focus:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__nextActivitySetButton--2_lVo:hover:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__nextActivitySetButton--2_lVo:focus:not(:disabled),
+.player__has_pendingMarks--2QUf3 .player__nextActivitySetButton--2_lVo:hover:not(:disabled),
+.player__has_pendingMarks--2QUf3 .player__nextActivitySetButton--2_lVo:focus:not(:disabled),
+.player__has_tryAgainButton--1CpjF ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:hover:not(:disabled),
+.player__has_tryAgainButton--1CpjF ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:focus:not(:disabled),
+.player__has_disabledCheckAnswersButton--36G6c ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:hover:not(:disabled),
+.player__has_disabledCheckAnswersButton--36G6c ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:focus:not(:disabled),
+.player__multiStepStartButton--2uzHV:hover:not(:disabled),
+.player__multiStepStartButton--2uzHV:focus:not(:disabled),
+.player__multiStepNextActivityButton--1Mo5P:not(:disabled):hover:not(:disabled),
+.player__multiStepNextActivityButton--1Mo5P:not(:disabled):focus:not(:disabled),
+.player__multiStepSubmitButton--CFZpi:not(:disabled):hover:not(:disabled),
+.player__multiStepSubmitButton--CFZpi:not(:disabled):focus:not(:disabled),
+.player__tryAgainButton--J9p5K:hover:not(:disabled),
+.player__tryAgainButton--J9p5K:focus:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__endPlaylistButton--2Xmmu:hover:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__endPlaylistButton--2Xmmu:focus:not(:disabled),
+.player__timedPlaylistSubmitButton--2_b3p:hover:not(:disabled),
+.player__timedPlaylistSubmitButton--2_b3p:focus:not(:disabled),
+.player__timedPlaylistFinishButton--s59Wb:hover:not(:disabled),
+.player__timedPlaylistFinishButton--s59Wb:focus:not(:disabled),
+.player__nextTimedPlaylistActivitySetButton--1qbpT:hover:not(:disabled),
+.player__nextTimedPlaylistActivitySetButton--1qbpT:focus:not(:disabled),
+.player__submitAnswersButton--1dxN6:hover:not(:disabled),
+.player__submitAnswersButton--1dxN6:focus:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__controls--3BaRR:not(.player__has_controlsMarking--3Lfow) .player__multiStepSubmitButton--CFZpi:hover:not(:disabled),
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__controls--3BaRR:not(.player__has_controlsMarking--3Lfow) .player__multiStepSubmitButton--CFZpi:focus:not(:disabled),
+.player__submitButton--2U4ov:hover:not(:disabled),
+.player__submitButton--2U4ov:focus:not(:disabled),
+.player__controls--3BaRR:not(:has(.player__has_tryAgainButton--1CpjF ~ .player__has_endSingleActivityButton--BCS3A)) .player__endSingleActivityButton--3uNyf:hover:not(:disabled),
+.player__controls--3BaRR:not(:has(.player__has_tryAgainButton--1CpjF ~ .player__has_endSingleActivityButton--BCS3A)) .player__endSingleActivityButton--3uNyf:focus:not(:disabled) {
+  transition: all 0.3s ease;
+}
+.player__primaryButton--I8s-b:disabled,
+.player__checkAnswersButton--246E1:disabled,
+:not(.player__has_checkAnswersButton--Zy1V7).player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:disabled,
+.player__has_disabledCheckAnswersButton--36G6c.player__controls_marking--2srOJ .player__storyDoneButton--2mSTK:disabled,
+.player__itemBasedStartButton--3VueE:disabled,
+.player__itemBasedNextButton--1Lb-V:disabled,
+.player__itemBasedFinishButton--1Y_c2:disabled,
+.player__itemBasedEndPlaylistButton--25ZyG:disabled,
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__nextActivitySetButton--2_lVo:disabled,
+.player__has_pendingMarks--2QUf3 .player__nextActivitySetButton--2_lVo:disabled,
+.player__has_tryAgainButton--1CpjF ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:disabled,
+.player__has_disabledCheckAnswersButton--36G6c ~ .player__has_nextActivitySetButton--3Op4- .player__nextActivitySetButton--2_lVo:disabled,
+.player__multiStepStartButton--2uzHV:disabled,
+.player__multiStepNextActivityButton--1Mo5P:not(:disabled):disabled,
+.player__multiStepSubmitButton--CFZpi:not(:disabled):disabled,
+.player__tryAgainButton--J9p5K:disabled,
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__endPlaylistButton--2Xmmu:disabled,
+.player__timedPlaylistSubmitButton--2_b3p:disabled,
+.player__timedPlaylistFinishButton--s59Wb:disabled,
+.player__nextTimedPlaylistActivitySetButton--1qbpT:disabled,
+.player__submitAnswersButton--1dxN6:disabled,
+.player__has_activitySetNavigation--13wLZ:not(.player__has_multiStepCoverScreen--3_4vz) .player__controls--3BaRR:not(.player__has_controlsMarking--3Lfow) .player__multiStepSubmitButton--CFZpi:disabled,
+.player__submitButton--2U4ov:disabled,
+.player__controls--3BaRR:not(:has(.player__has_tryAgainButton--1CpjF ~ .player__has_endSingleActivityButton--BCS3A)) .player__endSingleActivityButton--3uNyf:disabled {
+  background-color: var(--primary_disabled);
+  border-color: var(--primary_border_disabled);
+  color: var(--primary_content_disabled);
+  fill: var(--primary_content_disabled);
+}
+
+.player__itemBasedNextButton--1Lb-V,
+.player__itemBasedPreviousButton--3rjyM,
+.player__itemBasedFinishButton--1Y_c2,
+.player__nextActivitySetButton--2_lVo,
+.player__multiStepNextActivityButton--1Mo5P,
+.player__multiStepPreviousActivityButton--2OVGp,
+.player__multiStepNextActivitySetButton--3I4ne,
+.player__multiStepPreviousActivitySetButton--3WSUJ,
+.player__multiStepSubmitButton--CFZpi,
+.player__nextTimedPlaylistActivitySetButton--1qbpT,
+.player__timedPlaylistFinishButton--s59Wb,
+.player__previousTimedPlaylistActivitySetButton--3mlIV,
+.player__lastTimedPlaylistActivitySetButton--3vB0A,
+.player__timedPlaylistSubmitButton--2_b3p,
+.player__endPlaylistButton--2Xmmu {
+  min-width: 38px;
+  padding: 0;
+}
+.player__itemBasedNextButton--1Lb-V span,
+.player__itemBasedPreviousButton--3rjyM span,
+.player__itemBasedFinishButton--1Y_c2 span,
+.player__nextActivitySetButton--2_lVo span,
+.player__multiStepNextActivityButton--1Mo5P span,
+.player__multiStepPreviousActivityButton--2OVGp span,
+.player__multiStepNextActivitySetButton--3I4ne span,
+.player__multiStepPreviousActivitySetButton--3WSUJ span,
+.player__multiStepSubmitButton--CFZpi span,
+.player__nextTimedPlaylistActivitySetButton--1qbpT span,
+.player__timedPlaylistFinishButton--s59Wb span,
+.player__previousTimedPlaylistActivitySetButton--3mlIV span,
+.player__lastTimedPlaylistActivitySetButton--3vB0A span,
+.player__timedPlaylistSubmitButton--2_b3p span,
+.player__endPlaylistButton--2Xmmu span {
+  display: none;
+}
+@media (min-width: 450px) {
+  .player__itemBasedNextButton--1Lb-V,
+  .player__itemBasedPreviousButton--3rjyM,
+  .player__itemBasedFinishButton--1Y_c2,
+  .player__nextActivitySetButton--2_lVo,
+  .player__multiStepNextActivityButton--1Mo5P,
+  .player__multiStepPreviousActivityButton--2OVGp,
+  .player__multiStepNextActivitySetButton--3I4ne,
+  .player__multiStepPreviousActivitySetButton--3WSUJ,
+  .player__multiStepSubmitButton--CFZpi,
+  .player__nextTimedPlaylistActivitySetButton--1qbpT,
+  .player__timedPlaylistFinishButton--s59Wb,
+  .player__previousTimedPlaylistActivitySetButton--3mlIV,
+  .player__lastTimedPlaylistActivitySetButton--3vB0A,
+  .player__timedPlaylistSubmitButton--2_b3p,
+  .player__endPlaylistButton--2Xmmu {
+    padding: inherit;
+  }
+  .player__itemBasedNextButton--1Lb-V span,
+  .player__itemBasedPreviousButton--3rjyM span,
+  .player__itemBasedFinishButton--1Y_c2 span,
+  .player__nextActivitySetButton--2_lVo span,
+  .player__multiStepNextActivityButton--1Mo5P span,
+  .player__multiStepPreviousActivityButton--2OVGp span,
+  .player__multiStepNextActivitySetButton--3I4ne span,
+  .player__multiStepPreviousActivitySetButton--3WSUJ span,
+  .player__multiStepSubmitButton--CFZpi span,
+  .player__nextTimedPlaylistActivitySetButton--1qbpT span,
+  .player__timedPlaylistFinishButton--s59Wb span,
+  .player__previousTimedPlaylistActivitySetButton--3mlIV span,
+  .player__lastTimedPlaylistActivitySetButton--3vB0A span,
+  .player__timedPlaylistSubmitButton--2_b3p span,
+  .player__endPlaylistButton--2Xmmu span {
+    display: block;
+  }
+}
+*:only-child > .player__itemBasedNextButton--1Lb-V:only-child, *:only-child > .player__itemBasedNextButton--1Lb-V:nth-child(2):last-child, *:only-child > .player__itemBasedNextButton--1Lb-V:nth-last-child(2):first-child, *:nth-child(2):last-child > .player__itemBasedNextButton--1Lb-V:only-child, *:nth-last-child(2):first-child > .player__itemBasedNextButton--1Lb-V:only-child,
+*:only-child > .player__itemBasedPreviousButton--3rjyM:only-child,
+*:only-child > .player__itemBasedPreviousButton--3rjyM:nth-child(2):last-child,
+*:only-child > .player__itemBasedPreviousButton--3rjyM:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__itemBasedPreviousButton--3rjyM:only-child,
+*:nth-last-child(2):first-child > .player__itemBasedPreviousButton--3rjyM:only-child,
+*:only-child > .player__itemBasedFinishButton--1Y_c2:only-child,
+*:only-child > .player__itemBasedFinishButton--1Y_c2:nth-child(2):last-child,
+*:only-child > .player__itemBasedFinishButton--1Y_c2:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__itemBasedFinishButton--1Y_c2:only-child,
+*:nth-last-child(2):first-child > .player__itemBasedFinishButton--1Y_c2:only-child,
+*:only-child > .player__nextActivitySetButton--2_lVo:only-child,
+*:only-child > .player__nextActivitySetButton--2_lVo:nth-child(2):last-child,
+*:only-child > .player__nextActivitySetButton--2_lVo:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__nextActivitySetButton--2_lVo:only-child,
+*:nth-last-child(2):first-child > .player__nextActivitySetButton--2_lVo:only-child,
+*:only-child > .player__multiStepNextActivityButton--1Mo5P:only-child,
+*:only-child > .player__multiStepNextActivityButton--1Mo5P:nth-child(2):last-child,
+*:only-child > .player__multiStepNextActivityButton--1Mo5P:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__multiStepNextActivityButton--1Mo5P:only-child,
+*:nth-last-child(2):first-child > .player__multiStepNextActivityButton--1Mo5P:only-child,
+*:only-child > .player__multiStepPreviousActivityButton--2OVGp:only-child,
+*:only-child > .player__multiStepPreviousActivityButton--2OVGp:nth-child(2):last-child,
+*:only-child > .player__multiStepPreviousActivityButton--2OVGp:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__multiStepPreviousActivityButton--2OVGp:only-child,
+*:nth-last-child(2):first-child > .player__multiStepPreviousActivityButton--2OVGp:only-child,
+*:only-child > .player__multiStepNextActivitySetButton--3I4ne:only-child,
+*:only-child > .player__multiStepNextActivitySetButton--3I4ne:nth-child(2):last-child,
+*:only-child > .player__multiStepNextActivitySetButton--3I4ne:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__multiStepNextActivitySetButton--3I4ne:only-child,
+*:nth-last-child(2):first-child > .player__multiStepNextActivitySetButton--3I4ne:only-child,
+*:only-child > .player__multiStepPreviousActivitySetButton--3WSUJ:only-child,
+*:only-child > .player__multiStepPreviousActivitySetButton--3WSUJ:nth-child(2):last-child,
+*:only-child > .player__multiStepPreviousActivitySetButton--3WSUJ:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__multiStepPreviousActivitySetButton--3WSUJ:only-child,
+*:nth-last-child(2):first-child > .player__multiStepPreviousActivitySetButton--3WSUJ:only-child,
+*:only-child > .player__multiStepSubmitButton--CFZpi:only-child,
+*:only-child > .player__multiStepSubmitButton--CFZpi:nth-child(2):last-child,
+*:only-child > .player__multiStepSubmitButton--CFZpi:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__multiStepSubmitButton--CFZpi:only-child,
+*:nth-last-child(2):first-child > .player__multiStepSubmitButton--CFZpi:only-child,
+*:only-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:only-child,
+*:only-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:nth-child(2):last-child,
+*:only-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:only-child,
+*:nth-last-child(2):first-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:only-child,
+*:only-child > .player__timedPlaylistFinishButton--s59Wb:only-child,
+*:only-child > .player__timedPlaylistFinishButton--s59Wb:nth-child(2):last-child,
+*:only-child > .player__timedPlaylistFinishButton--s59Wb:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__timedPlaylistFinishButton--s59Wb:only-child,
+*:nth-last-child(2):first-child > .player__timedPlaylistFinishButton--s59Wb:only-child,
+*:only-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:only-child,
+*:only-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:nth-child(2):last-child,
+*:only-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:only-child,
+*:nth-last-child(2):first-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:only-child,
+*:only-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:only-child,
+*:only-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:nth-child(2):last-child,
+*:only-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:only-child,
+*:nth-last-child(2):first-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:only-child,
+*:only-child > .player__timedPlaylistSubmitButton--2_b3p:only-child,
+*:only-child > .player__timedPlaylistSubmitButton--2_b3p:nth-child(2):last-child,
+*:only-child > .player__timedPlaylistSubmitButton--2_b3p:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__timedPlaylistSubmitButton--2_b3p:only-child,
+*:nth-last-child(2):first-child > .player__timedPlaylistSubmitButton--2_b3p:only-child,
+*:only-child > .player__endPlaylistButton--2Xmmu:only-child,
+*:only-child > .player__endPlaylistButton--2Xmmu:nth-child(2):last-child,
+*:only-child > .player__endPlaylistButton--2Xmmu:nth-last-child(2):first-child,
+*:nth-child(2):last-child > .player__endPlaylistButton--2Xmmu:only-child,
+*:nth-last-child(2):first-child > .player__endPlaylistButton--2Xmmu:only-child {
+  padding: inherit;
+}
+*:only-child > .player__itemBasedNextButton--1Lb-V:only-child span, *:only-child > .player__itemBasedNextButton--1Lb-V:nth-child(2):last-child span, *:only-child > .player__itemBasedNextButton--1Lb-V:nth-last-child(2):first-child span, *:nth-child(2):last-child > .player__itemBasedNextButton--1Lb-V:only-child span, *:nth-last-child(2):first-child > .player__itemBasedNextButton--1Lb-V:only-child span,
+*:only-child > .player__itemBasedPreviousButton--3rjyM:only-child span,
+*:only-child > .player__itemBasedPreviousButton--3rjyM:nth-child(2):last-child span,
+*:only-child > .player__itemBasedPreviousButton--3rjyM:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__itemBasedPreviousButton--3rjyM:only-child span,
+*:nth-last-child(2):first-child > .player__itemBasedPreviousButton--3rjyM:only-child span,
+*:only-child > .player__itemBasedFinishButton--1Y_c2:only-child span,
+*:only-child > .player__itemBasedFinishButton--1Y_c2:nth-child(2):last-child span,
+*:only-child > .player__itemBasedFinishButton--1Y_c2:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__itemBasedFinishButton--1Y_c2:only-child span,
+*:nth-last-child(2):first-child > .player__itemBasedFinishButton--1Y_c2:only-child span,
+*:only-child > .player__nextActivitySetButton--2_lVo:only-child span,
+*:only-child > .player__nextActivitySetButton--2_lVo:nth-child(2):last-child span,
+*:only-child > .player__nextActivitySetButton--2_lVo:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__nextActivitySetButton--2_lVo:only-child span,
+*:nth-last-child(2):first-child > .player__nextActivitySetButton--2_lVo:only-child span,
+*:only-child > .player__multiStepNextActivityButton--1Mo5P:only-child span,
+*:only-child > .player__multiStepNextActivityButton--1Mo5P:nth-child(2):last-child span,
+*:only-child > .player__multiStepNextActivityButton--1Mo5P:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__multiStepNextActivityButton--1Mo5P:only-child span,
+*:nth-last-child(2):first-child > .player__multiStepNextActivityButton--1Mo5P:only-child span,
+*:only-child > .player__multiStepPreviousActivityButton--2OVGp:only-child span,
+*:only-child > .player__multiStepPreviousActivityButton--2OVGp:nth-child(2):last-child span,
+*:only-child > .player__multiStepPreviousActivityButton--2OVGp:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__multiStepPreviousActivityButton--2OVGp:only-child span,
+*:nth-last-child(2):first-child > .player__multiStepPreviousActivityButton--2OVGp:only-child span,
+*:only-child > .player__multiStepNextActivitySetButton--3I4ne:only-child span,
+*:only-child > .player__multiStepNextActivitySetButton--3I4ne:nth-child(2):last-child span,
+*:only-child > .player__multiStepNextActivitySetButton--3I4ne:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__multiStepNextActivitySetButton--3I4ne:only-child span,
+*:nth-last-child(2):first-child > .player__multiStepNextActivitySetButton--3I4ne:only-child span,
+*:only-child > .player__multiStepPreviousActivitySetButton--3WSUJ:only-child span,
+*:only-child > .player__multiStepPreviousActivitySetButton--3WSUJ:nth-child(2):last-child span,
+*:only-child > .player__multiStepPreviousActivitySetButton--3WSUJ:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__multiStepPreviousActivitySetButton--3WSUJ:only-child span,
+*:nth-last-child(2):first-child > .player__multiStepPreviousActivitySetButton--3WSUJ:only-child span,
+*:only-child > .player__multiStepSubmitButton--CFZpi:only-child span,
+*:only-child > .player__multiStepSubmitButton--CFZpi:nth-child(2):last-child span,
+*:only-child > .player__multiStepSubmitButton--CFZpi:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__multiStepSubmitButton--CFZpi:only-child span,
+*:nth-last-child(2):first-child > .player__multiStepSubmitButton--CFZpi:only-child span,
+*:only-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:only-child span,
+*:only-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:nth-child(2):last-child span,
+*:only-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:only-child span,
+*:nth-last-child(2):first-child > .player__nextTimedPlaylistActivitySetButton--1qbpT:only-child span,
+*:only-child > .player__timedPlaylistFinishButton--s59Wb:only-child span,
+*:only-child > .player__timedPlaylistFinishButton--s59Wb:nth-child(2):last-child span,
+*:only-child > .player__timedPlaylistFinishButton--s59Wb:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__timedPlaylistFinishButton--s59Wb:only-child span,
+*:nth-last-child(2):first-child > .player__timedPlaylistFinishButton--s59Wb:only-child span,
+*:only-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:only-child span,
+*:only-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:nth-child(2):last-child span,
+*:only-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:only-child span,
+*:nth-last-child(2):first-child > .player__previousTimedPlaylistActivitySetButton--3mlIV:only-child span,
+*:only-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:only-child span,
+*:only-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:nth-child(2):last-child span,
+*:only-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:only-child span,
+*:nth-last-child(2):first-child > .player__lastTimedPlaylistActivitySetButton--3vB0A:only-child span,
+*:only-child > .player__timedPlaylistSubmitButton--2_b3p:only-child span,
+*:only-child > .player__timedPlaylistSubmitButton--2_b3p:nth-child(2):last-child span,
+*:only-child > .player__timedPlaylistSubmitButton--2_b3p:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__timedPlaylistSubmitButton--2_b3p:only-child span,
+*:nth-last-child(2):first-child > .player__timedPlaylistSubmitButton--2_b3p:only-child span,
+*:only-child > .player__endPlaylistButton--2Xmmu:only-child span,
+*:only-child > .player__endPlaylistButton--2Xmmu:nth-child(2):last-child span,
+*:only-child > .player__endPlaylistButton--2Xmmu:nth-last-child(2):first-child span,
+*:nth-child(2):last-child > .player__endPlaylistButton--2Xmmu:only-child span,
+*:nth-last-child(2):first-child > .player__endPlaylistButton--2Xmmu:only-child span {
+  display: block;
+}
+
+.player__previousTimedPlaylistActivitySetButton--3mlIV svg,
+.player__lastTimedPlaylistActivitySetButton--3vB0A svg,
+.player__itemBasedPreviousButton--3rjyM svg,
+.player__multiStepPreviousActivityButton--2OVGp svg {
+  left: 5px;
+}
+
+.player__toggleButton--1jVls {
+  min-width: 164px;
+}
+
+.player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2) > .player__checkAnswersButton--246E1,
+.player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2) + .player__has_multiStepNextActivitySetButton--3pcSR > .player__multiStepNextActivityButton--1Mo5P,
+.player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2) + .player__has_multiStepSubmitButton--3Y5yE > .player__multiStepSubmitButton--CFZpi,
+.player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2) > .player__submitButton--2U4ov,
+.player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2) + .player__has_multiStepNextActivitySetButton--3pcSR > .player__multiStepNextActivityButton--1Mo5P,
+.player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2) + .player__has_multiStepSubmitButton--3Y5yE > .player__multiStepSubmitButton--CFZpi {
+  padding: inherit;
+}
+.player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2) > .player__checkAnswersButton--246E1 span,
+.player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2) + .player__has_multiStepNextActivitySetButton--3pcSR > .player__multiStepNextActivityButton--1Mo5P span,
+.player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2) + .player__has_multiStepSubmitButton--3Y5yE > .player__multiStepSubmitButton--CFZpi span,
+.player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2) > .player__submitButton--2U4ov span,
+.player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2) + .player__has_multiStepNextActivitySetButton--3pcSR > .player__multiStepNextActivityButton--1Mo5P span,
+.player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2) + .player__has_multiStepSubmitButton--3Y5yE > .player__multiStepSubmitButton--CFZpi span {
+  display: block;
+}
+
+.player__showOneByOneButton--1njc2:focus:not(:disabled):not(:last-of-type) {
+  z-index: 1;
+}
+
+.player__standardIcon--2FrHS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  background-color: var(--icon);
+  color: var(--icon_content);
+  fill: var(--icon_content);
+}
+.player__standardIcon--2FrHS:active:not(:disabled) {
+  background-color: var(--icon_active);
+  color: var(--icon_content_active);
+  fill: var(--icon_content_active);
+}
+.player__standardIcon--2FrHS:hover:not(:disabled) {
+  background-color: var(--icon_hover);
+  color: var(--icon_content_hover);
+  fill: var(--icon_content_hover);
+}
+.player__standardIcon--2FrHS:focus:not(:disabled) {
+  background-color: var(--icon_focused);
+  color: var(--icon_content_focused);
+  fill: var(--icon_content_focused);
+  outline: 2px solid var(--icon_focused_outline);
+  outline-offset: 2px;
+}
+.player__standardIcon--2FrHS:disabled {
+  cursor: default;
+  background-color: var(--icon_disabled);
+  color: var(--icon_content_disabled);
+  fill: var(--icon_content_disabled);
+}
+
+.player__activitySetNavigation--1CyFL,
+.player__rcfActivity_activitySetTitle--2Ba5_ {
+  background: #fff;
+  height: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.player__activitySetNavigation--1CyFL > *,
+.player__rcfActivity_activitySetTitle--2Ba5_ > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player__activitySetNavigation--1CyFL {
+  position: relative;
+  height: 48px;
+}
+
+[data-link-origin=assessment] .player__activitySetNavigation--1CyFL.player__timedPlaylistInProgress--3SQaE,
+[data-link-origin=strictHomework] .player__activitySetNavigation--1CyFL.player__timedPlaylistInProgress--3SQaE {
+  height: auto;
+  flex-direction: column;
+}
+@media (min-width: 450px) {
+  [data-link-origin=assessment] .player__activitySetNavigation--1CyFL.player__timedPlaylistInProgress--3SQaE,
+  [data-link-origin=strictHomework] .player__activitySetNavigation--1CyFL.player__timedPlaylistInProgress--3SQaE {
+    height: 48px;
+  }
+}
+
+.player__activitySetNavigation_closeButton--1FBCT,
+.player__navigationArrowsContainer--2JCTo {
+  position: absolute;
+}
+
+.player__timedPlaylistTimer--1Nxkm {
+  width: 72px;
+  height: 40px;
+  font-weight: 700;
+}
+.player__timedPlaylistTimer--1Nxkm > span {
+  font-size: 1.125rem;
+  margin-top: 8px;
+}
+@media (min-width: 450px) {
+  .player__timedPlaylistTimer--1Nxkm {
+    position: absolute;
+    left: 12px;
+    height: unset;
+  }
+  .player__timedPlaylistTimer--1Nxkm > span {
+    margin-top: unset;
+  }
+}
+
+[data-link-origin=strictHomework] .player__timedPlaylistTimer--1Nxkm.player__timedPlaylistTimer_hideInStrictHomework--2Dpfp {
+  display: none;
+}
+
+.player__activitySetNavigation--1CyFL {
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.player__activitySetNavigation_closeButton--1FBCT {
+  right: 12px;
+}
+
+.player__navigationArrowsContainer--2JCTo {
+  left: 12px;
+}
+
+.player__navigationArrowsContainer--2JCTo .player__activitySetNavigation_nextButton--37w4d {
+  margin-left: 24px;
+}
+
+.player__navigationArrowsContainer--2JCTo:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 32px;
+  width: 1px;
+  background: var(--navigationArrowsContainer_separator);
+}
+
+.player__extendedActivitySetNavigation--mItGY .player__activitySet_dragIcon--1AGCg {
+  position: absolute;
+  left: 12px;
+}
+.player__extendedActivitySetNavigation--mItGY .player__activitySetNavigation_previousButton--2WJwu {
+  margin-right: 10px;
+}
+.player__extendedActivitySetNavigation--mItGY .player__activitySetNavigation_nextButton--37w4d {
+  margin-left: 10px;
+}
+.player__extendedActivitySetNavigation--mItGY .player__activitySet_Buttons--2FJUN {
+  position: absolute;
+  right: 12px;
+}
+.player__extendedActivitySetNavigation--mItGY .player__activitySet_Buttons--2FJUN .player__activitySetNavigation_closeButton--1FBCT {
+  position: static;
+  right: auto;
+  margin-left: 10px;
+}
+
+.player__activitySet_titleBarButtons--3qiUH {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+@media (min-width: 450px) {
+  .player__activitySet_titleBarButtons--3qiUH {
+    top: unset;
+  }
+}
+.player__activitySet_titleBarButtons--3qiUH .player__activitySetNavigation_closeButton--1FBCT {
+  position: static;
+  right: auto;
+  margin-left: 10px;
+}
+.player__activitySet_titleBarButtons--3qiUH:only-child {
+  justify-content: flex-end;
+}
+
+.player__rcfActivity_activitySetTitle--2Ba5_ {
+  position: relative;
+  border-bottom: 1px solid #9a9a9a;
+  height: 48px;
+  padding: 3px 8px;
+  line-height: initial;
+}
+.player__rcfActivity_activitySetTitle--2Ba5_ > span {
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@supports (-webkit-line-clamp: 2) {
+  .player__rcfActivity_activitySetTitle--2Ba5_ > span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: normal;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .player__activitySetNavigation_paginationText--r9FKO {
+    display: none;
+  }
+}
+/* Extended ActivitySet Navigation Electron dragging Styles */
+/*Allow dragging from extendedActivitySetNavigation when windowed*/
+.player__windowed--1GbfZ .player__extendedActivitySetNavigation--mItGY {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+.player__windowed--1GbfZ .player__extendedActivitySetNavigation--mItGY .player__activitySet_dragIcon--1AGCg {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+.player__windowed--1GbfZ .player__extendedActivitySetNavigation--mItGY .player__activitySet_dragIcon--1AGCg:active {
+  cursor: grabbing;
+}
+.player__windowed--1GbfZ .player__extendedActivitySetNavigation--mItGY .player__activitySet_Buttons--2FJUN,
+.player__windowed--1GbfZ .player__extendedActivitySetNavigation--mItGY button {
+  -webkit-app-region: no-drag;
+}
+
+/* prevent dragging when maximized and add disabled styles to dragging icon */
+.player__maximized--3eKcd .player__extendedActivitySetNavigation--mItGY {
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+}
+.player__maximized--3eKcd .player__extendedActivitySetNavigation--mItGY .player__activitySet_dragIcon--1AGCg {
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+}
+.player__maximized--3eKcd .player__extendedActivitySetNavigation--mItGY .player__activitySet_dragIcon--1AGCg svg path {
+  stroke: var(--icon_content_disabled);
+}
+
+.player__scoreCard--1dqo7 {
+  background: #fff;
+  height: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: auto;
+  right: var(--rcfPlayer_fixedPositionOffset_right);
+  bottom: var(--rcfPlayer_fixedPositionOffset_bottom);
+  left: var(--rcfPlayer_fixedPositionOffset_left);
+  z-index: 3;
+  color: var(--scoreCard_text);
+  background: var(--scoreCard_background);
+  border-top: 1px solid #9a9a9a;
+}
+.player__scoreCard--1dqo7 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player__scoreCard_closeButton--3PLTT {
+  position: absolute;
+}
+.player__scoreCard_closeButton--3PLTT.player__standardIcon--2FrHS {
+  left: 12px;
+  color: var(--scoreCard_text);
+  fill: var(--scoreCard_text);
+  background: transparent;
+}
+.player__scoreCard_closeButton--3PLTT.player__standardIcon--2FrHS svg {
+  color: var(--scoreCard_text);
+  fill: var(--scoreCard_text);
+}
+.player__scoreCard_closeButton--3PLTT.player__standardIcon--2FrHS:active:not(:disabled), .player__scoreCard_closeButton--3PLTT.player__standardIcon--2FrHS:hover:not(:disabled), .player__scoreCard_closeButton--3PLTT.player__standardIcon--2FrHS:focus {
+  color: var(--scoreCard_hover_text);
+  fill: var(--scoreCard_hover_text);
+  background-color: var(--scoreCard_hover_background);
+}
+.player__scoreCard_closeButton--3PLTT.player__standardIcon--2FrHS:active:not(:disabled) svg, .player__scoreCard_closeButton--3PLTT.player__standardIcon--2FrHS:hover:not(:disabled) svg, .player__scoreCard_closeButton--3PLTT.player__standardIcon--2FrHS:focus svg {
+  color: var(--scoreCard_hover_text);
+  fill: var(--scoreCard_hover_text);
+}
+
+.player__scoreCard_scoreText--1BB-m {
+  margin: 0 48px;
+}
+
+.player__controls--3BaRR {
+  background: #fff;
+  height: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-top: 1px solid #9a9a9a;
+  justify-content: center;
+  /*box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.15);*/
+  padding: 0 8px;
+  width: 100%;
+  /* Marking control group styles */
+  /* Reset control group */
+  /* Navigation control groups */
+  /* Check answers button */
+  /* Show answers control group */
+}
+.player__controls--3BaRR > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player__titleBar--2W4t1 ~ .player__controls--3BaRR {
+  display: none;
+}
+.player__controls--3BaRR > * {
+  max-width: 136px;
+  width: 100%;
+}
+.player__controls--3BaRR > * + * {
+  margin-left: 4px;
+}
+@media (min-width: 350px) {
+  .player__controls--3BaRR > * + * {
+    margin-left: 8px;
+  }
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR > * + * {
+    margin-left: 16px;
+  }
+}
+.player__controls--3BaRR.player__has_controlsReset--1cN1B > .player__controls_reset--2kp_k:not(.player__has_tryAgainButton--1CpjF) + *:nth-child(2) {
+  margin-left: 0;
+}
+.player__controls--3BaRR.player__has_controlsReset--1cN1B .player__controls_reset--2kp_k:not(.player__has_tryAgainButton--1CpjF) {
+  margin-left: 6px;
+  margin-right: 8px;
+  max-width: 24px;
+}
+.player__controls--3BaRR.player__has_controlsReset--1cN1B .player__controls_reset--2kp_k:not(.player__has_tryAgainButton--1CpjF):only-child, .player__controls--3BaRR.player__has_controlsReset--1cN1B .player__controls_reset--2kp_k:not(.player__has_tryAgainButton--1CpjF):nth-last-child(2) {
+  position: absolute;
+  left: 8px;
+}
+.player__controls--3BaRR.player__has_controlsReset--1cN1B .player__controls_reset--2kp_k:not(.player__has_tryAgainButton--1CpjF):nth-last-child(3) {
+  margin-left: 0;
+}
+@media (min-width: 380px) {
+  .player__controls--3BaRR.player__has_controlsReset--1cN1B .player__controls_reset--2kp_k:not(.player__has_tryAgainButton--1CpjF):nth-last-child(3) {
+    margin-left: 6px;
+    position: absolute;
+    left: 8px;
+  }
+}
+.player__controls--3BaRR.player__has_controlsReset--1cN1B .player__controls_reset--2kp_k:not(.player__has_tryAgainButton--1CpjF):nth-last-child(4) {
+  margin-left: 0;
+}
+@media (min-width: 380px) {
+  .player__controls--3BaRR.player__has_controlsReset--1cN1B .player__controls_reset--2kp_k:not(.player__has_tryAgainButton--1CpjF):nth-last-child(4) {
+    margin-left: 6px;
+    position: absolute;
+    left: 8px;
+  }
+}
+@media (min-width: 380px) {
+  .player__controls--3BaRR.player__has_controlsReset--1cN1B.player__has_controlsShowAnswers--vjkpV {
+    padding: 0 8px 0 44px;
+  }
+}
+@media (min-width: 610px) {
+  .player__controls--3BaRR.player__has_controlsReset--1cN1B.player__has_controlsShowAnswers--vjkpV {
+    padding: 0 44px;
+  }
+}
+.player__controls--3BaRR .player__has_itemBasedNextButton--3b70u,
+.player__controls--3BaRR .player__has_itemBasedPreviousButton--1g4j1,
+.player__controls--3BaRR .player__has_itemBasedFinishButton--_nMaI,
+.player__controls--3BaRR .player__has_nextActivitySetButton--3Op4-,
+.player__controls--3BaRR .player__has_multiStepNextActivityButton--SVsXi,
+.player__controls--3BaRR .player__has_multiStepPreviousActivityButton--1B5w6,
+.player__controls--3BaRR .player__has_multiStepNextActivitySetButton--3pcSR,
+.player__controls--3BaRR .player__has_multiStepPreviousActivitySetButton--1n4zZ,
+.player__controls--3BaRR .player__has_multiStepSubmitButton--3Y5yE,
+.player__controls--3BaRR .player__has_nextTimedPlaylistActivitySetButton--1ioRW,
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8,
+.player__controls--3BaRR .player__has_timedPlaylistFinishButton--250y4,
+.player__controls--3BaRR .player__has_timedPlaylistSubmitButton--3Xh8P,
+.player__controls--3BaRR .player__has_endPlaylistButton--1n6Lh {
+  max-width: 38px;
+}
+@media (min-width: 450px) {
+  .player__controls--3BaRR .player__has_itemBasedNextButton--3b70u,
+  .player__controls--3BaRR .player__has_itemBasedPreviousButton--1g4j1,
+  .player__controls--3BaRR .player__has_itemBasedFinishButton--_nMaI,
+  .player__controls--3BaRR .player__has_nextActivitySetButton--3Op4-,
+  .player__controls--3BaRR .player__has_multiStepNextActivityButton--SVsXi,
+  .player__controls--3BaRR .player__has_multiStepPreviousActivityButton--1B5w6,
+  .player__controls--3BaRR .player__has_multiStepNextActivitySetButton--3pcSR,
+  .player__controls--3BaRR .player__has_multiStepPreviousActivitySetButton--1n4zZ,
+  .player__controls--3BaRR .player__has_multiStepSubmitButton--3Y5yE,
+  .player__controls--3BaRR .player__has_nextTimedPlaylistActivitySetButton--1ioRW,
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8,
+  .player__controls--3BaRR .player__has_timedPlaylistFinishButton--250y4,
+  .player__controls--3BaRR .player__has_timedPlaylistSubmitButton--3Xh8P,
+  .player__controls--3BaRR .player__has_endPlaylistButton--1n6Lh {
+    max-width: 136px;
+  }
+}
+.player__controls--3BaRR .player__has_itemBasedNextButton--3b70u:only-child, .player__controls--3BaRR .player__has_itemBasedNextButton--3b70u:nth-child(2):last-child, .player__controls--3BaRR .player__has_itemBasedNextButton--3b70u:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_itemBasedPreviousButton--1g4j1:only-child,
+.player__controls--3BaRR .player__has_itemBasedPreviousButton--1g4j1:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_itemBasedPreviousButton--1g4j1:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_itemBasedFinishButton--_nMaI:only-child,
+.player__controls--3BaRR .player__has_itemBasedFinishButton--_nMaI:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_itemBasedFinishButton--_nMaI:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_nextActivitySetButton--3Op4-:only-child,
+.player__controls--3BaRR .player__has_nextActivitySetButton--3Op4-:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_nextActivitySetButton--3Op4-:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_multiStepNextActivityButton--SVsXi:only-child,
+.player__controls--3BaRR .player__has_multiStepNextActivityButton--SVsXi:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_multiStepNextActivityButton--SVsXi:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_multiStepPreviousActivityButton--1B5w6:only-child,
+.player__controls--3BaRR .player__has_multiStepPreviousActivityButton--1B5w6:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_multiStepPreviousActivityButton--1B5w6:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_multiStepNextActivitySetButton--3pcSR:only-child,
+.player__controls--3BaRR .player__has_multiStepNextActivitySetButton--3pcSR:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_multiStepNextActivitySetButton--3pcSR:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_multiStepPreviousActivitySetButton--1n4zZ:only-child,
+.player__controls--3BaRR .player__has_multiStepPreviousActivitySetButton--1n4zZ:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_multiStepPreviousActivitySetButton--1n4zZ:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_multiStepSubmitButton--3Y5yE:only-child,
+.player__controls--3BaRR .player__has_multiStepSubmitButton--3Y5yE:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_multiStepSubmitButton--3Y5yE:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_nextTimedPlaylistActivitySetButton--1ioRW:only-child,
+.player__controls--3BaRR .player__has_nextTimedPlaylistActivitySetButton--1ioRW:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_nextTimedPlaylistActivitySetButton--1ioRW:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:only-child,
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_timedPlaylistFinishButton--250y4:only-child,
+.player__controls--3BaRR .player__has_timedPlaylistFinishButton--250y4:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_timedPlaylistFinishButton--250y4:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_timedPlaylistSubmitButton--3Xh8P:only-child,
+.player__controls--3BaRR .player__has_timedPlaylistSubmitButton--3Xh8P:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_timedPlaylistSubmitButton--3Xh8P:nth-last-child(2):first-child,
+.player__controls--3BaRR .player__has_endPlaylistButton--1n6Lh:only-child,
+.player__controls--3BaRR .player__has_endPlaylistButton--1n6Lh:nth-child(2):last-child,
+.player__controls--3BaRR .player__has_endPlaylistButton--1n6Lh:nth-last-child(2):first-child {
+  max-width: 136px;
+}
+.player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(3) {
+  max-width: 38px;
+}
+.player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(3) span {
+  display: none;
+}
+@media (min-width: 500px) {
+  .player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(3) {
+    max-width: 136px;
+  }
+  .player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(3) span {
+    display: block;
+  }
+}
+.player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(4) {
+  max-width: 38px;
+}
+.player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(4) span {
+  display: none;
+}
+@media (min-width: 700px) {
+  .player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(4) {
+    max-width: 136px;
+  }
+  .player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(4) span {
+    display: block;
+  }
+}
+.player__controls--3BaRR.player__has_checkAnswersButton--Zy1V7.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(4) {
+  max-width: 38px;
+}
+.player__controls--3BaRR.player__has_checkAnswersButton--Zy1V7.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(4) span {
+  display: none;
+}
+@media (min-width: 650px) {
+  .player__controls--3BaRR.player__has_checkAnswersButton--Zy1V7.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(4) {
+    max-width: 136px;
+  }
+  .player__controls--3BaRR.player__has_checkAnswersButton--Zy1V7.player__has_controlsShowAnswers--vjkpV .player__controls_navigation--1OlXq:nth-child(4) span {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 {
+  max-width: 38px;
+}
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 span {
+  display: none;
+}
+@media (min-width: 580px) {
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 {
+    max-width: 136px;
+  }
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 span {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:only-child, .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-child(2):last-child, .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-last-child(2):first-child {
+  max-width: 136px;
+}
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:only-child span, .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-child(2):last-child span, .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-last-child(2):first-child span {
+  display: block;
+}
+@media (max-width: 450px) {
+  .player__has_itemBasedCoverScreen--K9cnf [data-template=item-based] .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-last-child(2):first-child {
+    max-width: 38px;
+  }
+  .player__has_itemBasedCoverScreen--K9cnf [data-template=item-based] .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-last-child(2):first-child .player__previousTimedPlaylistActivitySetButton--3mlIV span {
+    display: none;
+  }
+  .player__has_itemBasedCoverScreen--K9cnf [data-template=item-based] .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-last-child(2):first-child .player__previousTimedPlaylistActivitySetButton--3mlIV svg {
+    display: block;
+  }
+}
+.player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__has_previousTimedPlaylistActivitySetButton--1y3M8 {
+  max-width: 38px;
+}
+.player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__has_previousTimedPlaylistActivitySetButton--1y3M8 span {
+  display: none;
+}
+@media (min-width: 700px) {
+  .player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__has_previousTimedPlaylistActivitySetButton--1y3M8 {
+    max-width: 136px;
+  }
+  .player__controls--3BaRR.player__has_controlsShowAnswers--vjkpV .player__has_previousTimedPlaylistActivitySetButton--1y3M8 span {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__has_resetActivityButton--2zHyI + .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__has_nextTimedPlaylistActivitySetButton--1ioRW:nth-child(3):nth-last-child(1),
+.player__controls--3BaRR .player__has_resetActivityButton--2zHyI + .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__has_timedPlaylistFinishButton--250y4:nth-child(3):nth-last-child(1) {
+  max-width: 136px;
+}
+.player__controls--3BaRR .player__has_resetActivityButton--2zHyI + .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__has_nextTimedPlaylistActivitySetButton--1ioRW:nth-child(3):nth-last-child(1) span,
+.player__controls--3BaRR .player__has_resetActivityButton--2zHyI + .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__has_timedPlaylistFinishButton--250y4:nth-child(3):nth-last-child(1) span {
+  display: block;
+}
+@media (min-width: 325px) {
+  .player__controls--3BaRR .player__has_resetActivityButton--2zHyI + .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-child(2):nth-last-child(2) {
+    max-width: 136px;
+  }
+  .player__controls--3BaRR .player__has_resetActivityButton--2zHyI + .player__has_previousTimedPlaylistActivitySetButton--1y3M8:nth-child(2):nth-last-child(2) span {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_multiStepStartButton--2SgaS.player__has_nextActivitySetButton--3Op4-,
+.player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_multiStepStartButton--2SgaS.player__has_endPlaylistButton--1n6Lh {
+  max-width: 280px;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_multiStepStartButton--2SgaS.player__has_nextActivitySetButton--3Op4-,
+  .player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_multiStepStartButton--2SgaS.player__has_endPlaylistButton--1n6Lh {
+    max-width: 288px;
+  }
+}
+.player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW,
+.player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 {
+  max-width: 280px;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW,
+  .player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 {
+    max-width: 288px;
+  }
+}
+.player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW .player__itemBasedStartButton--3VueE svg,
+.player__controls--3BaRR .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 .player__itemBasedStartButton--3VueE svg {
+  display: none;
+}
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW,
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 {
+  max-width: 182px;
+}
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW .player__nextTimedPlaylistActivitySetButton--1qbpT,
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW .player__timedPlaylistFinishButton--s59Wb,
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 .player__nextTimedPlaylistActivitySetButton--1qbpT,
+.player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 .player__timedPlaylistFinishButton--s59Wb {
+  max-width: 38px;
+}
+@media (min-width: 450px) {
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW,
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 {
+    max-width: 280px;
+  }
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW button span,
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 button span {
+    display: block;
+  }
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW .player__nextTimedPlaylistActivitySetButton--1qbpT,
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_nextTimedPlaylistActivitySetButton--1ioRW .player__timedPlaylistFinishButton--s59Wb,
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 .player__nextTimedPlaylistActivitySetButton--1qbpT,
+  .player__controls--3BaRR .player__has_previousTimedPlaylistActivitySetButton--1y3M8 + .player__controls_navigation--1OlXq.player__has_itemBasedStartButton--2rgAF.player__has_timedPlaylistFinishButton--250y4 .player__timedPlaylistFinishButton--s59Wb {
+    max-width: 100%;
+  }
+}
+.player__controls--3BaRR .player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2),
+.player__controls--3BaRR .player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2) + .player__has_multiStepNextActivitySetButton--3pcSR,
+.player__controls--3BaRR .player__has_checkAnswersButton--Zy1V7:nth-child(2):nth-last-child(2) + .player__has_multiStepSubmitButton--3Y5yE,
+.player__controls--3BaRR .player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2),
+.player__controls--3BaRR .player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2) + .player__has_multiStepNextActivitySetButton--3pcSR,
+.player__controls--3BaRR .player__has_submitButton--2JmoY:nth-child(2):nth-last-child(2) + .player__has_multiStepSubmitButton--3Y5yE {
+  max-width: 136px;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 {
+  max-width: 147px;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6 {
+    max-width: 247px;
+  }
+}
+@media (min-width: 600px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6 {
+    max-width: 287px;
+  }
+}
+@media (min-width: 380px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6:nth-child(2) {
+    max-width: 245px;
+  }
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6:nth-child(2) {
+    max-width: 287px;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersButton--3PGB1 {
+  max-width: 142px;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_answersToggleButton--2Cny3 {
+  max-width: 164px;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAnswers_Text--15PpT {
+  margin: 0 6px 0 0;
+  white-space: nowrap;
+  display: none;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAnswers_Text--15PpT {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6:nth-child(2) .player__showAnswers_Text--15PpT {
+  display: none;
+}
+@media (min-width: 380px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6:nth-child(2) .player__showAnswers_Text--15PpT {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAnswers_buttons--2BfpV {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAnswers_buttons--2BfpV > * {
+  padding: 0 8px;
+}
+@media (min-width: 450px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAnswers_buttons--2BfpV > * {
+    padding: 0 15px;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showOneByOneButton--1njc2 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 95%;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showOneByOneButton--1njc2:hover {
+  z-index: 1;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAllButton--1mwbF {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: calc(var(--button_border_width) * -1);
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAllButton--1mwbF:hover {
+  z-index: 1;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAnswersRevealButton--3KS1K {
+  display: block;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAnswersRevealButton--3KS1K {
+    display: none;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6:nth-child(2) .player__showAnswersRevealButton--3KS1K {
+  display: block;
+}
+@media (min-width: 380px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6:nth-child(2) .player__showAnswersRevealButton--3KS1K {
+    display: none;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc .player__showOneByOneButton--1njc2, .player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc .player__showAllButton--1mwbF {
+  display: none;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc .player__showOneByOneButton--1njc2, .player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc .player__showAllButton--1mwbF {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc:nth-child(2) .player__showOneByOneButton--1njc2, .player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc:nth-child(2) .player__showAllButton--1mwbF {
+  display: none;
+}
+@media (min-width: 380px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc:nth-child(2) .player__showOneByOneButton--1njc2, .player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc:nth-child(2) .player__showAllButton--1mwbF {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6.player__has_showAnswersRevealButton--1Xvzc .player__showOneByOneButton--1njc2 {
+  margin-left: 0;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showOneByOneButton--1njc2 span:nth-child(1) {
+  display: none;
+}
+@media (min-width: 600px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showOneByOneButton--1njc2 span:nth-child(1) {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showOneByOneButton--1njc2 span:nth-child(2) {
+  display: block;
+}
+@media (min-width: 600px) {
+  .player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showOneByOneButton--1njc2 span:nth-child(2) {
+    display: none;
+  }
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showOneByOneButton--1njc2:focus:before {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 1;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAllButton--1mwbF:focus:before {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  z-index: 2;
+}
+.player__controls--3BaRR .player__controls_showAnswers--215q6 .player__showAllItemButton--fHWok {
+  max-width: 164px;
+}
+.player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2) {
+  max-width: 127px;
+}
+@media (min-width: 415px) {
+  .player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2) {
+    max-width: 147px;
+  }
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2) {
+    max-width: 287px;
+  }
+}
+.player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2).player__has_showAnswersRevealButton--1Xvzc {
+  max-width: 136px;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2).player__has_showAnswersRevealButton--1Xvzc {
+    max-width: 287px;
+  }
+}
+.player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2) .player__showAnswers_Text--15PpT {
+  display: none;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2) .player__showAnswers_Text--15PpT {
+    display: block;
+  }
+}
+.player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2) .player__showAnswersRevealButton--3KS1K {
+  display: block;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2) .player__showAnswersRevealButton--3KS1K {
+    display: none;
+  }
+}
+.player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2).player__has_showAnswersRevealButton--1Xvzc .player__showOneByOneButton--1njc2, .player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2).player__has_showAnswersRevealButton--1Xvzc .player__showAllButton--1mwbF {
+  display: none;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2).player__has_showAnswersRevealButton--1Xvzc .player__showOneByOneButton--1njc2, .player__controls--3BaRR .player__controls_marking--2srOJ + .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K:nth-child(2).player__has_showAnswersRevealButton--1Xvzc .player__showAllButton--1mwbF {
+    display: block;
+  }
+}
+@media (max-width: 349px) {
+  .player__itemBased_review--3Z5FM .player__controls--3BaRR .player__has_itemBasedPreviousButton--1g4j1 ~ .player__has_showAnswersButton--3PGB1 {
+    max-width: calc(100% - 76px - 80px - 12px);
+  }
+  .player__itemBased_review--3Z5FM .player__controls--3BaRR .player__has_itemBasedPreviousButton--1g4j1 ~ .player__has_showAnswersButton--3PGB1 .player__showAnswers_buttons--2BfpV {
+    width: 100%;
+  }
+  .player__itemBased_review--3Z5FM .player__controls--3BaRR .player__has_itemBasedPreviousButton--1g4j1 ~ .player__has_showAnswersButton--3PGB1 .player__showAnswers_buttons--2BfpV > * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj {
+  max-width: 38px;
+  min-width: 38px;
+}
+.player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj button {
+  padding: 0;
+}
+.player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj button span {
+  display: none;
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj {
+    max-width: 136px;
+    min-width: 126px;
+  }
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj button {
+    padding: inherit;
+  }
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj button span {
+    display: block;
+  }
+}
+@media (min-width: 550px) {
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj {
+    max-width: 206px;
+  }
+}
+@media (min-width: 775px) {
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj {
+    max-width: 301px;
+  }
+}
+.player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj.player__has_showAnswersRevealButton--1Xvzc {
+  max-width: 136px;
+}
+@media (min-width: 775px) {
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj.player__has_showAnswersRevealButton--1Xvzc {
+    max-width: 301px;
+  }
+}
+.player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj .player__showAnswers_Text--15PpT {
+  display: none;
+}
+@media (min-width: 775px) {
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj .player__showAnswers_Text--15PpT {
+    display: block;
+  }
+}
+.player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj .player__showAnswersRevealButton--3KS1K {
+  display: block;
+}
+@media (min-width: 775px) {
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj .player__showAnswersRevealButton--3KS1K {
+    display: none;
+  }
+}
+.player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj.player__has_showAnswersRevealButton--1Xvzc .player__showOneByOneButton--1njc2, .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj.player__has_showAnswersRevealButton--1Xvzc .player__showAllButton--1mwbF {
+  display: none;
+}
+@media (min-width: 775px) {
+  .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj.player__has_showAnswersRevealButton--1Xvzc .player__showOneByOneButton--1njc2, .player__controls--3BaRR.player__has_controlsMarking--3Lfow.player__has_controlsShowAnswers--vjkpV.player__has_controlsNavigation--fsiYS .player__is_leftSide--3xAZj ~ .player__controls_showAnswers--215q6.player__has_showAnswersText--33h_K.player__has_showAllButton--10tnb.player__has_showOneByOneButton--1_Ujj.player__has_showAnswersRevealButton--1Xvzc .player__showAllButton--1mwbF {
+    display: block;
+  }
+}
+
+.player__titleBar--2W4t1 {
+  background: #fff;
+  height: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 48px;
+  bottom: 0;
+  /* Prevent user from selecting text on the titleBar */
+  -webkit-user-select: none;
+}
+.player__titleBar--2W4t1 > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player__titleBar--2W4t1:first-child {
+  border-bottom: 1px solid #9a9a9a;
+}
+.player__titleBar--2W4t1:last-child {
+  border-top: 1px solid #9a9a9a;
+}
+.player__titleBar--2W4t1 .player__titleBar_activitySetTitle--11ud5 {
+  position: absolute;
+  left: 12px;
+  max-width: calc(100% - 64px - 32px);
+}
+.player__titleBar--2W4t1 .player__titleBar_activitySetTitle--11ud5 p {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin: 0;
+  margin-left: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: rtl;
+}
+.player__titleBar--2W4t1 .player__titleBar_activitySetTitle--11ud5 p span {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+.player__titleBar--2W4t1 .player__titleBar_buttons--3qkMC {
+  position: absolute;
+  right: 12px;
+}
+.player__titleBar--2W4t1 .player__titleBar_fullscreenToggleButton--1nsKa span:nth-child(2) {
+  display: none;
+  /* We will need a class to toggle switching the icon and classes on the spans */
+}
+.player__titleBar--2W4t1 .player__titleBar_closeButton--2lUX8 {
+  margin-left: 10px;
+}
+.player__titleBar--2W4t1 .player__titleBar_dragIcon--RN8d8 {
+  position: relative;
+}
+.player__titleBar--2W4t1 .player__titleBar_dragIcon--RN8d8 svg {
+  position: relative;
+  top: 1px;
+}
+
+.player__windowed--1GbfZ .player__titleBar_fullscreenToggleButton--1nsKa #maximize {
+  visibility: visible;
+}
+
+.player__maximized--3eKcd .player__titleBar_fullscreenToggleButton--1nsKa #minimize {
+  visibility: visible;
+}
+
+.player__maximized--3eKcd .player__titleBar_fullscreenToggleButton--1nsKa:hover svg,
+.player__windowed--1GbfZ .player__titleBar_fullscreenToggleButton--1nsKa:hover svg {
+  padding: 1px;
+}
+
+.player__titleBar_activitySetTitle--11ud5 p:focus:before,
+.player__rcfActivity_activitySetTitle--2Ba5_:focus:before {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--primary_focused_outline);
+  left: -7px;
+  top: -6px;
+  right: -7px;
+  bottom: -6px;
+  border-radius: 5px;
+}
+
+/* Title Bar Electron dragging Styles */
+/*Allow dragging from titleBar when windowed*/
+.player__windowed--1GbfZ .player__titleBar--2W4t1 {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+.player__windowed--1GbfZ .player__titleBar--2W4t1 .player__titleBar_dragIcon--RN8d8,
+.player__windowed--1GbfZ .player__titleBar--2W4t1 .player__titleBar_activitySetTitle--11ud5 {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  cursor: grab;
+  line-height: 1rem;
+}
+.player__windowed--1GbfZ .player__titleBar--2W4t1 .player__titleBar_dragIcon--RN8d8:active,
+.player__windowed--1GbfZ .player__titleBar--2W4t1 .player__titleBar_activitySetTitle--11ud5:active {
+  cursor: grabbing;
+}
+.player__windowed--1GbfZ .player__titleBar--2W4t1 .player__titleBar_buttons--3qkMC,
+.player__windowed--1GbfZ .player__titleBar--2W4t1 button {
+  -webkit-app-region: no-drag;
+}
+
+/* prevent dragging when maximized and add disabled styles to dragging icon */
+.player__maximized--3eKcd .player__titleBar--2W4t1 {
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+}
+.player__maximized--3eKcd .player__titleBar--2W4t1 .player__titleBar_dragIcon--RN8d8,
+.player__maximized--3eKcd .player__titleBar--2W4t1 .player__titleBar_activitySetTitle--11ud5 {
+  -webkit-app-region: no-drag;
+  -webkit-user-select: none;
+}
+.player__maximized--3eKcd .player__titleBar--2W4t1 .player__titleBar_activitySetTitle--11ud5 svg path {
+  stroke: var(--icon_content_disabled);
+}
+
+/* itemBased header styles */
+.player__itemBasedHeader--2dU8a,
+.player__multiStepHeader--3uFSJ {
+  background: #fff;
+  height: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #9a9a9a;
+  justify-content: flex-start;
+  height: 48px;
+  z-index: 1;
+}
+.player__itemBasedHeader--2dU8a > *,
+.player__multiStepHeader--3uFSJ > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player__itemBasedHeader--2dU8a.player__has_titleBarButtons--IgQfI .player__header_titleBarButtons--36hQ4,
+.player__multiStepHeader--3uFSJ.player__has_titleBarButtons--IgQfI .player__header_titleBarButtons--36hQ4 {
+  margin-right: 12px;
+}
+.player__itemBasedHeader--2dU8a.player__has_titleBarButtons--IgQfI .player__titleBar_fullscreenToggleButton--1nsKa,
+.player__multiStepHeader--3uFSJ.player__has_titleBarButtons--IgQfI .player__titleBar_fullscreenToggleButton--1nsKa {
+  margin: 0;
+}
+.player__itemBasedHeader--2dU8a.player__has_titleBarButtons--IgQfI .player__header_closeButton--3kxvj,
+.player__multiStepHeader--3uFSJ.player__has_titleBarButtons--IgQfI .player__header_closeButton--3kxvj {
+  margin-left: 10px;
+}
+
+.player__itemBasedHeader_backButton--3H4yP,
+.player__itemBasedHeader--2dU8a button:first-child,
+.player__multiStepHeader_backButton--2h_eS,
+.player__multiStepHeader--3uFSJ button:first-child {
+  margin-left: 12px;
+}
+
+@media only screen and (max-width: 660px) {
+  [data-challenge-mode=random] .player__itemBasedHeader--2dU8a {
+    height: 64px;
+  }
+}
+.player__itemBasedHeader_backButton--3H4yP + *,
+.player__multiStepHeader_backButton--2h_eS + * {
+  min-width: calc(100% - 72px - 20px);
+}
+.player__has_titleBarButtons--IgQfI .player__itemBasedHeader_backButton--3H4yP + *,
+.player__has_titleBarButtons--IgQfI .player__multiStepHeader_backButton--2h_eS + * {
+  min-width: calc(100% - 140px - 20px);
+}
+
+.player__timedPlaylistTimer--1Nxkm + * {
+  min-width: calc(100% - 48px - 20px - 150px);
+  width: 100%;
+  height: 48px;
+}
+@media (min-width: 450px) {
+  .player__timedPlaylistTimer--1Nxkm + * {
+    height: 100%;
+    width: calc(100% - 48px - 20px - 150px);
+  }
+}
+
+/* Item Based Progress Bar Styles */
+.player__itemBasedProgressBar_challenge--3s3C3 {
+  display: none;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.player__itemBasedProgressBar_reviewProgress--2bCGf,
+.player__itemBasedProgressBar_challenge--3s3C3,
+.player__itemBasedProgressBar_progress--1NF9W,
+.player__multiStepProgressBar_progress--15WBg,
+.player__timedPlaylistProgressBar_progress--1VRPZ,
+.player__itemBasedProgressBar_lives--3VqwM,
+.player__scoreScreen_lives--1FJn7,
+.player__multiStepProgressBar_progress--15WBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 10px;
+}
+.player__has_titleBarButtons--IgQfI .player__itemBasedProgressBar_reviewProgress--2bCGf,
+.player__has_titleBarButtons--IgQfI .player__itemBasedProgressBar_challenge--3s3C3,
+.player__has_titleBarButtons--IgQfI .player__itemBasedProgressBar_progress--1NF9W,
+.player__has_titleBarButtons--IgQfI .player__multiStepProgressBar_progress--15WBg,
+.player__has_titleBarButtons--IgQfI .player__timedPlaylistProgressBar_progress--1VRPZ,
+.player__has_titleBarButtons--IgQfI .player__itemBasedProgressBar_lives--3VqwM,
+.player__has_titleBarButtons--IgQfI .player__scoreScreen_lives--1FJn7,
+.player__has_titleBarButtons--IgQfI .player__multiStepProgressBar_progress--15WBg {
+  margin-left: 44px;
+}
+
+.player__timedPlaylistTimer_red--JTInV {
+  color: var(--timedPlaylistTimer_red);
+}
+
+@media only screen and (max-width: 300px) {
+  [data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_challenge--3s3C3 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+[data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_lives--3VqwM,
+[data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_progress--1NF9W {
+  margin: 0;
+}
+[data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_lives--3VqwM {
+  width: 30%;
+  max-width: 120px;
+}
+[data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_progress--1NF9W {
+  width: 70%;
+}
+
+.player__itemBasedProgressBar_reviewProgress--2bCGf li,
+.player__itemBasedProgressBar_progress--1NF9W li,
+.player__multiStepProgressBar_progress--15WBg li,
+.player__timedPlaylistProgressBar_progress--1VRPZ li,
+.player__itemBasedProgressBar_lives--3VqwM li,
+.player__scoreScreen_lives--1FJn7 li {
+  max-width: 25px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 4px;
+}
+
+.player__itemBasedProgressBar_lives--3VqwM li {
+  height: 25px;
+}
+
+.player__itemBasedProgressBar_lives--3VqwM li polygon.life-active,
+.player__scoreScreen_lives--1FJn7 li polygon.life-active {
+  fill: transparent;
+}
+.player__itemBasedProgressBar_lives--3VqwM li path.life-container,
+.player__scoreScreen_lives--1FJn7 li path.life-container {
+  fill: #000;
+}
+.player__itemBasedProgressBar_lives--3VqwM li circle.life-backgroundContainer,
+.player__scoreScreen_lives--1FJn7 li circle.life-backgroundContainer {
+  fill: var(--secondaryOutline_active);
+}
+
+.player__itemBasedProgressBar_reviewProgress--2bCGf li.player__progressBar_active--YXQRF {
+  background-color: var(--progressBarActive);
+}
+
+.player__itemBasedProgressBar_progress--1NF9W li,
+.player__multiStepProgressBar_progress--15WBg li,
+.player__timedPlaylistProgressBar_progress--1VRPZ li,
+.player__itemBasedProgressBar_reviewProgress--2bCGf li {
+  background-color: var(--itemBasedProgressBarProgress);
+  border: solid 2px transparent;
+  border-radius: 8px;
+  max-width: 24px;
+  aspect-ratio: 2/1;
+}
+@supports not (aspect-ratio: 2/1) {
+  .player__itemBasedProgressBar_progress--1NF9W li,
+  .player__multiStepProgressBar_progress--15WBg li,
+  .player__timedPlaylistProgressBar_progress--1VRPZ li,
+  .player__itemBasedProgressBar_reviewProgress--2bCGf li {
+    max-width: 16px;
+    height: 8px;
+  }
+  @media only screen and (min-width: 575px) {
+    .player__itemBasedProgressBar_progress--1NF9W li,
+    .player__multiStepProgressBar_progress--15WBg li,
+    .player__timedPlaylistProgressBar_progress--1VRPZ li,
+    .player__itemBasedProgressBar_reviewProgress--2bCGf li {
+      max-width: 24px;
+      height: 12px;
+    }
+  }
+}
+.player__itemBasedProgressBar_progress--1NF9W li.player__progressBar_active--YXQRF,
+.player__multiStepProgressBar_progress--15WBg li.player__progressBar_active--YXQRF,
+.player__timedPlaylistProgressBar_progress--1VRPZ li.player__progressBar_active--YXQRF,
+.player__itemBasedProgressBar_reviewProgress--2bCGf li.player__progressBar_active--YXQRF {
+  border: solid 2px #fff;
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--primaryOutline_border);
+}
+
+.player__timedPlaylistProgressBar_progress--1VRPZ li {
+  cursor: pointer;
+}
+.player__timedPlaylistProgressBar_progress--1VRPZ li:hover {
+  border: solid 2px #fff;
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--primaryOutline_border);
+}
+.player__timedPlaylistProgressBar_progress--1VRPZ li.player__progressBar_attempted--lZfBz {
+  background-color: var(--primary_active);
+}
+
+.player__timedPlaylistProgressPagination_pagination--1tXEB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 47px;
+  margin: 0 10px;
+}
+@media (max-width: 449px) {
+  [data-link-origin=strictHomework] .player__timedPlaylistTimer_hideInStrictHomework--2Dpfp + .player__timedPlaylistProgressPagination_pagination--1tXEB {
+    max-width: calc(100% - 90px);
+    margin: 0 80px 0 10px;
+  }
+  [data-link-origin=strictHomework].player__fullScreen--QeZe9 .player__timedPlaylistTimer_hideInStrictHomework--2Dpfp + .player__timedPlaylistProgressPagination_pagination--1tXEB {
+    max-width: calc(100% - 56px);
+    margin: 0 46px 0 10px;
+  }
+}
+.player__has_titleBarButtons--IgQfI .player__timedPlaylistProgressPagination_pagination--1tXEB {
+  margin-left: 44px;
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB button,
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_ellipsis--DxleJ {
+  width: unset;
+  max-width: unset;
+  aspect-ratio: 1/1;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_finishButton--38Qbl {
+  aspect-ratio: 2/1;
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_button--F18tg {
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--paginationBar);
+  border: 1px solid var(--paginationBar);
+  color: var(--secondary_content);
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_button--F18tg:first-child {
+  margin-left: 0;
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_button--F18tg:last-child {
+  margin-right: 0;
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_button--F18tg:focus:not(:disabled), .player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_button--F18tg:hover {
+  transition: all 0.3s ease;
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_button--F18tg:focus:not(:disabled) {
+  outline: 2px solid var(--secondary_focused_outline);
+  outline-offset: 2px;
+}
+@media (hover: hover) {
+  .player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_button--F18tg:hover {
+    background-color: var(--paginationBar_hover);
+    border-color: var(--paginationBar_hover);
+    border-width: var(--button_border_width);
+    color: var(--primary_content);
+  }
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_active--nVUM0 {
+  background-color: var(--paginationBar_active);
+  border-color: var(--paginationBar_active);
+  border-width: var(--button_border_width);
+  color: var(--primary_content);
+  cursor: default;
+  pointer-events: none;
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_attempted--35b8i,
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_active--nVUM0.player__progressPagination_finishButton--38Qbl {
+  background-color: var(--paginationBar_attempted);
+  border-color: var(--paginationBar_attempted);
+  color: var(--secondary_content);
+}
+@media (hover: hover) {
+  .player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_attempted--35b8i:hover {
+    background-color: var(--paginationBar_hover);
+    border-color: var(--paginationBar_hover);
+    color: var(--primary_content);
+  }
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_attempted--35b8i.player__progressPagination_active--nVUM0 {
+  background-color: var(--paginationBar_active);
+  border-color: var(--paginationBar_active);
+  color: var(--primary_content);
+}
+@media (hover: hover) {
+  .player__timedPlaylistProgressPagination_pagination--1tXEB .player__progressPagination_attempted--35b8i.player__progressPagination_active--nVUM0:hover {
+    background-color: var(--paginationBar_hover);
+    border-color: var(--paginationBar_hover);
+  }
+}
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__timedPlaylistProgressPagination_previous--1B-YD,
+.player__timedPlaylistProgressPagination_pagination--1tXEB .player__timedPlaylistProgressPagination_next--bk0yb {
+  display: static;
+}
+
+.player__itemBasedProgressBar_progress--1NF9W li.player__progressBar_correct--2aTOs,
+.player__multiStepProgressBar_progress--15WBg li.player__progressBar_correct--2aTOs {
+  background-color: var(--progressBar_correct);
+}
+.player__itemBasedProgressBar_progress--1NF9W li.player__progressBar_wrong--3hEYc,
+.player__multiStepProgressBar_progress--15WBg li.player__progressBar_wrong--3hEYc {
+  background-color: var(--progressBar_wrong);
+}
+.player__itemBasedProgressBar_progress--1NF9W li.player__progressBar_pendingMarks--2ujzZ,
+.player__multiStepProgressBar_progress--15WBg li.player__progressBar_pendingMarks--2ujzZ {
+  background-color: var(--progressBar_pendingMarks);
+}
+.player__itemBasedProgressBar_progress--1NF9W li.player__progressBar_partiallyCorrect--1GXuu,
+.player__multiStepProgressBar_progress--15WBg li.player__progressBar_partiallyCorrect--1GXuu {
+  background-color: var(--progressBar_pendingMarks);
+  background-image: linear-gradient(135deg, var(--progressBar_wrong) 0%, var(--progressBar_wrong) 45%, #fff 45%, #fff 55%, var(--progressBar_correct) 55%, var(--progressBar_correct) 100%);
+  background-origin: border-box;
+}
+
+.player__itemBasedProgressBar_lives--3VqwM li.player__progressBar_active--YXQRF polygon.life-active {
+  fill: var(--itemBasedProgressBar_lives);
+}
+.player__itemBasedProgressBar_lives--3VqwM li.player__progressBar_active--YXQRF path.life-container {
+  fill: transparent;
+}
+
+/* challenge timer styles START */
+.player__span--1rNVk.player__itemBasedProgressBar_timer--3iNkU {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-activity-mode=itemBased_challenge] span.player__itemBasedProgressBar_timer--3iNkU {
+  width: auto;
+  font-size: 1.313rem;
+}
+
+[data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_lives--3VqwM {
+  margin-left: 16px;
+}
+
+[data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_progress--1NF9W {
+  width: 45%;
+  min-width: 140px;
+  margin-left: 16px;
+  max-width: fit-content;
+  min-width: 310px;
+}
+@media only screen and (max-width: 300px) {
+  [data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_progress--1NF9W {
+    display: none;
+  }
+}
+@media only screen and (max-width: 460px) {
+  [data-activity-mode=itemBased_challenge] .player__itemBasedProgressBar_progress--1NF9W {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* timer graph styles */
+.player__itemBasedProgressBar_timerContainer--1m0_K,
+.player__itemBasedProgressBar_timerContainer--1m0_K * {
+  transition: 0.3s ease;
+}
+
+.player__itemBasedProgressBar_timerContainer--1m0_K {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* pie styles */
+.player__itemBasedProgressBar_timerContainer--1m0_K svg {
+  margin: 0 8px 0 0;
+}
+
+.player__itemBasedProgressBar_red--3AMcd svg circle:last-child {
+  stroke: var(--itemBasedProgressBar_timerContainer_red);
+}
+
+.player__itemBasedProgressBar_orange--1F9mi svg circle:last-child {
+  stroke: var(--itemBasedProgressBar_timerContainer_orange);
+}
+
+.player__itemBasedProgressBar_green--3jskr svg circle:last-child {
+  stroke: var(--itemBasedProgressBar_timerContainer_green);
+}
+
+/*digital timer styles*/
+.player__itemBasedProgressBar_challenge--3s3C3 .player__itemBasedProgressBar_timer--3iNkU {
+  font-weight: 700;
+}
+
+.player__itemBasedProgressBar_red--3AMcd .player__itemBasedProgressBar_timer--3iNkU {
+  color: var(--itemBasedProgressBar_timerContainer_red);
+}
+
+.player__itemBasedProgressBar_orange--1F9mi .player__itemBasedProgressBar_timer--3iNkU {
+  color: var(--itemBasedProgressBar_timerContainer_orange);
+}
+
+.player__itemBasedProgressBar_green--3jskr .player__itemBasedProgressBar_timer--3iNkU {
+  color: var(--itemBasedProgressBar_timerContainer_green);
+}
+
+/*animation*/
+.player__itemBasedProgressBar_bounce--ZVenz .player__itemBasedProgressBar_timer--3iNkU {
+  animation: player__bounceAnimation--NI0qV 0.5s;
+}
+
+.player__itemBasedProgressBar_shortBounce--17UrB .player__itemBasedProgressBar_timer--3iNkU {
+  animation: player__shortBounceAnimation--243s0 1s;
+  animation-iteration-count: infinite;
+}
+
+/* live lost animation */
+.player__itemBasedProgressBar_lives--3VqwM li:not(.player__progressBar_active--YXQRF) {
+  animation: player__bounceAnimation--NI0qV 0.5s;
+}
+
+/*animations*/
+@keyframes player__bounceAnimation--NI0qV {
+  20%, 80% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes player__shortBounceAnimation--243s0 {
+  00% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+/*progressive challenge counter*/
+.player__itemBasedProgressBar_counterContainer--HsPC1 {
+  margin-left: 16px;
+}
+.player__itemBasedProgressBar_counterContainer--HsPC1 .player__itemBasedProgressBar_correctCounter--14TAf {
+  font-weight: 700;
+  color: var(--itemBasedProgressBar_correctCounter);
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 380px) {
+  [data-challenge-mode=progressive] .player__itemBasedProgressBar_lives--3VqwM,
+  [data-challenge-mode=progressive] .player__itemBasedProgressBar_counterContainer--HsPC1 {
+    margin-left: 16px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  /*itemBased_challenge collapsed progress bars*/
+  [data-challenge-mode=random] .player__itemBasedProgressBar_timerContainer--1m0_K,
+  [data-challenge-mode=random] .player__itemBasedProgressBar_lives--3VqwM {
+    height: 45%;
+    margin-top: 4px;
+  }
+  [data-challenge-mode=random] .player__itemBasedProgressBar_progress--1NF9W {
+    height: 45%;
+    min-width: 100%;
+    margin-left: 0;
+  }
+}
+/* pagination area loader - appears until PLAYER_STATUS.rcfLoaded is set */
+.player__paginationLoader--1VlH4 {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.player__paginationLoader--1VlH4 div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #aaa;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.player__paginationLoader--1VlH4 div:nth-child(1) {
+  left: 8px;
+  animation: player__paginationLoaderAnimation1--1gygd 0.6s infinite;
+}
+
+.player__paginationLoader--1VlH4 div:nth-child(2) {
+  left: 8px;
+  animation: player__paginationLoaderAnimation2--FK0ev 0.6s infinite;
+}
+
+.player__paginationLoader--1VlH4 div:nth-child(3) {
+  left: 32px;
+  animation: player__paginationLoaderAnimation2--FK0ev 0.6s infinite;
+}
+
+.player__paginationLoader--1VlH4 div:nth-child(4) {
+  left: 56px;
+  animation: player__paginationLoaderAnimation3--3Hqtr 0.6s infinite;
+}
+
+@keyframes player__paginationLoaderAnimation1--1gygd {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes player__paginationLoaderAnimation2--FK0ev {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+@keyframes player__paginationLoaderAnimation3--3Hqtr {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.player__coverScreen_multiStep--2o-XH,
+.player__coverScreen_itemBased--_8fkf,
+.player__coverScreen_container--c1EID,
+.player__timedPlaylistEndScreen_container--2mrgS {
+  outline: 1px solid transparent;
+}
+
+.player__has_multiStepCoverScreen--3_4vz .player__content--20_mI,
+.player__has_multiStepScoreScreen--11eRI .player__content--20_mI,
+.player__has_itemBasedCoverScreen--K9cnf .player__content--20_mI,
+.player__has_itemBasedScoreScreen--NS-Td .player__content--20_mI {
+  height: 0;
+}
+
+.player__coverScreen_container--c1EID,
+.player__scoreScreen_container--3Vjlg,
+.player__timedPlaylistEndScreen_container--2mrgS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-grow: 1;
+  background: #fff;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.player__scoreScreen--28djo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player__coverScreen_activitySetTitle--15eZa,
+.player__coverScreen_multiStepsLabel--3NnBo,
+.player__coverScreen_activitySetDetails--27FHP,
+.player__coverScreen_conditionsContainer--2J1_X,
+.player__coverScreen_promptContainer--q8D2H,
+.player__scoreScreen_activitySetTitle--3YcGd,
+.player__timedPlaylistEndScreen_playlistSubmittedSVG--131F7,
+.player__timedPlaylistEndScreen--3WULo > * {
+  text-align: center;
+}
+
+.player__timedPlaylistEndScreen--3WULo .player__timedPlaylistEndScreen_header--3PZBj,
+.player__timedPlaylistEndScreen--3WULo .player__timedPlaylistEndScreen_paragraph--2bZ-z {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.player__timedPlaylistEndScreen--3WULo .player__timedPlaylistEndScreen_header--3PZBj {
+  margin-top: 2rem;
+}
+.player__timedPlaylistEndScreen--3WULo .player__timedPlaylistEndScreen_header--3PZBj h2 {
+  line-height: 2rem;
+}
+
+.player__timedPlaylistEndScreen--3WULo .player__timedPlaylistEndScreen_paragraph--2bZ-z {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.player__timedPlaylistEndScreen--3WULo .player__timedPlaylistEndScreen_playlistSubmittedSVG--131F7,
+.player__timedPlaylistEndScreen--3WULo .player__timedPlaylistEndScreen_playlistTimedOutSVG--2ABaA,
+.player__timedPlaylistEndScreen--3WULo .player__timedPlaylistEndScreen_playlistFinishSVG--1A9wF {
+  line-height: 0;
+}
+
+.player__scoreScreen_score--3qhTe > span:first-of-type {
+  margin-right: 20px;
+}
+
+.player__coverScreen_multiStepsLabel--3NnBo {
+  margin-top: 1rem;
+}
+
+.player__coverScreen_activitySetDetails--27FHP ul {
+  text-align: left;
+  display: inline-block;
+}
+.player__coverScreen_activitySetDetails--27FHP ul svg {
+  vertical-align: text-bottom;
+  margin-right: 8px;
+}
+
+.player__coverScreen_itemBased--_8fkf ~ div .player__itemBasedHeader--2dU8a {
+  display: none;
+}
+
+.player__coverScreen_activityModeLabel--2sJBJ svg,
+.player__coverScreen_multiStepsLabel--3NnBo svg,
+.player__timedPlaylistEndScreen_playlistSubmittedSVG--131F7 svg,
+.player__timedPlaylistEndScreen_playlistTimedOutSVG--2ABaA svg,
+.player__timedPlaylistEndScreen_playlistFinishSVG--1A9wF svg {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--coverScoreScreen_svg_mobile);
+  max-height: var(--coverScoreScreen_svg_mobile);
+}
+
+@media only screen and (min-width: 575px) {
+  .player__coverScreen_activityModeLabel--2sJBJ svg {
+    max-width: var(--coverScoreScreen_svg_desktop);
+    max-height: var(--coverScoreScreen_svg_desktop);
+  }
+  .player__scoreScreen_reward--gCUi5 .player__reward_badge--29GNb {
+    max-width: 168px;
+    height: 168px;
+  }
+  .player__scoreScreen_reward--gCUi5 .player__reward_text--2cDjR {
+    margin: 16px auto 0;
+  }
+}
+.player__coverScreen_activityModeLabel--2sJBJ svg > g,
+.player__coverScreen_multiStepsLabel--3NnBo svg > g {
+  visibility: hidden;
+}
+
+.theme_3 .player__coverScreen_activityModeLabel--2sJBJ svg .background,
+.theme_3 .player__itemBased_practice--1JKBp .player__coverScreen_activityModeLabel--2sJBJ svg .practice,
+.theme_3 .player__itemBased_test--LMtuu .player__coverScreen_activityModeLabel--2sJBJ svg .test,
+.theme_3 .player__itemBased_challenge--pcogn .player__coverScreen_activityModeLabel--2sJBJ svg .challenge,
+.theme_3 .player__coverScreen_multiStepsLabel--3NnBo svg .multiStep_theme_default {
+  visibility: visible;
+}
+
+.topLevelDetails:not(.theme_3) .player__coverScreen_activityModeLabel--2sJBJ svg .container,
+.topLevelDetails:not(.theme_3) .player__itemBased_practice--1JKBp .player__coverScreen_activityModeLabel--2sJBJ svg .practice_theme_1,
+.topLevelDetails:not(.theme_3) .player__itemBased_test--LMtuu .player__coverScreen_activityModeLabel--2sJBJ svg .test_theme_1,
+.topLevelDetails:not(.theme_3) .player__itemBased_challenge--pcogn .player__coverScreen_activityModeLabel--2sJBJ svg .challenge_theme_1,
+.topLevelDetails:not(.theme_3) .player__coverScreen_multiStepsLabel--3NnBo svg .multiStep_theme_1 {
+  visibility: visible;
+}
+
+.topLevelDetails:not(.theme_3) svg .svgUpdateFill {
+  fill: var(--ux-icon-colour-dark, #2e61d0);
+}
+.topLevelDetails:not(.theme_3) svg .svgUpdateFill_light {
+  fill: var(--ux-icon-colour-light, #b1c5ed);
+}
+
+.player__coverScreen--1gbqD .player__coverScreen_conditionsContainer--2J1_X {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 575px) {
+  .player__coverScreen_promptContainer--q8D2H {
+    flex-grow: 1;
+  }
+}
+
+.player__coverScreen_conditionsLabels--2dCw7 {
+  display: none;
+  vertical-align: middle;
+}
+
+.player__coverScreen_conditionsLabels--2dCw7 svg {
+  fill: var(--coverScoreScreen_icons);
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+}
+
+.player__coverScreen_conditionsLabels--2dCw7 svg:last-of-type {
+  height: 20px;
+}
+
+.player__itemBased_challenge--pcogn .player__coverScreen_conditionsLabels--2dCw7 {
+  display: inline-block;
+}
+
+.player__coverScreen_activitySetDescriptionContainer--1T2Iw,
+.player__coverScreen_rulesContainer--2Zb-J {
+  margin-top: 1rem;
+}
+.player__coverScreen_activitySetDescriptionContainer--1T2Iw h3,
+.player__coverScreen_rulesContainer--2Zb-J h3 {
+  color: var(--coverScoreScreen_rules_text);
+  margin-bottom: 0;
+  padding-left: 5px;
+  font-weight: 400;
+}
+.player__coverScreen_activitySetDescriptionContainer--1T2Iw h3 + .player__coverScreen_rules--MuFMl,
+.player__coverScreen_rulesContainer--2Zb-J h3 + .player__coverScreen_rules--MuFMl {
+  margin-top: 6px;
+}
+
+.player__coverScreen_activitySetDescription--_DiUF,
+.player__coverScreen_rules--MuFMl {
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: solid 1px var(--coverScoreScreen_rules_border);
+  background-color: var(--coverScoreScreen_rules_background);
+  line-height: 20px;
+}
+
+.player__scoreScreen_livesContainer--sQHKi,
+.player__scoreScreen_individualScoreDetails--2eGnp,
+.player__scoreScreen_score--3qhTe {
+  padding: 14px 0 0;
+}
+
+.player__scoreScreen_lives--1FJn7 {
+  margin: 0;
+}
+.player__scoreScreen_lives--1FJn7 li {
+  height: 48px;
+  max-width: 48px;
+}
+.player__scoreScreen_lives--1FJn7 li.player__life_active--DMLt3 polygon.life-active {
+  fill: var(--coverScoreScreen_icons);
+}
+.player__scoreScreen_lives--1FJn7 li.player__life_active--DMLt3 path.life-container {
+  fill: transparent;
+}
+
+@media only screen and (max-width: 250px) {
+  .player__scoreScreen_lives--1FJn7 li + li {
+    margin-left: 8px;
+  }
+}
+.player__scoreScreen_individualScoreDetails--2eGnp {
+  margin-top: 38px;
+  padding-top: 0;
+  width: 100%;
+}
+.player__scoreScreen_individualScoreDetails--2eGnp ul {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 20px 0;
+  text-align: center;
+  margin: auto;
+}
+.player__scoreScreen_individualScoreDetails--2eGnp li {
+  display: table-row;
+}
+.player__scoreScreen_individualScoreDetails--2eGnp span {
+  display: table-cell;
+}
+.player__scoreScreen_individualScoreDetails--2eGnp .player__linkStep--1NA0u {
+  color: var(--coverScoreScreen_linkStep);
+  font-weight: 600;
+  cursor: pointer;
+}
+.player__scoreScreen_individualScoreDetails--2eGnp .player__linkStep--1NA0u:hover {
+  text-decoration: underline;
+}
+.player__scoreScreen_individualScoreDetails--2eGnp .scoreCorrect,
+.player__scoreScreen_individualScoreDetails--2eGnp .scoreWrong,
+.player__scoreScreen_individualScoreDetails--2eGnp .scoreOpenGradable {
+  display: flex;
+  justify-content: center;
+  width: 24px;
+}
+
+.player__scoreScreen_correctText--FWpjf,
+.player__scoreScreen_wrongText--13T_P {
+  vertical-align: middle;
+}
+
+.player__scoreScreen_correctIcon--3UEyf svg,
+.player__scoreScreen_wrongIcon--20tsS svg {
+  vertical-align: middle;
+  width: 22px;
+  height: 25px;
+}
+
+.player__scoreScreen_reward--gCUi5 .player__reward_text--2cDjR {
+  font-size: 1rem;
+  margin: 89px auto 37px;
+  text-align: center;
+  position: relative;
+}
+.player__scoreScreen_reward--gCUi5 .player__reward_text--2cDjR:empty {
+  display: none;
+}
+
+.player__scoreScreen_reward--gCUi5 .player__reward_badge--29GNb {
+  margin: 0 auto;
+  max-width: var(--coverScoreScreen_svg_desktop);
+  height: var(--coverScoreScreen_svg_desktop);
+  background-color: var(--secondaryOutline_active);
+  border-radius: 50%;
+  padding: 16px;
+}
+.player__scoreScreen_reward--gCUi5 .player__reward_badge--29GNb svg {
+  width: 100%;
+  height: 100%;
+}
+
+.player__scoreScreen_reward--gCUi5.player__none--3P9Wf .player__reward_badge--29GNb svg #rewardIcon_4,
+.player__scoreScreen_reward--gCUi5.player__good--3nRcn .player__reward_badge--29GNb svg #rewardIcon_3,
+.player__scoreScreen_reward--gCUi5.player__great--39LAA .player__reward_badge--29GNb svg #rewardIcon_2,
+.player__scoreScreen_reward--gCUi5.player__excellent--1z4XE .player__reward_badge--29GNb svg #rewardIcon_1 {
+  visibility: visible;
+}
+
+/*
+.itemBasedScoreScreen_score_completed_with_text {
+	margin-top: 34px;
+	text-align: center;
+}
+ */
+.player__scoreScreen_score_percentageContainer--3Sahd {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 34px auto 10px;
+  padding: 0;
+  /*
+  	.itemBasedScoreScreen_score_completed_with_text + & {
+  		margin: 1rem auto 2rem;
+  	}
+  */
+}
+.player__scoreScreen_score_percentageContainer--3Sahd svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.player__scoreScreen_score_percentageContainer--3Sahd svg path {
+  stroke-linecap: round;
+  transition: stroke 0.5s linear, stroke-dasharray 0.5s linear;
+  transition-delay: 100ms;
+}
+.player__scoreScreen_score_percentageContainer--3Sahd.p0 svg path {
+  stroke: transparent;
+}
+
+.player__scoreScreen_score_percentageContent--5L_q6 {
+  width: 168px;
+  height: 168px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  line-height: normal;
+}
+.player__scoreScreen_score_percentageContent--5L_q6 .player__score_correctText--h_UBr {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.player__scoreScreen_score_percentageContent--5L_q6 .player__score_percentageChar--1VfN3 {
+  font-size: 2rem;
+  margin-left: 1.2px;
+}
+.player__scoreScreen_score_percentageContent--5L_q6 .player__score_percentageValue--2V8Po {
+  font-size: 3.375rem;
+  line-height: 68px;
+  font-weight: 700;
+  margin-right: 1.2px;
+}
+.player__scoreScreen_score_percentageContent--5L_q6 .player__score_correctText--h_UBr {
+  font-weight: 700;
+  width: 100%;
+}
+
+.player__itemBasedScoreScreen_score_accuracyText--e7ERz {
+  margin-top: 2rem;
+}
+
+.player__scoreScreen_teacherMarkPendingNotice--1e4Wl {
+  margin-top: 56px;
+}
+.player__scoreScreen_teacherMarkPendingNotice--1e4Wl .player__scoreStatus--fSK3O {
+  vertical-align: text-bottom;
+  padding-right: 8px;
+  line-height: 1;
+}
+
+/* cover and score screen background border */
+.player__coverScreen_container--c1EID,
+.player__scoreScreen_container--3Vjlg,
+.player__timedPlaylistEndScreen_container--2mrgS {
+  background: linear-gradient(135deg, var(--coverScoreScreen_backgroundGradient_1), var(--coverScoreScreen_backgroundGradient_2));
+}
+
+.player__coverScreen_itemBased--_8fkf.player__itemBased_challenge--pcogn,
+.player__scoreScreen_itemBased--2TXOk.player__itemBased_challenge--pcogn {
+  background: linear-gradient(135deg, var(--coverScoreScreen_challenge_backgroundGradient_1), var(--coverScoreScreen_challenge_backgroundGradient_2));
+}
+
+.player__coverScreen--1gbqD,
+.player__scoreScreen--28djo,
+.player__timedPlaylistEndScreen--3WULo {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  padding: 16px;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+  /* scrollbars styling */
+  scrollbar-width: thin;
+  scrollbar-color: #c7c7c7 #f1f1f1;
+}
+.player__coverScreen--1gbqD p,
+.player__scoreScreen--28djo p,
+.player__timedPlaylistEndScreen--3WULo p {
+  margin: 0;
+}
+@media only screen and (min-width: 650px) {
+  .player__coverScreen--1gbqD,
+  .player__scoreScreen--28djo,
+  .player__timedPlaylistEndScreen--3WULo {
+    width: 618px;
+  }
+}
+.player__coverScreen--1gbqD::-webkit-scrollbar,
+.player__scoreScreen--28djo::-webkit-scrollbar,
+.player__timedPlaylistEndScreen--3WULo::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f1f1f1;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.player__coverScreen--1gbqD::-webkit-scrollbar-thumb,
+.player__scoreScreen--28djo::-webkit-scrollbar-thumb,
+.player__timedPlaylistEndScreen--3WULo::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+  border-radius: 8px;
+}
+@media (hover: hover) {
+  .player__coverScreen--1gbqD::-webkit-scrollbar-thumb:hover,
+  .player__scoreScreen--28djo::-webkit-scrollbar-thumb:hover,
+  .player__timedPlaylistEndScreen--3WULo::-webkit-scrollbar-thumb:hover {
+    background-color: #7d7d7d;
+  }
+}
+.player__coverScreen--1gbqD::-webkit-scrollbar-button, .player__coverScreen--1gbqD::-webkit-scrollbar-track, .player__coverScreen--1gbqD::-webkit-scrollbar-track-piece,
+.player__scoreScreen--28djo::-webkit-scrollbar-button,
+.player__scoreScreen--28djo::-webkit-scrollbar-track,
+.player__scoreScreen--28djo::-webkit-scrollbar-track-piece,
+.player__timedPlaylistEndScreen--3WULo::-webkit-scrollbar-button,
+.player__timedPlaylistEndScreen--3WULo::-webkit-scrollbar-track,
+.player__timedPlaylistEndScreen--3WULo::-webkit-scrollbar-track-piece {
+  display: none;
+}
+
+.player__timedPlaylistEndScreen--3WULo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ItemBased Cover styles */
+.player__coverScreen_itemBased--_8fkf .player__coverScreen--1gbqD {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.player__coverScreen_activitySetTitle--15eZa,
+.player__scoreScreen_activitySetTitle--3YcGd,
+.player__itemBased_practice--1JKBp .player__coverScreen_activityModeLabel--2sJBJ,
+.player__itemBased_test--LMtuu .player__coverScreen_activityModeLabel--2sJBJ,
+.player__itemBased_challenge--pcogn .player__coverScreen_activityModeLabel--2sJBJ {
+  margin: 16px auto 0;
+}
+
+.player__coverScreen_activitySetTitle--15eZa,
+.player__scoreScreen_activitySetTitle--3YcGd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.player__coverScreen_itemBased--_8fkf .player__coverScreen_activitySetTitle--15eZa {
+  padding: 0 0 8px;
+}
+.player__coverScreen_itemBased--_8fkf .player__coverScreen_activitySetTitle--15eZa > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 68px;
+}
+
+.player__scoreScreen_completionText--3UlCf p,
+.player__scoreScreen_activitySetTitle--3YcGd p {
+  margin-bottom: 0;
+}
+
+.player__scoreScreen_reward--gCUi5 {
+  margin: 16px 0 0;
+}
+
+/* itemBased Teacher Review Mode label */
+.player__itemBased_reviewModeLabel--3T5VX {
+  width: 100%;
+  background-color: var(--coverScoreScreen_reviewMode_background);
+  color: var(--coverScoreScreen_reviewMode_text);
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 4px 0;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.player__loader--1fQNI {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 24px;
+  width: auto;
+  background-color: white;
+  border: 2px solid #fff;
+  margin: 0;
+  z-index: 4;
+  position: fixed;
+  top: var(--rcfPlayer_fixedPositionOffset_top);
+  right: var(--rcfPlayer_fixedPositionOffset_right);
+  bottom: var(--rcfPlayer_fixedPositionOffset_bottom);
+  left: var(--rcfPlayer_fixedPositionOffset_left);
+}
+.player__windowed--1GbfZ .player__loader--1fQNI {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin: 0;
+}
+.player__loader--1fQNI .player__loader_block--2YWT- {
+  height: 100%;
+  max-height: 64px;
+  aspect-ratio: 1/1;
+  display: block;
+  border-radius: 50%;
+  background: conic-gradient(#fff 0%, var(--primary));
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 8px), #000 0);
+  animation: player__s3--2YZH3 1s infinite linear;
+}
+.player__loader--1fQNI .player__loader_title--1Iydd {
+  display: block;
+  color: #000;
+}
+@keyframes player__s3--2YZH3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.player__fontSizeControlGroup--3t47_,
+.player__controlFontSizeMenuButton--3EAyc,
+.player__changeFontSizeButton--3tg2k {
+  position: relative;
+}
+
+.player__fontSizeControlGroup--3t47_ {
+  display: var(--rcfPlayer-fontSizeControl-display, none);
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  height: 56px;
+  position: absolute;
+  right: 8px;
+  z-index: 12;
+}
+
+.player__controlFontSizeMenuButton--3EAyc {
+  width: 40px;
+  height: 40px;
+  border-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player__controlFontSizeMenuButton--3EAyc svg {
+  position: absolute;
+  top: unset;
+  right: unset;
+  bottom: unset;
+  left: unset;
+}
+.player__fontSizeControlMenu_active--1jB1G .player__controlFontSizeMenuButton--3EAyc {
+  border-color: var(--ux-color-primary-pressed);
+}
+
+.player__fontSizeControlMenu--7CQSS {
+  --font-size-control-menu-width: 173px;
+  --font-size-control-menu-height: 49px;
+  display: none;
+  background: var(--ux-surface-container);
+  border: 1px solid var(--ux-surface-container-border-light);
+  border-radius: var(--button_border-radius);
+  width: auto;
+  width: var(--font-size-control-menu-width);
+  height: var(--font-size-control-menu-height);
+  padding: 8px;
+  position: absolute;
+  bottom: calc(var(--font-size-control-menu-height) * -1 + 2px);
+  z-index: 2;
+}
+.player__fontSizeControlMenu_active--1jB1G .player__fontSizeControlMenu--7CQSS {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.player__changeFontSizeButton--3tg2k {
+  width: 35px;
+  height: 33px;
+}
+.player__changeFontSizeButton--3tg2k:focus:not(:disabled) {
+  background: var(--primary_hover);
+  border-color: var(--primary_border_hover);
+}
+.player__changeFontSizeButton--3tg2k:focus:not(:disabled) path {
+  fill: var(--primary_content);
+}
+.player__changeFontSizeButton--3tg2k:hover:not(:disabled) {
+  background: var(--primary_hover);
+  border-color: var(--primary_border_hover);
+}
+.player__changeFontSizeButton--3tg2k:hover:not(:disabled) path {
+  fill: var(--primary_content);
+}
+
+.player__changeFontSizeButton_active--34P8v {
+  background: var(--ux-item-active, var(--icon_hover));
+}
+
+
+
+/*# sourceMappingURL=player.css.map*/

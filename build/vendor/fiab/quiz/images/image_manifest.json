@@ -1,0 +1,769 @@
+{
+    "compressed": [
+        {
+            "id": "audio_prompt_icon",
+            "path": "images/compressed/common/audio_prompt_icon.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "bg_curtains_",
+            "path": "images/compressed/common/bg_curtains_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "bg_floor_",
+            "path": "images/compressed/common/bg_floor_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "bg_stage_",
+            "path": "images/compressed/common/bg_stage_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "bg_stage_player_base_stage_ring_",
+            "path": "images/compressed/common/bg_stage_player_base_stage_ring_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "bg_stage_wall_",
+            "path": "images/compressed/common/bg_stage_wall_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "black",
+            "path": "images/compressed/common/black.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "button",
+            "path": "images/compressed/common/button.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "button_over",
+            "path": "images/compressed/common/button_over.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "charselect_icon_bear_",
+            "path": "images/compressed/common/charselect_icon_bear_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "charselect_icon_elephant_",
+            "path": "images/compressed/common/charselect_icon_elephant_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "charselect_icon_lemur_",
+            "path": "images/compressed/common/charselect_icon_lemur_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "charselect_icon_owl_",
+            "path": "images/compressed/common/charselect_icon_owl_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "charselect_icon_penguin_",
+            "path": "images/compressed/common/charselect_icon_penguin_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "charselect_icon_rabbit_",
+            "path": "images/compressed/common/charselect_icon_rabbit_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "circle_2",
+            "path": "images/compressed/common/circle_2.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "circle_3",
+            "path": "images/compressed/common/circle_3.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "circle_4",
+            "path": "images/compressed/common/circle_4.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "confirm_button",
+            "path": "images/compressed/common/confirm_button.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "confirm_click",
+            "path": "images/compressed/common/confirm_click.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "fade",
+            "path": "images/compressed/common/fade.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "gunge_fill",
+            "path": "images/compressed/common/gunge_fill.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "left_arrow_active_",
+            "path": "images/compressed/common/left_arrow_active_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "left_arrow_press_",
+            "path": "images/compressed/common/left_arrow_press_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_bg_curtains_v2_",
+            "path": "images/compressed/common/macmil_gungegame_bg_curtains_v2_.jpg",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_bg_gunge_tank_contestant_box_back_",
+            "path": "images/compressed/common/macmil_gungegame_bg_gunge_tank_contestant_box_back_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_bg_gunge_tank_contestant_box_front_",
+            "path": "images/compressed/common/macmil_gungegame_bg_gunge_tank_contestant_box_front_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_bg_gunge_tank_gunge_base_",
+            "path": "images/compressed/common/macmil_gungegame_bg_gunge_tank_gunge_base_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_bg_gunge_tank_gunge_spout_fill_",
+            "path": "images/compressed/common/macmil_gungegame_bg_gunge_tank_gunge_spout_fill_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_bg_top_gunge_tank_front-2_",
+            "path": "images/compressed/common/macmil_gungegame_bg_top_gunge_tank_front-2_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_bg_top_gunge_tank_front_",
+            "path": "images/compressed/common/macmil_gungegame_bg_top_gunge_tank_front_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_confetti_partcle_",
+            "path": "images/compressed/common/macmil_gungegame_confetti_partcle_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_confetti_partcle_blue",
+            "path": "images/compressed/common/macmil_gungegame_confetti_partcle_blue.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_confetti_partcle_green",
+            "path": "images/compressed/common/macmil_gungegame_confetti_partcle_green.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_confetti_partcle_orange",
+            "path": "images/compressed/common/macmil_gungegame_confetti_partcle_orange.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_confetti_partcle_pink",
+            "path": "images/compressed/common/macmil_gungegame_confetti_partcle_pink.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_confetti_partcle_yellow",
+            "path": "images/compressed/common/macmil_gungegame_confetti_partcle_yellow.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_activity_spinner_base_back_",
+            "path": "images/compressed/common/macmil_gungegame_ui_activity_spinner_base_back_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_activity_spinner_base_questionforfeit_",
+            "path": "images/compressed/common/macmil_gungegame_ui_activity_spinner_base_questionforfeit_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_answer_correct_tick_",
+            "path": "images/compressed/common/macmil_gungegame_ui_answer_correct_tick_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_answer_incorrect_cross_",
+            "path": "images/compressed/common/macmil_gungegame_ui_answer_incorrect_cross_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_back_button_active_",
+            "path": "images/compressed/common/macmil_gungegame_ui_back_button_active_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_back_button_press_",
+            "path": "images/compressed/common/macmil_gungegame_ui_back_button_press_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_buzzer_blue_",
+            "path": "images/compressed/common/macmil_gungegame_ui_buzzer_blue_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_buzzer_green_",
+            "path": "images/compressed/common/macmil_gungegame_ui_buzzer_green_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_buzzer_purple_",
+            "path": "images/compressed/common/macmil_gungegame_ui_buzzer_purple_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_buzzer_yellow_",
+            "path": "images/compressed/common/macmil_gungegame_ui_buzzer_yellow_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_genric_panel_",
+            "path": "images/compressed/common/macmil_gungegame_ui_genric_panel_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_instruction_panel_wide_v2_",
+            "path": "images/compressed/common/macmil_gungegame_ui_instruction_panel_wide_v2_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_no_button_active_",
+            "path": "images/compressed/common/macmil_gungegame_ui_no_button_active_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_no_button_press_",
+            "path": "images/compressed/common/macmil_gungegame_ui_no_button_press_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_player_number_1_",
+            "path": "images/compressed/common/macmil_gungegame_ui_player_number_1_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_player_number_2_",
+            "path": "images/compressed/common/macmil_gungegame_ui_player_number_2_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_player_number_3_",
+            "path": "images/compressed/common/macmil_gungegame_ui_player_number_3_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_player_number_4_",
+            "path": "images/compressed/common/macmil_gungegame_ui_player_number_4_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_scoreboard_blue_",
+            "path": "images/compressed/common/macmil_gungegame_ui_scoreboard_blue_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_scoreboard_green_",
+            "path": "images/compressed/common/macmil_gungegame_ui_scoreboard_green_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_scoreboard_purple_",
+            "path": "images/compressed/common/macmil_gungegame_ui_scoreboard_purple_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_scoreboard_yellow_",
+            "path": "images/compressed/common/macmil_gungegame_ui_scoreboard_yellow_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_yes_button_active_",
+            "path": "images/compressed/common/macmil_gungegame_ui_yes_button_active_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "macmil_gungegame_ui_yes_button_press_",
+            "path": "images/compressed/common/macmil_gungegame_ui_yes_button_press_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "option_1",
+            "path": "images/compressed/common/option_1.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "option_2",
+            "path": "images/compressed/common/option_2.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "option_3",
+            "path": "images/compressed/common/option_3.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "option_4",
+            "path": "images/compressed/common/option_4.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "panel_glow",
+            "path": "images/compressed/common/panel_glow.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "panel_macmil_gungegame_ui_answer_panel_1_",
+            "path": "images/compressed/common/panel_macmil_gungegame_ui_answer_panel_1_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "panel_macmil_gungegame_ui_answer_panel_2_",
+            "path": "images/compressed/common/panel_macmil_gungegame_ui_answer_panel_2_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "panel_macmil_gungegame_ui_answer_panel_3_",
+            "path": "images/compressed/common/panel_macmil_gungegame_ui_answer_panel_3_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "panel_macmil_gungegame_ui_answer_panel_4_",
+            "path": "images/compressed/common/panel_macmil_gungegame_ui_answer_panel_4_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "particle_sparkle",
+            "path": "images/compressed/common/particle_sparkle.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "prompt_panel_large",
+            "path": "images/compressed/common/prompt_panel_large.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "prompt_panel_short",
+            "path": "images/compressed/common/prompt_panel_short.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "quiz_portrait_bg_gradient_",
+            "path": "images/compressed/common/quiz_portrait_bg_gradient_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "restart_button",
+            "path": "images/compressed/common/restart_button.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "restart_button_press",
+            "path": "images/compressed/common/restart_button_press.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "restart_icon",
+            "path": "images/compressed/common/restart_icon.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "right_arrow_active_",
+            "path": "images/compressed/common/right_arrow_active_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "right_arrow_press_",
+            "path": "images/compressed/common/right_arrow_press_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "slot",
+            "path": "images/compressed/common/slot.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_arrow_",
+            "path": "images/compressed/common/spinner_arrow_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_centre_cap_",
+            "path": "images/compressed/common/spinner_centre_cap_.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_highlight_1",
+            "path": "images/compressed/common/spinner_highlight_1.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_highlight_2",
+            "path": "images/compressed/common/spinner_highlight_2.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_highlight_3",
+            "path": "images/compressed/common/spinner_highlight_3.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_highlight_4",
+            "path": "images/compressed/common/spinner_highlight_4.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_highlight_5",
+            "path": "images/compressed/common/spinner_highlight_5.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_highlight_6",
+            "path": "images/compressed/common/spinner_highlight_6.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_question",
+            "path": "images/compressed/common/spinner_question.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "spinner_slime",
+            "path": "images/compressed/common/spinner_slime.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "game_show_game_bg",
+            "path": "images/compressed/skin/game_show/game_bg.png",
+            "classes": [
+                "skin",
+                "game_show"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "game_show_panel_macmil_gungegame_ui_answer_panel_1_",
+            "path": "images/compressed/skin/game_show/panel_macmil_gungegame_ui_answer_panel_1_.png",
+            "classes": [
+                "skin",
+                "game_show"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "game_show_panel_macmil_gungegame_ui_answer_panel_2_",
+            "path": "images/compressed/skin/game_show/panel_macmil_gungegame_ui_answer_panel_2_.png",
+            "classes": [
+                "skin",
+                "game_show"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "game_show_panel_macmil_gungegame_ui_answer_panel_3_",
+            "path": "images/compressed/skin/game_show/panel_macmil_gungegame_ui_answer_panel_3_.png",
+            "classes": [
+                "skin",
+                "game_show"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "game_show_panel_macmil_gungegame_ui_answer_panel_4_",
+            "path": "images/compressed/skin/game_show/panel_macmil_gungegame_ui_answer_panel_4_.png",
+            "classes": [
+                "skin",
+                "game_show"
+            ],
+            "parentImage": null
+        }
+    ]
+}

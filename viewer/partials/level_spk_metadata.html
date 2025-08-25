@@ -1,0 +1,59 @@
+<br>
+<h2>SPK specific metadata</h2>
+<div class="spkMetadata">
+    <div>
+		<label for="meta-data-show-device-orientation">Device Orientation</label>
+		<input id="meta-data-show-device-orientation" type="checkbox" class="input-xxlarge" name="meta-data-show-device-orientation" ng-model="metaData.showOrientationDeviceNotification"><span ng-click="metaData.showOrientationDeviceNotification=!metaData.showOrientationDeviceNotification">&#160;Show orientation device notification?</span>
+        <label for="meta-data-terms-conditions">Terms And Conditions URL</label>
+        <input id="meta-data-terms-conditions" type="text" ng-model="metaData.termsAndConditions">
+        <label for="meta-data-credits">Credits URL</label>
+        <input id="meta-data-credits" type="text" ng-model="metaData.credits">
+        <label for="meta-data-backgroundImage">Background Image</label>
+        <input class="imageChooser" id="meta-data-backgroundImage" placeholder="choose a background image" type="text" name="spk-meta-data-backgroundImage" ng-model="metaData.backgroundImage" READONLY>
+        <span class="viewerSingleButton" ng-click="chooseBackgroundImage(metaData.backgroundImage)">Choose</span>
+        <img ng-show="!!metaData.backgroundImage" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.backgroundImage}}">
+        <label for="meta-data-background-color">Background Color</label>
+        <input class="splitDisplay" id="meta-data-background-color" type="text" ng-model="metaData.backgroundColor"><div class="colorDisplay" style="background-color: {{metaData.backgroundColor}};">&#160;</div>
+        <label for="meta-data-activitiesImage">Activities Image</label>
+        <input class="imageChooser" id="meta-data-activitiesImage" placeholder="choose an activity image" type="text" name="spk-meta-data-activitiesImage" ng-model="metaData.activitiesImage" READONLY>
+        <span class="viewerSingleButton" ng-click="chooseActivitiesImage(metaData.activitiesImage)">Choose</span>
+        <img ng-show="!!metaData.activitiesImage" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.activitiesImage}}">
+        <label for="meta-data-logoImage">Logo Image</label>
+        <input class="imageChooser" id="meta-data-logoImage" placeholder="choose a logo image" type="text" name="spk-meta-data-logo" ng-model="metaData.logoImage" READONLY>
+        <span class="viewerSingleButton" ng-click="chooseLogoImage(metaData.logoImage)">Choose</span>
+        <img ng-show="!!metaData.logoImage" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.logoImage}}">
+        <label for="meta-data-coverImage">Cover Image</label>
+        <input class="imageChooser" id="meta-data-coverImage" placeholder="choose a cover image" type="text" name="spk-meta-data-cover" ng-model="metaData.coverImage" READONLY>
+        <span class="viewerSingleButton" ng-click="chooseCoverImage(metaData.coverImage)">Choose</span>
+        <img ng-show="!!metaData.coverImage" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.coverImage}}">
+        <label for="meta-data-scoreImage">Score Image</label>
+        <input class="imageChooser" id="meta-data-scoreImage" placeholder="choose a score image" type="text" name="spk-meta-data-score" ng-model="metaData.scoreImage" READONLY>
+        <span class="viewerSingleButton" ng-click="chooseScoreImage(metaData.scoreImage)">Choose</span>
+        <img ng-show="!!metaData.scoreImage" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.scoreImage}}">
+        <label for="meta-data-scoreBackground">Score Background</label>
+        <input class="imageChooser" id="meta-data-scoreBackground" placeholder="choose a score image" type="text" name="spk-meta-data-scoreBackground" ng-model="metaData.scoreBackground" READONLY>
+        <span class="viewerSingleButton" ng-click="chooseScoreBackgroundImage(metaData.scoreBackground)">Choose</span>
+        <img ng-show="!!metaData.scoreBackground" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.scoreBackground}}">
+    </div>
+    <br>
+    <h3>Categories</h3>
+    <div ng-repeat="category in metaData.activityCategories track by $index">
+        <label>Category {{$index}}</label>
+        <label for="meta-data-category-name-{{$index}}">Name</label>
+        <input id="meta-data-category-name-{{$index}}" type="text" name="meta-data-category-name-{{$index}}" ng-model="metaData.activityCategories[$index].name">
+        <label for="meta-data-category-main-{{$index}}">Primary Category</label>
+        <input id="meta-data-category-main-{{$index}}" type="radio" name="meta-data-category-name-{{$index}}" ng-model="metaData.mainCategory" ng-value="metaData.activityCategories[$index].name">
+        <label for="meta-data-category-icon-{{$index}}">Icon</label>
+        <input class="imageChooser" id="meta-data-category-icon-{{$index}}" placeholder="choose an icon image" type="text" name="meta-data-category-icon-{{$index}}" ng-model="metaData.activityCategories[$index].icon" READONLY>
+        <span class="viewerSingleButton" ng-click="chooseCategoryImage(category.icon, $index)">Choose</span>
+        <img ng-show="!!metaData.activityCategories[$index].icon" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.activityCategories[$index].icon}}">
+        <label for="meta-data-category-background-{{$index}}">Background Image</label>
+        <input class="imageChooser" id="meta-data-category-background-{{$index}}" placeholder="choose a category background image" type="text" name="spk-meta-data-category-background-{{$index}}" ng-model="metaData.activityCategories[$index].background" READONLY>
+        <span class="viewerSingleButton" ng-click="chooseCategoryBackgroundImage(category.background, $index)">Choose</span>
+        <img ng-show="!!metaData.activityCategories[$index].background" ng-src="{{levelAssetsUrl}}/Level_{{currentLevel}}/assets/images/{{metaData.activityCategories[$index].background}}">
+        <br>
+        <span class="viewerSingleButton" ng-click="metaData.activityCategories.splice($index, 1)">Remove Category</span>
+    </div>
+    <br>
+    <span class="viewerSingleButton" ng-click="metaData.activityCategories.push({name: '', icon: ''})">Add Category</span>
+</div>

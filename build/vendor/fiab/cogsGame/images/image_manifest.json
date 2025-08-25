@@ -1,0 +1,1294 @@
+{
+    "compressed": [
+        {
+            "id": "audio_prompt_icon",
+            "path": "images/compressed/common/audio_prompt_icon.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "fade",
+            "path": "images/compressed/common/fade.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "handle",
+            "path": "images/compressed/common/handle.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "image_frame",
+            "path": "images/compressed/common/image_frame.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "loading_spinner",
+            "path": "images/compressed/common/loading_spinner.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "particle_sparkle",
+            "path": "images/compressed/common/particle_sparkle.png",
+            "classes": [
+                "common"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_1_player",
+            "path": "images/compressed/skin/neon/1_player.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_2_player",
+            "path": "images/compressed/skin/neon/2_player.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_3_player",
+            "path": "images/compressed/skin/neon/3_player.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_4_player",
+            "path": "images/compressed/skin/neon/4_player.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_animation_split_centre_1",
+            "path": "images/compressed/skin/neon/animation_split_centre_1.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_animation_split_centre_2",
+            "path": "images/compressed/skin/neon/animation_split_centre_2.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_animation_split_centre_3",
+            "path": "images/compressed/skin/neon/animation_split_centre_3.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_animation_split_centre_4",
+            "path": "images/compressed/skin/neon/animation_split_centre_4.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_animation_split_edge_1",
+            "path": "images/compressed/skin/neon/animation_split_edge_1.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_animation_split_edge_2",
+            "path": "images/compressed/skin/neon/animation_split_edge_2.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_animation_split_edge_3",
+            "path": "images/compressed/skin/neon/animation_split_edge_3.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_animation_split_edge_4",
+            "path": "images/compressed/skin/neon/animation_split_edge_4.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_announce_panel",
+            "path": "images/compressed/skin/neon/announce_panel.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_avatar_holder",
+            "path": "images/compressed/skin/neon/avatar_holder.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_back_button",
+            "path": "images/compressed/skin/neon/back_button.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_back_button_hover",
+            "path": "images/compressed/skin/neon/back_button_hover.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_back_button_press",
+            "path": "images/compressed/skin/neon/back_button_press.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_blue",
+            "path": "images/compressed/skin/neon/blue.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_button_next",
+            "path": "images/compressed/skin/neon/button_next.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_button_next_hover",
+            "path": "images/compressed/skin/neon/button_next_hover.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_button_next_press",
+            "path": "images/compressed/skin/neon/button_next_press.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_button_previous",
+            "path": "images/compressed/skin/neon/button_previous.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_button_previous_hover",
+            "path": "images/compressed/skin/neon/button_previous_hover.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_button_previous_press",
+            "path": "images/compressed/skin/neon/button_previous_press.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_cog_base",
+            "path": "images/compressed/skin/neon/cog_base.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_cog_edge",
+            "path": "images/compressed/skin/neon/cog_edge.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_cog_navbar_neon",
+            "path": "images/compressed/skin/neon/cog_navbar_neon.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_end_platform",
+            "path": "images/compressed/skin/neon/end_platform.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_fixed_base_neon",
+            "path": "images/compressed/skin/neon/fixed_base_neon.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_frame_panel_solid",
+            "path": "images/compressed/skin/neon/frame_panel_solid.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_frame_solid_fade",
+            "path": "images/compressed/skin/neon/frame_solid_fade.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_game_bg",
+            "path": "images/compressed/skin/neon/game_bg.jpg",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_green",
+            "path": "images/compressed/skin/neon/green.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_half_base_neon",
+            "path": "images/compressed/skin/neon/half_base_neon.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_life_icon",
+            "path": "images/compressed/skin/neon/life_icon.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_life_lost_icon",
+            "path": "images/compressed/skin/neon/life_lost_icon.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_mid_base_neon",
+            "path": "images/compressed/skin/neon/mid_base_neon.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_navbar_button_active",
+            "path": "images/compressed/skin/neon/navbar_button_active.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_navbar_button_inactive",
+            "path": "images/compressed/skin/neon/navbar_button_inactive.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_navbar_cog",
+            "path": "images/compressed/skin/neon/navbar_cog.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_navbar_fixed",
+            "path": "images/compressed/skin/neon/navbar_fixed.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_navbar_handle",
+            "path": "images/compressed/skin/neon/navbar_handle.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_ok_button",
+            "path": "images/compressed/skin/neon/ok_button.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_ok_button_hover",
+            "path": "images/compressed/skin/neon/ok_button_hover.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_ok_button_press",
+            "path": "images/compressed/skin/neon/ok_button_press.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_orange",
+            "path": "images/compressed/skin/neon/orange.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_panel_full",
+            "path": "images/compressed/skin/neon/panel_full.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_panel_short",
+            "path": "images/compressed/skin/neon/panel_short.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_panel_tiny",
+            "path": "images/compressed/skin/neon/panel_tiny.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_particle_1",
+            "path": "images/compressed/skin/neon/particle_1.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_particle_2",
+            "path": "images/compressed/skin/neon/particle_2.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_particle_3",
+            "path": "images/compressed/skin/neon/particle_3.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_particle_4",
+            "path": "images/compressed/skin/neon/particle_4.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_particle_5",
+            "path": "images/compressed/skin/neon/particle_5.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_particle_6",
+            "path": "images/compressed/skin/neon/particle_6.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_play_button",
+            "path": "images/compressed/skin/neon/play_button.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_podium",
+            "path": "images/compressed/skin/neon/podium.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_purple",
+            "path": "images/compressed/skin/neon/purple.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_red",
+            "path": "images/compressed/skin/neon/red.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_result_divider_h",
+            "path": "images/compressed/skin/neon/result_divider_h.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_result_divider_v",
+            "path": "images/compressed/skin/neon/result_divider_v.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_result_panel",
+            "path": "images/compressed/skin/neon/result_panel.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_result_points",
+            "path": "images/compressed/skin/neon/result_points.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_star_plane_1",
+            "path": "images/compressed/skin/neon/star_plane_1.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_star_plane_2",
+            "path": "images/compressed/skin/neon/star_plane_2.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_star_plane_3",
+            "path": "images/compressed/skin/neon/star_plane_3.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "neon_yellow",
+            "path": "images/compressed/skin/neon/yellow.png",
+            "classes": [
+                "skin",
+                "neon"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_1_player",
+            "path": "images/compressed/skin/snake/1_player.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_2_player",
+            "path": "images/compressed/skin/snake/2_player.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_3_player",
+            "path": "images/compressed/skin/snake/3_player.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_4_player",
+            "path": "images/compressed/skin/snake/4_player.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_animation_split_centre_1",
+            "path": "images/compressed/skin/snake/animation_split_centre_1.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_animation_split_centre_2",
+            "path": "images/compressed/skin/snake/animation_split_centre_2.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_animation_split_centre_3",
+            "path": "images/compressed/skin/snake/animation_split_centre_3.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_animation_split_centre_4",
+            "path": "images/compressed/skin/snake/animation_split_centre_4.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_animation_split_edge_1",
+            "path": "images/compressed/skin/snake/animation_split_edge_1.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_animation_split_edge_2",
+            "path": "images/compressed/skin/snake/animation_split_edge_2.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_animation_split_edge_3",
+            "path": "images/compressed/skin/snake/animation_split_edge_3.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_animation_split_edge_4",
+            "path": "images/compressed/skin/snake/animation_split_edge_4.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_announce_panel",
+            "path": "images/compressed/skin/snake/announce_panel.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_avatar_holder",
+            "path": "images/compressed/skin/snake/avatar_holder.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_back_button",
+            "path": "images/compressed/skin/snake/back_button.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_back_button_hover",
+            "path": "images/compressed/skin/snake/back_button_hover.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_back_button_press",
+            "path": "images/compressed/skin/snake/back_button_press.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_base_large_none",
+            "path": "images/compressed/skin/snake/base_large_none.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_base_med_none",
+            "path": "images/compressed/skin/snake/base_med_none.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_base_small_none",
+            "path": "images/compressed/skin/snake/base_small_none.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_blue",
+            "path": "images/compressed/skin/snake/blue.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_button_next",
+            "path": "images/compressed/skin/snake/button_next.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_button_next_hover",
+            "path": "images/compressed/skin/snake/button_next_hover.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_button_next_press",
+            "path": "images/compressed/skin/snake/button_next_press.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_button_previous",
+            "path": "images/compressed/skin/snake/button_previous.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_button_previous_hover",
+            "path": "images/compressed/skin/snake/button_previous_hover.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_button_previous_press",
+            "path": "images/compressed/skin/snake/button_previous_press.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_cog_base",
+            "path": "images/compressed/skin/snake/cog_base.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_cog_edge",
+            "path": "images/compressed/skin/snake/cog_edge.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_cog_navbar_neon",
+            "path": "images/compressed/skin/snake/cog_navbar_neon.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_fixed_base_neon",
+            "path": "images/compressed/skin/snake/fixed_base_neon.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_frame_panel_solid",
+            "path": "images/compressed/skin/snake/frame_panel_solid.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_frame_solid_fade",
+            "path": "images/compressed/skin/snake/frame_solid_fade.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_game_bg",
+            "path": "images/compressed/skin/snake/game_bg.jpg",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_green",
+            "path": "images/compressed/skin/snake/green.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_half_base_neon",
+            "path": "images/compressed/skin/snake/half_base_neon.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_life_icon",
+            "path": "images/compressed/skin/snake/life_icon.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_life_lost_icon",
+            "path": "images/compressed/skin/snake/life_lost_icon.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_macmil_senbuild_snake_head",
+            "path": "images/compressed/skin/snake/macmil_senbuild_snake_head.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_macmil_senbuild_snake_snake_body_tile",
+            "path": "images/compressed/skin/snake/macmil_senbuild_snake_snake_body_tile.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_mid_base_neon",
+            "path": "images/compressed/skin/snake/mid_base_neon.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_navbar_button_active",
+            "path": "images/compressed/skin/snake/navbar_button_active.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_navbar_button_inactive",
+            "path": "images/compressed/skin/snake/navbar_button_inactive.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_navbar_cog",
+            "path": "images/compressed/skin/snake/navbar_cog.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_navbar_fixed",
+            "path": "images/compressed/skin/snake/navbar_fixed.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_navbar_handle",
+            "path": "images/compressed/skin/snake/navbar_handle.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_ok_button",
+            "path": "images/compressed/skin/snake/ok_button.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_ok_button_hover",
+            "path": "images/compressed/skin/snake/ok_button_hover.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_ok_button_press",
+            "path": "images/compressed/skin/snake/ok_button_press.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_orange",
+            "path": "images/compressed/skin/snake/orange.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_panel_full",
+            "path": "images/compressed/skin/snake/panel_full.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_panel_short",
+            "path": "images/compressed/skin/snake/panel_short.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_panel_tiny",
+            "path": "images/compressed/skin/snake/panel_tiny.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_particle_1",
+            "path": "images/compressed/skin/snake/particle_1.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_particle_2",
+            "path": "images/compressed/skin/snake/particle_2.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_particle_3",
+            "path": "images/compressed/skin/snake/particle_3.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_particle_4",
+            "path": "images/compressed/skin/snake/particle_4.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_particle_5",
+            "path": "images/compressed/skin/snake/particle_5.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_particle_6",
+            "path": "images/compressed/skin/snake/particle_6.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_play_button",
+            "path": "images/compressed/skin/snake/play_button.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_play_button_hover",
+            "path": "images/compressed/skin/snake/play_button_hover.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_play_button_press",
+            "path": "images/compressed/skin/snake/play_button_press.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_podium",
+            "path": "images/compressed/skin/snake/podium.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_purple",
+            "path": "images/compressed/skin/snake/purple.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_red",
+            "path": "images/compressed/skin/snake/red.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_result_divider_h",
+            "path": "images/compressed/skin/snake/result_divider_h.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_result_divider_v",
+            "path": "images/compressed/skin/snake/result_divider_v.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_result_lives",
+            "path": "images/compressed/skin/snake/result_lives.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_result_panel",
+            "path": "images/compressed/skin/snake/result_panel.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_result_points",
+            "path": "images/compressed/skin/snake/result_points.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        },
+        {
+            "id": "snake_yellow",
+            "path": "images/compressed/skin/snake/yellow.png",
+            "classes": [
+                "skin",
+                "snake"
+            ],
+            "parentImage": null
+        }
+    ]
+}

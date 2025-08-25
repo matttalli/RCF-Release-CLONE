@@ -1,0 +1,160 @@
+
+macmill_gungegame_bear.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bear_
+  rotate: false
+  xy: 1, 16
+  size: 194, 238
+  orig: 194, 238
+  offset: 0, 0
+  index: -1
+bear_gunge_head_
+  rotate: false
+  xy: 420, 137
+  size: 59, 27
+  orig: 59, 27
+  offset: 0, 0
+  index: -1
+bear_gunge_leg_l_
+  rotate: false
+  xy: 482, 168
+  size: 27, 40
+  orig: 27, 40
+  offset: 0, 0
+  index: -1
+bear_gunge_leg_r_
+  rotate: false
+  xy: 364, 2
+  size: 33, 36
+  orig: 33, 36
+  offset: 0, 0
+  index: -1
+bear_gunge_nose_
+  rotate: false
+  xy: 339, 116
+  size: 18, 14
+  orig: 18, 14
+  offset: 0, 0
+  index: -1
+bear_gunge_shoulder_
+  rotate: false
+  xy: 400, 7
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_arm_upper_l_
+  rotate: false
+  xy: 423, 54
+  size: 43, 80
+  orig: 43, 80
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_arm_upper_r_
+  rotate: true
+  xy: 432, 8
+  size: 43, 80
+  orig: 43, 80
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_blink_
+  rotate: true
+  xy: 469, 80
+  size: 54, 27
+  orig: 54, 27
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_body_
+  rotate: false
+  xy: 198, 114
+  size: 138, 140
+  orig: 138, 140
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_ear_l_
+  rotate: false
+  xy: 482, 141
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_ear_r_
+  rotate: true
+  xy: 490, 56
+  size: 21, 24
+  orig: 21, 24
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_half_close_
+  rotate: true
+  xy: 515, 1
+  size: 52, 24
+  orig: 52, 24
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_head_
+  rotate: true
+  xy: 285, 8
+  size: 103, 76
+  orig: 103, 76
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_leg_l_
+  rotate: false
+  xy: 364, 41
+  size: 56, 89
+  orig: 56, 89
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_leg_r_
+  rotate: false
+  xy: 420, 167
+  size: 59, 87
+  orig: 59, 87
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_lower_arm_l_
+  rotate: false
+  xy: 242, 4
+  size: 40, 107
+  orig: 40, 110
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_lower_arm_r_
+  rotate: true
+  xy: 198, 3
+  size: 108, 41
+  orig: 108, 41
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_muzzle_
+  rotate: false
+  xy: 482, 211
+  size: 39, 43
+  orig: 39, 43
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_neck_
+  rotate: true
+  xy: 339, 133
+  size: 121, 78
+  orig: 121, 78
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_nose_
+  rotate: true
+  xy: 469, 55
+  size: 22, 18
+  orig: 22, 18
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_bear_pupil_
+  rotate: false
+  xy: 1, 1
+  size: 8, 12
+  orig: 8, 12
+  offset: 0, 0
+  index: -1

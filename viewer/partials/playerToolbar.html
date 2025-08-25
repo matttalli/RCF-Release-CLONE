@@ -1,0 +1,78 @@
+<div class="viewerButtonBar actControls" ng-class="{'dev': layout.isDevMode, 'tocOpen': layout.showTOCPanel }">
+
+	<div class="buttons">
+		<div ng-show="!!activity.prevActivityID" class="previousActivityNav">
+			<button class="navActivityLink" ng-click="previousRcfTocItem()" >
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
+				</svg>
+			</button>
+		</div>
+
+		<div class="buttonsContainer">
+			<span id="standardButtons">
+				<button id="showAnswersButton"
+					ng-disabled="disableButton('show-answers')"
+					ng-class="{'inactive': disableButton('show-answers')}"
+					title="Show Correct Answers"
+					class="viewerSingleButton"
+					ng-click="showAnswers()"
+				>
+					Show Answers
+				</button>
+
+				<button id="nextAnswerButton"
+					ng-show="showButton('next-answer')"
+					ng-disabled="disableButton('next-answer')"
+					ng-class="{'inactive': disableButton('next-answer') }"
+					title="Next answer"
+					ng-click="showNextAnswer()"
+					class="viewerSingleButton"
+				>
+					Next Answer
+				</button>
+
+				<button id="markAnswersButton"
+					ng-show="showButton('check-answers')"
+					ng-disabled="disableButton('check-answers')"
+					ng-class="{'inactive': disableButton('check-answers'), 'selected': layout.marking, '': !layout.marking }"
+					title="Check answers"
+					ng-click="toggleMarks()"
+					class="viewerSingleButton"
+				>
+					Check Answers
+				</button>
+
+				<button id="tryAgainButton"
+					ng-show="showButton('try-again')"
+					ng-click="tryAgain()"
+					ng-class="{'inMarking': layout.marking, 'inactive': !layout.marking}"
+					ng-disabled="disableButton('try-again')"
+					class="viewerSingleButton tryAgainButton"
+				>
+					Try again
+				</button>
+
+				<button id="resetAnswersButton"
+					ng-show="showButton('reset')"
+					ng-click="resetAnswers()"
+					ng-class="{'inactive': disableButton('reset') }"
+					title="Reset answers"
+					class="viewerSingleButton resetButtonX"
+				>
+					Reset
+				</button>
+			</span>
+
+		</div>
+
+		<div ng-show="!!activity.nextActivityID" class="nextActivityNav">
+			<button class="navActivityLink" ng-click="nextRcfTocItem()">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+				</svg>
+			</button>
+		</div>
+
+	</div>
+</div>

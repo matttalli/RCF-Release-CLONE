@@ -1,0 +1,216 @@
+{
+    "compressed": {
+        "mp3": [
+            {
+                "id": "beep1",
+                "path": "audio/compressed/common/beep1.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "beep2",
+                "path": "audio/compressed/common/beep2.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "button_1",
+                "path": "audio/compressed/common/button_1.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "button_2",
+                "path": "audio/compressed/common/button_2.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "complete",
+                "path": "audio/compressed/common/complete.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "correct",
+                "path": "audio/compressed/common/correct.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "incorrect",
+                "path": "audio/compressed/common/incorrect.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "sledge_loop",
+                "path": "audio/compressed/common/sledge_loop.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "sledge_move_1",
+                "path": "audio/compressed/common/sledge_move_1.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "sledge_move_2",
+                "path": "audio/compressed/common/sledge_move_2.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "sledge_move_3",
+                "path": "audio/compressed/common/sledge_move_3.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "snowman_hit",
+                "path": "audio/compressed/common/snowman_hit.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "thud",
+                "path": "audio/compressed/common/thud.mp3",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            }
+        ],
+        "ogg": [
+            {
+                "id": "beep1",
+                "path": "audio/compressed/common/beep1.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "beep2",
+                "path": "audio/compressed/common/beep2.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "button_1",
+                "path": "audio/compressed/common/button_1.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "button_2",
+                "path": "audio/compressed/common/button_2.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "complete",
+                "path": "audio/compressed/common/complete.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "correct",
+                "path": "audio/compressed/common/correct.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "incorrect",
+                "path": "audio/compressed/common/incorrect.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "sledge_loop",
+                "path": "audio/compressed/common/sledge_loop.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "sledge_move_1",
+                "path": "audio/compressed/common/sledge_move_1.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "sledge_move_2",
+                "path": "audio/compressed/common/sledge_move_2.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "sledge_move_3",
+                "path": "audio/compressed/common/sledge_move_3.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "snowman_hit",
+                "path": "audio/compressed/common/snowman_hit.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            },
+            {
+                "id": "thud",
+                "path": "audio/compressed/common/thud.ogg",
+                "classes": [
+                    "common"
+                ],
+                "length": null
+            }
+        ]
+    }
+}

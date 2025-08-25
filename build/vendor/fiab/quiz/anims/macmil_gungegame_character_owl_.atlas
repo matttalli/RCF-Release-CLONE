@@ -1,0 +1,181 @@
+
+macmil_gungegame_character_owl_.png
+size: 256,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+macmil_gungegame_character_owl_beak_
+  rotate: true
+  xy: 222, 6
+  size: 10, 18
+  orig: 10, 18
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_beak_open_
+  rotate: true
+  xy: 185, 4
+  size: 12, 20
+  orig: 12, 20
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_blink_
+  rotate: true
+  xy: 197, 294
+  size: 47, 35
+  orig: 47, 35
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_body base_
+  rotate: false
+  xy: 1, 108
+  size: 94, 147
+  orig: 94, 147
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_brow_l_
+  rotate: false
+  xy: 202, 122
+  size: 31, 40
+  orig: 31, 40
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_brow_r_
+  rotate: true
+  xy: 166, 211
+  size: 49, 17
+  orig: 49, 17
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_foot_l_
+  rotate: true
+  xy: 161, 112
+  size: 26, 38
+  orig: 26, 38
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_foot_r_
+  rotate: true
+  xy: 98, 108
+  size: 30, 33
+  orig: 30, 33
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_head_
+  rotate: true
+  xy: 156, 19
+  size: 88, 84
+  orig: 88, 84
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_headphones_
+  rotate: true
+  xy: 107, 12
+  size: 93, 46
+  orig: 93, 46
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_leg_l_
+  rotate: true
+  xy: 152, 289
+  size: 52, 42
+  orig: 52, 42
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_leg_r_
+  rotate: true
+  xy: 166, 165
+  size: 43, 37
+  orig: 43, 37
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_pose_001_
+  rotate: false
+  xy: 1, 258
+  size: 148, 251
+  orig: 148, 251
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_pupil_l_
+  rotate: false
+  xy: 156, 1
+  size: 13, 15
+  orig: 13, 15
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_pupil_r_
+  rotate: false
+  xy: 208, 4
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_tail_
+  rotate: false
+  xy: 152, 344
+  size: 62, 79
+  orig: 62, 79
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_wing upper_l_
+  rotate: false
+  xy: 55, 9
+  size: 49, 96
+  orig: 49, 96
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_wing_lower_l_
+  rotate: true
+  xy: 98, 141
+  size: 114, 65
+  orig: 117, 66
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_wing_lower_r_
+  rotate: true
+  xy: 1, 3
+  size: 102, 51
+  orig: 102, 51
+  offset: 0, 0
+  index: -1
+macmil_gungegame_character_owl_wing_r_rear_
+  rotate: false
+  xy: 152, 426
+  size: 51, 83
+  orig: 51, 83
+  offset: 0, 0
+  index: -1
+owl_gunge_beak_
+  rotate: false
+  xy: 172, 2
+  size: 10, 14
+  orig: 10, 14
+  offset: 0, 0
+  index: -1
+owl_gunge_foot_
+  rotate: false
+  xy: 152, 263
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+owl_gunge_head_
+  rotate: true
+  xy: 206, 437
+  size: 72, 34
+  orig: 72, 34
+  offset: 0, 0
+  index: -1
+owl_gunge_headphone_r_
+  rotate: false
+  xy: 178, 266
+  size: 18, 20
+  orig: 18, 20
+  offset: 0, 0
+  index: -1
+owl_gunge_wing_l_
+  rotate: false
+  xy: 134, 110
+  size: 24, 28
+  orig: 24, 28
+  offset: 0, 0
+  index: -1

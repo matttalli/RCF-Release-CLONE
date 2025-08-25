@@ -1,0 +1,177 @@
+{
+	"frames": {
+		"life": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 50,
+				"h": 50
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"lost_life": {
+			"frame": {
+				"x": 50,
+				"y": 0,
+				"w": 50,
+				"h": 50
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"cloud_1": {
+			"frame": {
+				"x": 0,
+				"y": 50,
+				"w": 400,
+				"h": 130
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"cloud_2": {
+			"frame": {
+				"x": 400,
+				"y": 50,
+				"w": 400,
+				"h": 130
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"cloud_3": {
+			"frame": {
+				"x": 0,
+				"y": 180,
+				"w": 400,
+				"h": 230
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"cloud_4": {
+			"frame": {
+				"x": 400,
+				"y": 180,
+				"w": 400,
+				"h": 230
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"foreground": {
+			"frame": {
+				"x": 0,
+				"y": 410,
+				"w": 800,
+				"h": 230
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_1": {
+			"frame": {
+				"x": 0,
+				"y": 543,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_2": {
+			"frame": {
+				"x": 200,
+				"y": 543,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_3": {
+			"frame": {
+				"x": 400,
+				"y": 543,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_4": {
+			"frame": {
+				"x": 600,
+				"y": 543,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_5": {
+			"frame": {
+				"x": 0,
+				"y": 783,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_6": {
+			"frame": {
+				"x": 200,
+				"y": 783,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_7": {
+			"frame": {
+				"x": 400,
+				"y": 783,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_8": {
+			"frame": {
+				"x": 600,
+				"y": 783,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_9": {
+			"frame": {
+				"x": 0,
+				"y": 1023,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_10": {
+			"frame": {
+				"x": 200,
+				"y": 1023,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"balloon_anim_11": {
+			"frame": {
+				"x": 400,
+				"y": 1023,
+				"w": 200,
+				"h": 240
+			},
+			"anchor": { "x": 0.5, "y": 0.5 }
+		}
+
+	},
+	"meta": {
+		"app": "https://www.leshylabs.com/apps/sstool/",
+		"version": "Leshy SpriteSheet Tool v0.8.4",
+		"image": "spritesheet.png",
+		"size": {
+			"w": 800,
+			"h": 1263
+		},
+		"scale": 1
+	}
+}

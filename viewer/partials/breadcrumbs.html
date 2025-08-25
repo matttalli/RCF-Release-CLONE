@@ -1,0 +1,129 @@
+ <nav class="crumb breadcrumbs-nav">
+	<style>
+	 .breadcrumbs-nav {
+		display: inline-flex;
+		overflow: hidden;
+	  }
+
+	  .breadcrumbs__item {
+		background: #fff;
+		color: #333;
+		outline: none;
+		padding: 0.4em 0.5em 0.4em 1.3em;
+		position: relative;
+		text-decoration: none;
+	  }
+
+	  .breadcrumbs__item:hover:after,
+	  .breadcrumbs__item:hover {
+		background: #edf1f5;
+	  }
+
+	  .breadcrumbs__item:focus:after,
+	  .breadcrumbs__item:focus,
+	  .breadcrumbs__item.is-active:focus {
+		background: var(--dark-bar-3);
+		color: var(--text-with-dark-background)
+	  }
+
+	  .breadcrumbs__item:after,
+	  .breadcrumbs__item:before {
+		background: white;
+		bottom: 0;
+		clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+		content: "";
+		left: 100%;
+		position: absolute;
+		top: 0;
+		width: 1em;
+		z-index: 1;
+	  }
+
+	  .breadcrumbs__item:before {
+		background: #cbd2d9;
+		margin-left: 1px;
+	  }
+
+	  .breadcrumbs__item:last-child {
+		border-right: none;
+	  }
+
+	  .breadcrumbs__item.is-active {
+		background: #edf1f5;
+	  }
+	  span.breadcrumbs-loader {
+		content: "\00a0\00a0\00a0\00a0\00a0\00a0";
+		min-width: 50px;
+		background:
+			url('./images/ajax-loader.gif')
+			50% 50%
+			no-repeat;
+	  }
+
+	  .clipboardCopyTools {
+		display: flex;
+		margin-left: 15px;
+		align-items: center;
+		cursor: pointer;
+	  }
+
+	  .clipboardCopyTools button {
+		height: 100%;
+		min-width: 35px;
+		background: transparent;
+		border: none;
+		outline: none;
+		color: rgba(255, 255, 255, 0.6);
+		cursor: pointer;
+		padding: 5px;
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	  }
+
+	  .clipboardCopyTools button:hover {
+		color: rgba(255,255,255,1);
+		background: var(--selection-background);
+		cursor: pointer;
+	  }
+
+	  .clipboardCopyTools svg {
+		max-height: 24px;
+		max-width: 24px;
+		height: 24px;
+		width: 24px;
+	  }
+	</style>
+
+
+	<a class="breadcrumbs__item" href="#/">
+		products
+	</a>
+	<a ng-class="{'breadcrumbs__item is-active': $last, 'breadcrumbs__item': !$last}" ng-repeat="breadCrumb in layout.breadCrumbs.getAll()" ng-if="breadCrumb.name !== ''" href="#{{breadCrumb.path}}">
+		{{breadCrumb.name}}
+	</a>
+	<span ng-if="loadingTocCount !==0" class="breadcrumbs-loader">
+
+	</span>
+	<span class="clipboardCopyTools" >
+		<button id="copyPathButton"
+			title="copy activity path to clipboard"
+			ng-click="copyPathToClipboard()"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184" />
+			</svg>
+		</button>
+		<button id="copyPageUrlButton"
+			title="copy page url to clipboard"
+			ng-click="copyCurrentUrlToClipboard()"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+			</svg>
+		</button>
+
+	</span>
+
+</nav>

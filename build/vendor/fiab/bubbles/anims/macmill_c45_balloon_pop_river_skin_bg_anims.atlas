@@ -1,0 +1,139 @@
+
+macmill_c45_balloon_pop_river_skin_bg_anims.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+macmil_c45_river_barrel_pop_anim_001_
+  rotate: false
+  xy: 771, 569
+  size: 94, 87
+  orig: 179, 179
+  offset: 45, 46
+  index: -1
+macmil_c45_river_barrel_pop_anim_002_
+  rotate: false
+  xy: 746, 375
+  size: 97, 89
+  orig: 179, 179
+  offset: 44, 46
+  index: -1
+macmil_c45_river_barrel_pop_anim_003_
+  rotate: false
+  xy: 515, 231
+  size: 97, 93
+  orig: 179, 179
+  offset: 44, 40
+  index: -1
+macmil_c45_river_barrel_pop_anim_004_
+  rotate: false
+  xy: 645, 235
+  size: 100, 97
+  orig: 179, 179
+  offset: 31, 39
+  index: -1
+macmil_c45_river_barrel_pop_anim_005_
+  rotate: false
+  xy: 515, 327
+  size: 120, 111
+  orig: 179, 179
+  offset: 21, 32
+  index: -1
+macmil_c45_river_barrel_pop_anim_006_
+  rotate: true
+  xy: 515, 441
+  size: 125, 127
+  orig: 179, 179
+  offset: 24, 28
+  index: -1
+macmil_c45_river_barrel_pop_anim_007
+  rotate: false
+  xy: 343, 71
+  size: 152, 138
+  orig: 179, 179
+  offset: 11, 23
+  index: -1
+macmil_c45_river_barrel_pop_anim_008
+  rotate: false
+  xy: 175, 68
+  size: 165, 141
+  orig: 179, 179
+  offset: 6, 23
+  index: -1
+macmil_c45_river_barrel_pop_anim_009_
+  rotate: false
+  xy: 1, 55
+  size: 171, 154
+  orig: 179, 179
+  offset: 1, 14
+  index: -1
+macmil_c45_river_barrel_pop_anim_010_
+  rotate: false
+  xy: 498, 82
+  size: 144, 127
+  orig: 179, 179
+  offset: 14, 31
+  index: -1
+macmil_pop_river_bridge_
+  rotate: false
+  xy: 1, 212
+  size: 511, 807
+  orig: 511, 807
+  offset: 0, 0
+  index: -1
+macmil_pop_river_fish master_
+  rotate: false
+  xy: 175, 24
+  size: 112, 41
+  orig: 112, 41
+  offset: 0, 0
+  index: -1
+macmil_pop_river_frog_
+  rotate: false
+  xy: 416, 34
+  size: 63, 34
+  orig: 63, 34
+  offset: 0, 0
+  index: -1
+macmil_pop_river_pondweed_
+  rotate: false
+  xy: 515, 569
+  size: 253, 87
+  orig: 260, 87
+  offset: 3, 0
+  index: -1
+macmil_pop_river_reeds_
+  rotate: true
+  xy: 638, 335
+  size: 103, 105
+  orig: 103, 105
+  offset: 0, 0
+  index: -1
+macmil_pop_river_rock_1_
+  rotate: false
+  xy: 498, 10
+  size: 116, 69
+  orig: 116, 69
+  offset: 0, 0
+  index: -1
+macmil_pop_river_rock_2_
+  rotate: false
+  xy: 645, 467
+  size: 120, 99
+  orig: 120, 99
+  offset: 0, 0
+  index: -1
+macmil_pop_river_water_lily_
+  rotate: true
+  xy: 343, 1
+  size: 67, 70
+  orig: 73, 73
+  offset: 4, 2
+  index: -1
+macmil_pop_river_water_tile_
+  rotate: false
+  xy: 515, 659
+  size: 360, 360
+  orig: 360, 360
+  offset: 0, 0
+  index: -1

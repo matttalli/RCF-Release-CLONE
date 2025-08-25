@@ -1,0 +1,4 @@
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="windowDragHandle">
+    <path d="M4,60 L4,12 C4,12 4,4 12,4 L60,4" fill="none" fill-rule="nonzero" stroke="#1D8166" stroke-width="8" stroke-linecap="round"></path>
+    <polygon points="0 0, 0 12, 12 0" fill="#1D8166"/>
+</svg>

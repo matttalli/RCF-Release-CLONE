@@ -1,0 +1,264 @@
+{
+"skeleton": { "hash": "Hav30/fcCAjdeoFubAKtOah0JYQ", "spine": "3.8.99", "images": "../../2d art/export/quiz/v1/gunge_anim/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "gunge_control", "parent": "root" },
+	{ "name": "gunge_anim", "parent": "gunge_control" }
+],
+"slots": [
+	{ "name": "gunge_001", "bone": "gunge_anim" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"gunge_001": {
+				"gunge_001": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_002": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_003": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_004": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_005": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_006": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_007": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_008": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_009": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_000a": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_000b": { "y": 0.5, "width": 304, "height": 331 },
+				"gunge_000c": { "y": 0.5, "width": 304, "height": 331 }
+			}
+		}
+	}
+],
+"animations": {
+	"01_green_gunge": {
+		"slots": {
+			"gunge_001": {
+				"color": [
+					{ "color": "ff6b00ff", "curve": "stepped" },
+					{ "time": 2, "color": "ff6b00ff" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0667, "name": "gunge_000a" },
+					{ "time": 0.1333, "name": "gunge_000b" },
+					{ "time": 0.1667, "name": "gunge_000c" },
+					{ "time": 0.2, "name": "gunge_001" },
+					{ "time": 0.2667, "name": "gunge_002" },
+					{ "time": 0.3, "name": "gunge_003" },
+					{ "time": 0.3667, "name": "gunge_004" },
+					{ "time": 0.4333, "name": "gunge_005" },
+					{ "time": 0.5, "name": "gunge_006" },
+					{ "time": 0.5667, "name": "gunge_001" },
+					{ "time": 0.6333, "name": "gunge_002" },
+					{ "time": 0.7, "name": "gunge_003" },
+					{ "time": 0.7667, "name": "gunge_004" },
+					{ "time": 0.8, "name": "gunge_005" },
+					{ "time": 0.8667, "name": "gunge_006" },
+					{ "time": 0.9333, "name": "gunge_001" },
+					{ "time": 1, "name": "gunge_002" },
+					{ "time": 1.0667, "name": "gunge_003" },
+					{ "time": 1.1333, "name": "gunge_004" },
+					{ "time": 1.2, "name": "gunge_005" },
+					{ "time": 1.2667, "name": "gunge_006" },
+					{ "time": 1.3, "name": "gunge_001" },
+					{ "time": 1.3667, "name": "gunge_002" },
+					{ "time": 1.4333, "name": "gunge_003" },
+					{ "time": 1.5, "name": "gunge_004" },
+					{ "time": 1.5667, "name": "gunge_005" },
+					{ "time": 1.6333, "name": "gunge_006" },
+					{ "time": 1.7, "name": "gunge_001" },
+					{ "time": 1.7667, "name": "gunge_002" },
+					{ "time": 1.8, "name": "gunge_003" },
+					{ "time": 1.8667, "name": "gunge_007" },
+					{ "time": 1.9, "name": "gunge_008" },
+					{ "time": 1.9667, "name": "gunge_009" },
+					{ "time": 2, "name": null }
+				]
+			}
+		}
+	},
+	"02_yellow_gunge": {
+		"slots": {
+			"gunge_001": {
+				"color": [
+					{ "color": "ffba00ff", "curve": "stepped" },
+					{ "time": 2, "color": "ffba00ff" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0667, "name": "gunge_000a" },
+					{ "time": 0.1333, "name": "gunge_000b" },
+					{ "time": 0.1667, "name": "gunge_000c" },
+					{ "time": 0.2, "name": "gunge_001" },
+					{ "time": 0.2667, "name": "gunge_002" },
+					{ "time": 0.3, "name": "gunge_003" },
+					{ "time": 0.3667, "name": "gunge_004" },
+					{ "time": 0.4333, "name": "gunge_005" },
+					{ "time": 0.5, "name": "gunge_006" },
+					{ "time": 0.5667, "name": "gunge_001" },
+					{ "time": 0.6333, "name": "gunge_002" },
+					{ "time": 0.7, "name": "gunge_003" },
+					{ "time": 0.7667, "name": "gunge_004" },
+					{ "time": 0.8, "name": "gunge_005" },
+					{ "time": 0.8667, "name": "gunge_006" },
+					{ "time": 0.9333, "name": "gunge_001" },
+					{ "time": 1, "name": "gunge_002" },
+					{ "time": 1.0667, "name": "gunge_003" },
+					{ "time": 1.1333, "name": "gunge_004" },
+					{ "time": 1.2, "name": "gunge_005" },
+					{ "time": 1.2667, "name": "gunge_006" },
+					{ "time": 1.3, "name": "gunge_001" },
+					{ "time": 1.3667, "name": "gunge_002" },
+					{ "time": 1.4333, "name": "gunge_003" },
+					{ "time": 1.5, "name": "gunge_004" },
+					{ "time": 1.5667, "name": "gunge_005" },
+					{ "time": 1.6333, "name": "gunge_006" },
+					{ "time": 1.7, "name": "gunge_001" },
+					{ "time": 1.7667, "name": "gunge_002" },
+					{ "time": 1.8, "name": "gunge_003" },
+					{ "time": 1.8667, "name": "gunge_007" },
+					{ "time": 1.9, "name": "gunge_008" },
+					{ "time": 1.9667, "name": "gunge_009" },
+					{ "time": 2, "name": null }
+				]
+			}
+		}
+	},
+	"03_blue_gunge": {
+		"slots": {
+			"gunge_001": {
+				"color": [
+					{ "color": "23ace5ff", "curve": "stepped" },
+					{ "time": 2, "color": "23ace5ff" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0667, "name": "gunge_000a" },
+					{ "time": 0.1333, "name": "gunge_000b" },
+					{ "time": 0.1667, "name": "gunge_000c" },
+					{ "time": 0.2, "name": "gunge_001" },
+					{ "time": 0.2667, "name": "gunge_002" },
+					{ "time": 0.3, "name": "gunge_003" },
+					{ "time": 0.3667, "name": "gunge_004" },
+					{ "time": 0.4333, "name": "gunge_005" },
+					{ "time": 0.5, "name": "gunge_006" },
+					{ "time": 0.5667, "name": "gunge_001" },
+					{ "time": 0.6333, "name": "gunge_002" },
+					{ "time": 0.7, "name": "gunge_003" },
+					{ "time": 0.7667, "name": "gunge_004" },
+					{ "time": 0.8, "name": "gunge_005" },
+					{ "time": 0.8667, "name": "gunge_006" },
+					{ "time": 0.9333, "name": "gunge_001" },
+					{ "time": 1, "name": "gunge_002" },
+					{ "time": 1.0667, "name": "gunge_003" },
+					{ "time": 1.1333, "name": "gunge_004" },
+					{ "time": 1.2, "name": "gunge_005" },
+					{ "time": 1.2667, "name": "gunge_006" },
+					{ "time": 1.3, "name": "gunge_001" },
+					{ "time": 1.3667, "name": "gunge_002" },
+					{ "time": 1.4333, "name": "gunge_003" },
+					{ "time": 1.5, "name": "gunge_004" },
+					{ "time": 1.5667, "name": "gunge_005" },
+					{ "time": 1.6333, "name": "gunge_006" },
+					{ "time": 1.7, "name": "gunge_001" },
+					{ "time": 1.7667, "name": "gunge_002" },
+					{ "time": 1.8, "name": "gunge_003" },
+					{ "time": 1.8667, "name": "gunge_007" },
+					{ "time": 1.9, "name": "gunge_008" },
+					{ "time": 1.9667, "name": "gunge_009" },
+					{ "time": 2, "name": null }
+				]
+			}
+		}
+	},
+	"04_purple_gunge": {
+		"slots": {
+			"gunge_001": {
+				"color": [
+					{ "color": "7b26beff" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0667, "name": "gunge_000a" },
+					{ "time": 0.1333, "name": "gunge_000b" },
+					{ "time": 0.1667, "name": "gunge_000c" },
+					{ "time": 0.2, "name": "gunge_001" },
+					{ "time": 0.2667, "name": "gunge_002" },
+					{ "time": 0.3, "name": "gunge_003" },
+					{ "time": 0.3667, "name": "gunge_004" },
+					{ "time": 0.4333, "name": "gunge_005" },
+					{ "time": 0.5, "name": "gunge_006" },
+					{ "time": 0.5667, "name": "gunge_001" },
+					{ "time": 0.6333, "name": "gunge_002" },
+					{ "time": 0.7, "name": "gunge_003" },
+					{ "time": 0.7667, "name": "gunge_004" },
+					{ "time": 0.8, "name": "gunge_005" },
+					{ "time": 0.8667, "name": "gunge_006" },
+					{ "time": 0.9333, "name": "gunge_001" },
+					{ "time": 1, "name": "gunge_002" },
+					{ "time": 1.0667, "name": "gunge_003" },
+					{ "time": 1.1333, "name": "gunge_004" },
+					{ "time": 1.2, "name": "gunge_005" },
+					{ "time": 1.2667, "name": "gunge_006" },
+					{ "time": 1.3, "name": "gunge_001" },
+					{ "time": 1.3667, "name": "gunge_002" },
+					{ "time": 1.4333, "name": "gunge_003" },
+					{ "time": 1.5, "name": "gunge_004" },
+					{ "time": 1.5667, "name": "gunge_005" },
+					{ "time": 1.6333, "name": "gunge_006" },
+					{ "time": 1.7, "name": "gunge_001" },
+					{ "time": 1.7667, "name": "gunge_002" },
+					{ "time": 1.8, "name": "gunge_003" },
+					{ "time": 1.8667, "name": "gunge_007" },
+					{ "time": 1.9, "name": "gunge_008" },
+					{ "time": 1.9667, "name": "gunge_009" },
+					{ "time": 2, "name": null }
+				]
+			}
+		}
+	},
+	"master": {
+		"slots": {
+			"gunge_001": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0667, "name": "gunge_000a" },
+					{ "time": 0.1333, "name": "gunge_000b" },
+					{ "time": 0.1667, "name": "gunge_000c" },
+					{ "time": 0.2, "name": "gunge_001" },
+					{ "time": 0.2667, "name": "gunge_002" },
+					{ "time": 0.3, "name": "gunge_003" },
+					{ "time": 0.3667, "name": "gunge_004" },
+					{ "time": 0.4333, "name": "gunge_005" },
+					{ "time": 0.5, "name": "gunge_006" },
+					{ "time": 0.5667, "name": "gunge_001" },
+					{ "time": 0.6333, "name": "gunge_002" },
+					{ "time": 0.7, "name": "gunge_003" },
+					{ "time": 0.7667, "name": "gunge_004" },
+					{ "time": 0.8, "name": "gunge_005" },
+					{ "time": 0.8667, "name": "gunge_006" },
+					{ "time": 0.9333, "name": "gunge_001" },
+					{ "time": 1, "name": "gunge_002" },
+					{ "time": 1.0667, "name": "gunge_003" },
+					{ "time": 1.1333, "name": "gunge_004" },
+					{ "time": 1.2, "name": "gunge_005" },
+					{ "time": 1.2667, "name": "gunge_006" },
+					{ "time": 1.3, "name": "gunge_001" },
+					{ "time": 1.3667, "name": "gunge_002" },
+					{ "time": 1.4333, "name": "gunge_003" },
+					{ "time": 1.5, "name": "gunge_004" },
+					{ "time": 1.5667, "name": "gunge_005" },
+					{ "time": 1.6333, "name": "gunge_006" },
+					{ "time": 1.7, "name": "gunge_001" },
+					{ "time": 1.7667, "name": "gunge_002" },
+					{ "time": 1.8333, "name": "gunge_003" },
+					{ "time": 1.8667, "name": "gunge_007" },
+					{ "time": 1.9333, "name": "gunge_008" },
+					{ "time": 1.9667, "name": "gunge_009" },
+					{ "time": 2, "name": null }
+				]
+			}
+		}
+	}
+}
+}

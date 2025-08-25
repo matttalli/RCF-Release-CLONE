@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+   <xs:element name="referenceContent">
+		    <xs:complexType mixed="false">
+			      <xs:sequence>
+				<!-- metadata element -->
+				        <xs:element name="metadata" type="referenceContentMetadataType"/>
+				        <!-- main content block element -->
+				        <xs:element name="main" type="baseReferenceBlockType"/>
+			      </xs:sequence>
+			      <!-- attributes for the 'referenceContent' element -->
+			      <xs:attribute name="id" use="required">
+				        <xs:annotation>
+					          <xs:documentation> Reference Content must have an id which adheres to a GUID (32 characters, 0-9a-f) </xs:documentation>
+				        </xs:annotation>
+				        <xs:simpleType>
+					          <xs:restriction base="xs:string">
+						            <xs:minLength value="32"/>
+						            <xs:pattern value="([0-9a-fA-F]{32})"/>
+					          </xs:restriction>
+				        </xs:simpleType>
+			      </xs:attribute>
+			      <!-- optional 'lang' language attribute for the 'referenceContent' element -->
+			      <xs:attribute name="lang" type="referenceContentLanguageType" use="optional"/>
+		    </xs:complexType>
+	  </xs:element>
+   <xs:element name="sSpan">
+		    <xs:annotation>
+			      <xs:documentation>'simple styled span' contains formatting elements</xs:documentation>
+		    </xs:annotation>
+		    <xs:complexType mixed="true">
+			      <xs:choice minOccurs="0" maxOccurs="unbounded">
+				        <xs:group ref="formattingElements"/>
+			      </xs:choice>
+			      <xs:attribute name="id" type="xs:ID" use="optional"/>
+			      <xs:attribute name="class" type="userClassPattern" use="optional"/>
+			      <xs:attribute name="lang" type="referenceContentLanguageType" use="optional"/>
+		    </xs:complexType>
+	  </xs:element>
+   <xs:element name="colourText">
+		    <xs:annotation>
+			      <xs:documentation>'colour text' contains text with a colour</xs:documentation>
+		    </xs:annotation>
+		    <xs:complexType mixed="true">
+			      <xs:choice minOccurs="0" maxOccurs="unbounded">
+				        <xs:group ref="formattingElements"/>
+			      </xs:choice>
+			      <xs:attribute name="id" type="xs:ID" use="optional"/>
+			      <xs:attribute name="class" type="userClassPattern" use="optional"/>
+			      <xs:attribute name="lang" type="referenceContentLanguageType" use="optional"/>
+		    </xs:complexType>
+	  </xs:element>
+   <xs:element name="video" type="complexVideoType"/>
+   <xs:element name="audio" type="simpleAudioType"/>
+   <xs:element name="image" type="simpleImageType"/>
+   <xs:element name="imageAudio" type="imageAudioType"/>
+   <xs:element name="dl">
+        <xs:annotation>
+            <xs:documentation>'description list' (dl) encloses a list of groups of terms and
+                descriptions.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element name="dt" type="dtType" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="dd" type="ddType" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attributeGroup ref="rcfTriggerableAttributes"/>
+            <xs:attribute name="lang" type="languageType" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+   <xs:simpleType name="referenceMetadataContentType">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="media"/>
+			      <xs:enumeration value="video"/>
+			      <xs:enumeration value="audio"/>
+			      <xs:enumeration value="image"/>
+			      <xs:enumeration value="text"/>
+			      <xs:enumeration value="audioScript"/>
+			      <xs:enumeration value="table"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="referenceContentLanguageType">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="en"/>
+			      <xs:enumeration value="en-us"/>
+			      <xs:enumeration value="en-gb"/>
+			      <xs:enumeration value="es"/>
+			      <xs:enumeration value="pl"/>
+			      <xs:enumeration value="hi"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="yesNoType">
+		    <xs:annotation>
+			      <xs:documentation>A simple 'Y' / 'N' type for attributes / datatypes</xs:documentation>
+		    </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="y"/>
+			      <xs:enumeration value="n"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="userClassPattern">
+		    <xs:list>
+			      <xs:simpleType>
+				        <xs:restriction base="xs:string">
+					          <xs:pattern value="(mm_\w+)"/>
+				        </xs:restriction>
+			      </xs:simpleType>
+		    </xs:list>
+	  </xs:simpleType>
+   <xs:simpleType name="noSpaceType">
+		    <xs:annotation>
+			      <xs:documentation> This 'type' is used on attributes which point to external assets
+				(audio / video / images) - these are filenames and when served from a website,
+				should never have spaces in the filenames. This check will cause the xml validation
+				to fail against the schema if the asset name contains a space. </xs:documentation>
+		    </xs:annotation>
+		    <xs:restriction base="xs:token">
+			      <xs:pattern value="[^ ]*"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="imageCaptionType">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="standard"/>
+			      <xs:enumeration value="corner"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="displayType">
+		    <xs:annotation>
+			      <xs:documentation>displayType attribute tells the XSLT transformer to markup the item as
+				'H'orizontal ('inline') or 'V'ertical ('block') via CSS styles</xs:documentation>
+		    </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="h"/>
+			      <xs:enumeration value="v"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="listDisplayType">
+		    <xs:annotation>
+			      <xs:documentation>The enumerations for a 'list' display type</xs:documentation>
+		    </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="numbered"/>
+			      <xs:enumeration value="bullet"/>
+			      <xs:enumeration value="alpha"/>
+			      <xs:enumeration value="upper-alpha"/>
+			      <xs:enumeration value="roman"/>
+			      <xs:enumeration value="plain"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="nonEmptyString">
+		    <xs:annotation>
+			      <xs:documentation> This 'type' is used on attributes which are required and required to
+				have actual values (not just empty attributes) - such as ID's - usually used in
+				conjunction with a 'unique' constraint to stop ID's being reused throughout the XML
+				document. </xs:documentation>
+		    </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:minLength value="1"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="languageType">
+		    <xs:annotation>
+			      <xs:documentation>Language type for the inner elements of an activity / reference content</xs:documentation>
+		    </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="en"/>
+			      <xs:enumeration value="en-us"/>
+			      <xs:enumeration value="en-gb"/>
+			      <xs:enumeration value="es"/>
+			      <xs:enumeration value="pl"/>
+			      <xs:enumeration value="hi"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="playerSize">
+		    <xs:annotation>
+			      <xs:documentation>playerSize for media players - 'small, 'medium'' or 'large' (small = inline, medium=block, large = block) - default is 'large'</xs:documentation>
+		    </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="small"/>
+			      <xs:enumeration value="medium"/>
+			      <xs:enumeration value="large"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="panzoomType">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="default"/>
+			      <xs:enumeration value="inplace"/>
+			      <xs:enumeration value="popup"/>
+			      <xs:enumeration value="y"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+   <xs:simpleType name="triggerClassPattern">
+		    <xs:annotation>
+			      <xs:documentation>'trigger classes' used in the RCF elements *must* start with tr_</xs:documentation>
+		    </xs:annotation>
+		    <xs:list>
+			      <xs:simpleType>
+				        <xs:restriction base="xs:string">
+					          <xs:pattern value="(tr_\w+)"/>
+				        </xs:restriction>
+			      </xs:simpleType>
+		    </xs:list>
+	  </xs:simpleType>
+   <xs:complexType name="referenceContentMetadataType" mixed="true">
+		    <xs:sequence>
+			<!-- title element which contains text for the reference content title -->
+			      <xs:element name="title" minOccurs="1" maxOccurs="1">
+				        <xs:complexType>
+					          <xs:simpleContent>
+						            <xs:extension base="xs:string">
+							              <xs:attribute name="lang" type="referenceContentLanguageType" use="optional"/>
+						            </xs:extension>
+					          </xs:simpleContent>
+				        </xs:complexType>
+			      </xs:element>
+			      <!-- type element which can contain "media/audio/image/text/realia/audioscript/table" - no repeating values -->
+			      <xs:element name="type"
+                     type="referenceContentMetadataContentType"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:unique name="referenceMetadataContentTypesUnique">
+					          <xs:selector xpath="content"/>
+					          <xs:field xpath="@type"/>
+				        </xs:unique>
+			      </xs:element>
+			      <!-- recallable element which has a @value=y/n attribute -->
+			      <xs:element name="recallable" minOccurs="0" maxOccurs="1">
+				        <xs:complexType>
+					          <xs:attribute name="value" type="yesNoType" use="required"/>
+				        </xs:complexType>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+   <xs:complexType name="referenceContentMetadataContentType" mixed="false">
+		    <xs:sequence>
+			      <xs:element name="content" minOccurs="1" maxOccurs="unbounded">
+				        <xs:complexType>
+					          <xs:attribute name="type" type="referenceMetadataContentType" use="required"/>
+				        </xs:complexType>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+   <xs:complexType name="baseReferenceBlockType" mixed="true">
+		    <xs:choice minOccurs="0" maxOccurs="unbounded">
+			      <xs:element name="collapsibleBlock" type="referenceContentCollapsibleBlockType"/>
+			      <xs:element name="block" type="baseReferenceBlockType"/>
+			      <xs:element name="highlightingTextBlock"
+                     type="highlightingTextBlockType"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
+			      <xs:group ref="simpleBlockElements" minOccurs="0"/>
+			      <xs:group ref="unmarkedInteractiveBlockElements" minOccurs="0"/>
+			      <xs:group ref="basicInlineElements" minOccurs="0"/>
+		    </xs:choice>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+		    <xs:attribute name="lang" type="referenceContentLanguageType" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="simpleBlockElementsType" mixed="true">
+		    <xs:annotation>
+			      <xs:documentation/>
+		    </xs:annotation>
+		    <xs:choice minOccurs="0" maxOccurs="unbounded">
+			      <xs:group ref="formattingElements" minOccurs="0"/>
+			      <xs:group ref="basicInlineElements" minOccurs="0"/>
+			      <xs:element ref="sSpan" minOccurs="0"/>
+			      <xs:element ref="colourText" minOccurs="0"/>
+		    </xs:choice>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+		    <xs:attribute name="lang" type="referenceContentLanguageType" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="phonsType" mixed="true">
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="basicFormattingType" mixed="true">
+		    <xs:choice minOccurs="0" maxOccurs="unbounded">
+			      <xs:group ref="formattingElements"/>
+			      <xs:element ref="sSpan" minOccurs="0"/>
+			      <xs:element ref="colourText" minOccurs="0"/>
+		    </xs:choice>
+		    <xs:attribute name="lang" type="referenceContentLanguageType" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="basicListType">
+		    <xs:annotation>
+			      <xs:documentation>A basicList is just like a normal list, but with none of the
+				interactive elements</xs:documentation>
+		    </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="listObject">
+				        <xs:sequence maxOccurs="unbounded">
+					          <xs:element name="li" maxOccurs="unbounded">
+						            <xs:complexType mixed="true">
+							              <xs:choice minOccurs="0" maxOccurs="unbounded">
+								                <xs:element name="list" type="basicListType" minOccurs="0"/>
+								                <xs:group ref="formattingElements" minOccurs="0"/>
+								                <xs:group ref="basicInlineElements" minOccurs="0"/>
+								                <xs:group ref="unmarkedInteractiveBlockElements" minOccurs="0"/>
+								                <xs:element ref="sSpan" minOccurs="0"/>
+								                <xs:element ref="colourText" minOccurs="0"/>
+								                <xs:element name="p" type="simpleBlockElementsType" minOccurs="0"/>
+								                <xs:element name="table" type="simpleTableType"/>
+								                <xs:element name="block" type="simpleFormattingBlockType" minOccurs="0"/>
+							              </xs:choice>
+							              <xs:attribute name="class" type="userClassPattern" use="optional"/>
+							              <xs:attribute name="numbered" type="yesNoType" use="optional"/>
+						            </xs:complexType>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+   <xs:complexType name="listObject" abstract="true">
+		    <xs:annotation>
+			      <xs:documentation>Other lists (basicListType and fullListType) will inherit the base
+				properties from this 'listObject' - it should never be used directly in the schema !</xs:documentation>
+		    </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="orientable">
+				        <xs:attribute name="type" type="listDisplayType" use="required"/>
+				        <xs:attribute name="start" type="xs:integer" use="optional"/>
+				        <xs:attribute name="reversed" type="yesNoType" use="optional"/>
+				        <xs:attribute name="class" type="userClassPattern" use="optional"/>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+   <xs:complexType name="orientable" abstract="true">
+		    <xs:attribute name="display" type="displayType">
+			      <xs:annotation>
+				        <xs:documentation>Display the item type 'H'orizonally (inline) or 'V'ertically
+					(block)</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+	  </xs:complexType>
+   <xs:complexType name="simpleTableType" mixed="false">
+		    <xs:sequence maxOccurs="unbounded">
+			      <xs:element name="tr" type="simpleRowType"/>
+		    </xs:sequence>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="simpleRowType" mixed="false">
+		    <xs:choice>
+			      <xs:element name="td" maxOccurs="unbounded">
+				        <xs:complexType mixed="true">
+					          <xs:choice minOccurs="0" maxOccurs="unbounded">
+						            <xs:element name="list" type="basicListType" minOccurs="0"/>
+						            <xs:group ref="formattingElements" minOccurs="0"/>
+						            <xs:group ref="basicInlineElements" minOccurs="0"/>
+						            <xs:group ref="unmarkedInteractiveBlockElements" minOccurs="0"/>
+						            <xs:element ref="sSpan" minOccurs="0"/>
+						            <xs:element ref="colourText" minOccurs="0"/>
+						            <xs:element name="p" type="simpleBlockElementsType" minOccurs="0"/>
+					          </xs:choice>
+					          <xs:attribute name="class" type="userClassPattern" use="optional"/>
+					          <xs:attribute name="colspan" type="xs:integer" use="optional"/>
+					          <xs:attribute name="rowspan" type="xs:integer" use="optional"/>
+				        </xs:complexType>
+			      </xs:element>
+			      <xs:choice maxOccurs="unbounded">
+				        <xs:element name="th">
+					          <xs:complexType mixed="true">
+						            <xs:choice minOccurs="0" maxOccurs="unbounded">
+							              <xs:group ref="formattingElements" minOccurs="0"/>
+							              <xs:group ref="basicInlineElements" minOccurs="0"/>
+							              <xs:element name="p" type="simpleBlockElementsType" minOccurs="0"/>
+						            </xs:choice>
+						            <xs:attribute name="class" type="userClassPattern" use="optional"/>
+						            <xs:attribute name="colspan" type="xs:integer" use="optional"/>
+						            <xs:attribute name="rowspan" type="xs:integer" use="optional"/>
+					          </xs:complexType>
+				        </xs:element>
+			      </xs:choice>
+		    </xs:choice>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="itemSimpleListType" mixed="true">
+		    <xs:annotation>
+			      <xs:documentation>itemSimpleListType - used where there is a sequence of 'item' elements
+				which do NOT have a 'correct' attribute</xs:documentation>
+		    </xs:annotation>
+		    <xs:sequence>
+			      <xs:element name="item" type="formattedItemType" maxOccurs="unbounded"/>
+		    </xs:sequence>
+		    <xs:attribute name="type" type="listDisplayType" use="optional"/>
+		    <xs:attribute name="display" type="displayType" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="formattedItemType" mixed="true">
+		    <xs:annotation>
+			      <xs:documentation>Most basic example of an 'item' in a list</xs:documentation>
+		    </xs:annotation>
+		    <xs:sequence>
+			      <xs:choice minOccurs="0" maxOccurs="unbounded">
+				        <xs:group ref="formattingElements"/>
+				        <xs:element ref="sSpan" minOccurs="0"/>
+				        <xs:element ref="colourText" minOccurs="0"/>
+			      </xs:choice>
+		    </xs:sequence>
+	  </xs:complexType>
+   <xs:complexType name="referenceContentCollapsibleBlockType">
+		    <xs:sequence minOccurs="1">
+			      <xs:element name="collapseButton" minOccurs="1">
+				        <xs:complexType mixed="false">
+					          <xs:attribute name="captionWhenClosed" type="xs:string" use="required"/>
+					          <xs:attribute name="captionWhenOpened" type="xs:string" use="required"/>
+				        </xs:complexType>
+			      </xs:element>
+			      <xs:element name="block"
+                     type="baseReferenceBlockType"
+                     minOccurs="1"
+                     maxOccurs="1"/>
+		    </xs:sequence>
+		    <xs:attribute name="open" type="yesNoType" default="n"/>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+		    <xs:attribute name="id" type="nonEmptyString" use="required"/>
+	  </xs:complexType>
+   <xs:complexType name="hyperLinkType" mixed="true">
+		    <xs:attribute name="href"/>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="rcfInteraction" mixed="false">
+		    <xs:annotation>
+			      <xs:documentation>The 'base' definition for an interaction, contains ID and CLASS attributes</xs:documentation>
+		    </xs:annotation>
+		    <xs:attribute name="id" type="nonEmptyString" use="required"/>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="highlightingTextBlockType" mixed="true">
+		    <xs:complexContent>
+			      <xs:extension base="rcfInteraction">
+				        <xs:choice minOccurs="0" maxOccurs="unbounded">
+					          <xs:group ref="simpleBlockElements" minOccurs="0"/>
+					          <xs:group ref="multimediaFormattingElements" minOccurs="0"/>
+					          <xs:element name="staticAudioTranscript"
+                           minOccurs="0"
+                           type="staticAudioTranscriptType"/>
+					          <xs:element name="block" type="simpleFormattingBlockType" minOccurs="0"/>
+				        </xs:choice>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+   <xs:complexType name="simpleFormattingBlockType" mixed="true">
+		    <xs:choice minOccurs="0" maxOccurs="unbounded">
+			      <xs:element name="block" type="simpleFormattingBlockType" minOccurs="0"/>
+			      <xs:group ref="simpleBlockElements" minOccurs="0"/>
+			      <xs:group ref="multimediaFormattingElements" minOccurs="0"/>
+		    </xs:choice>
+		    <xs:attribute name="class" type="userClassPattern"/>
+		    <xs:attribute name="lang" type="referenceContentLanguageType" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="complexVideoType">
+		    <xs:annotation>
+			      <xs:documentation>New Video Type to encapsulate the 'Plyr' video player</xs:documentation>
+		    </xs:annotation>
+		    <xs:sequence>
+			      <xs:element name="track" minOccurs="0" maxOccurs="unbounded">
+				        <xs:complexType mixed="false">
+					          <xs:attribute name="label" type="nonEmptyString" use="required"/>
+					          <xs:attribute name="srclang" type="nonEmptyString" use="required"/>
+					          <xs:attribute name="src" type="nonEmptyString" use="required"/>
+					          <xs:attribute name="kind" use="optional">
+						            <xs:simpleType>
+							              <xs:restriction base="nonEmptyString">
+								                <xs:enumeration value="captions"/>
+								                <xs:enumeration value="descriptions"/>
+							              </xs:restriction>
+						            </xs:simpleType>
+					          </xs:attribute>
+				        </xs:complexType>
+			      </xs:element>
+		    </xs:sequence>
+
+		    <xs:attribute name="switchVideo" type="yesNoType" use="optional" default="y">
+			      <xs:annotation>
+				        <xs:documentation>DEPRECATED - By default, the RCF will look for 'src'-HD or 'src'-SD depending on whether you are on a mobile/tablet, or desktop maching. Setting this to 'N' will just make the RCF look for 'src'.mp4
+				</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="src" type="noSpaceType" use="required"/>
+		    <xs:attribute name="streamingSrc" type="noSpaceType" use="optional">
+			      <xs:annotation>
+				        <xs:documentation>
+					URL for streaming HLS video - if provided, will be used in place of the 'src' attribute
+				</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="title" use="optional"/>
+		    <xs:attribute name="a11yTitle" type="xs:string" use="optional">
+			      <xs:annotation>
+				        <xs:documentation>Accessibility title which will be added as a aria-label attribute to the div containing the audio player</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+	  </xs:complexType>
+   <xs:complexType name="simpleAudioType" mixed="false">
+		    <xs:sequence minOccurs="1" maxOccurs="unbounded">
+			      <xs:element name="track">
+				        <xs:complexType mixed="false">
+					          <xs:attribute name="src" type="noSpaceType" use="required"/>
+					          <xs:attribute name="trackName" type="xs:string"/>
+					          <xs:attribute name="pageRef" type="xs:integer"/>
+				        </xs:complexType>
+			      </xs:element>
+		    </xs:sequence>
+		    <xs:attribute name="srt" type="yesNoType" use="optional" default="y"/>
+		    <xs:attribute name="size" type="playerSize"/>
+		    <xs:attribute name="autoScroll" type="yesNoType" default="n">
+			      <xs:annotation>
+				        <xs:documentation>Follow the subtitles (scroll) as the audio plays - default "n" if missing</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="autoCC" type="yesNoType" use="optional" default="n">
+			      <xs:annotation>
+				        <xs:documentation>Automatically open the CC panel when play is pressed</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="openCC" type="yesNoType" use="optional" default="n">
+			      <xs:annotation>
+				        <xs:documentation>Automatically open the CC panel when activity is loaded</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="title" use="optional"/>
+		    <xs:attribute name="recording" type="yesNoType" use="optional"/>
+		    <xs:attribute name="srtSrc" type="xs:string" use="optional"/>
+		    <xs:attribute name="a11yTitle" type="xs:string" use="optional">
+			      <xs:annotation>
+				        <xs:documentation>Accessibility title which will be added as a aria-label attribute to the div containing the audio player</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="lang" type="languageType" use="optional">
+			      <xs:annotation>
+				        <xs:documentation>Language of the audio track, which is added as a lang attribute to div with audioScript</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="a11yTitleLang" type="languageType" use="optional">
+			      <xs:annotation>
+				        <xs:documentation>
+					Accessibility title language which will be added as a lang attribute to the span containing the audio player
+				</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+	  </xs:complexType>
+   <xs:complexType name="subtitleLineType" mixed="true">
+		    <xs:complexContent>
+			      <xs:extension base="basicFormattingType">
+				        <xs:attribute name="speaker" type="xs:string" use="optional"/>
+				        <xs:attribute name="numSecs" type="xs:string" use="optional"/>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+   <xs:complexType name="audioDialogType" mixed="true">
+		    <xs:sequence maxOccurs="unbounded">
+			      <xs:element name="subtitles">
+				        <xs:complexType>
+					          <xs:sequence maxOccurs="unbounded">
+						            <xs:element name="subtitle" type="subtitleLineType"/>
+					          </xs:sequence>
+					          <xs:attribute name="id" type="xs:string" use="required">
+						            <xs:annotation>
+							              <xs:documentation>
+								The 'id' of a subtitles element should match up to the 'src' value of a corresponding *audio* element
+							</xs:documentation>
+						            </xs:annotation>
+					          </xs:attribute>
+				        </xs:complexType>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+   <xs:complexType name="staticAudioTranscriptType" mixed="true">
+		    <xs:annotation>
+			      <xs:documentation>
+				New element (formatting elements as children) for the audio transcript as part of assessment / print html
+			</xs:documentation>
+		    </xs:annotation>
+		    <xs:choice minOccurs="0" maxOccurs="unbounded">
+			      <xs:group ref="formattingElements" minOccurs="0"/>
+			      <xs:group ref="simpleBlockElements" minOccurs="0"/>
+			      <xs:element name="block"
+                     minOccurs="0"
+                     maxOccurs="unbounded"
+                     type="staticAudioTranscriptType"/>
+		    </xs:choice>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="simpleImageType" mixed="false">
+		    <xs:annotation>
+			      <xs:documentation>Simple image type which has @src and @title attributes</xs:documentation>
+		    </xs:annotation>
+		    <xs:all>
+			      <xs:element name="caption" type="imageCaptionComplexType" minOccurs="0"/>
+			      <xs:element name="description" type="imageDescriptionType" minOccurs="0"/>
+		    </xs:all>
+		    <xs:attribute name="src" type="noSpaceType" use="required"/>
+		    <xs:attribute name="title" use="optional"/>
+		    <xs:attribute name="a11yTitle" use="optional"/>
+		    <xs:attribute name="a11yTitleLang" type="languageType" use="optional"/>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+		    <xs:attribute name="panzoom" type="panzoomType" use="optional"/>
+		    <xs:attribute name="decorative" type="yesNoType" use="optional"/>
+		    <xs:attributeGroup ref="rcfTriggerableAttributes"/>
+	  </xs:complexType>
+   <xs:complexType name="imageCaptionComplexType" mixed="true">
+		    <xs:annotation>
+			      <xs:documentation>An image caption can contain formattingElements</xs:documentation>
+		    </xs:annotation>
+		    <xs:choice minOccurs="0" maxOccurs="unbounded">
+			      <xs:group ref="formattingElements" minOccurs="0"/>
+			      <xs:element ref="sSpan" minOccurs="0"/>
+			      <xs:element ref="colourText" minOccurs="0"/>
+		    </xs:choice>
+		    <xs:attribute name="type" type="imageCaptionType" use="optional"/>
+		    <xs:attribute name="lang" type="languageType"/>
+	  </xs:complexType>
+   <xs:complexType name="imageDescriptionType" mixed="true">
+		    <xs:annotation>
+			      <xs:documentation>An image description can contain formattingElements</xs:documentation>
+		    </xs:annotation>
+		    <xs:choice minOccurs="0" maxOccurs="unbounded">
+			      <xs:group ref="formattingElements" minOccurs="0"/>
+			      <xs:element ref="sSpan" minOccurs="0"/>
+			      <xs:element ref="colourText" minOccurs="0"/>
+		    </xs:choice>
+		    <xs:attribute name="lang" type="languageType"/>
+	  </xs:complexType>
+   <xs:complexType name="imageAudioType" mixed="false">
+		    <xs:annotation>
+			      <xs:documentation>image audio type - an image which will play audio when clicked</xs:documentation>
+		    </xs:annotation>
+		    <xs:choice minOccurs="0" maxOccurs="1">
+			      <xs:element name="caption">
+				        <xs:complexType mixed="true">
+					          <xs:choice minOccurs="0" maxOccurs="unbounded">
+						            <xs:group ref="formattingElements" minOccurs="0"/>
+						            <xs:element ref="sSpan" minOccurs="0"/>
+						            <xs:element ref="colourText" minOccurs="0"/>
+					          </xs:choice>
+					          <xs:attribute name="type" type="imageCaptionType" use="optional"/>
+					          <xs:attribute name="lang" type="languageType"/>
+				        </xs:complexType>
+			      </xs:element>
+		    </xs:choice>
+		    <xs:attribute name="src" type="noSpaceType" use="required"/>
+		    <xs:attribute name="title" use="optional"/>
+		    <xs:attribute name="a11yTitle" use="optional"/>
+		    <xs:attribute name="a11yTitleLang" type="languageType" use="optional"/>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+		    <xs:attribute name="audio" type="noSpaceType" use="required"/>
+		    <xs:attribute name="decorative" type="yesNoType" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="rcfFormattingObject" mixed="true">
+		    <xs:annotation>
+			      <xs:documentation>Base definition for a formatting object - contains ID and Class attributes</xs:documentation>
+		    </xs:annotation>
+		    <xs:attribute name="id" type="xs:ID" use="optional"/>
+		    <xs:attribute name="class" type="userClassPattern" use="optional"/>
+	  </xs:complexType>
+   <xs:complexType name="dtType" mixed="true">
+        <xs:complexContent>
+            <xs:extension base="rcfFormattingObject">
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:group ref="formattingElements"/>
+                    <xs:element ref="colourText" minOccurs="0"/>
+                </xs:choice>
+                <xs:attributeGroup ref="rcfTriggerableAttributes"/>
+                <xs:attribute name="lang" type="languageType" use="optional"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+   <xs:complexType name="ddType" mixed="true">
+        <xs:complexContent>
+            <xs:extension base="rcfFormattingObject">
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:group ref="formattingElements"/>
+                    <xs:element ref="colourText" minOccurs="0"/>
+                </xs:choice>
+                <xs:attributeGroup ref="rcfTriggerableAttributes"/>
+                <xs:attribute name="lang" type="languageType" use="optional"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+   <xs:group name="simpleBlockElements">
+		    <xs:annotation>
+			      <xs:documentation> simpleBlockElements have *NO* marked children </xs:documentation>
+		    </xs:annotation>
+		    <xs:choice>
+			      <xs:element name="h1" type="simpleBlockElementsType"/>
+			      <xs:element name="h2" type="simpleBlockElementsType"/>
+			      <xs:element name="h3" type="simpleBlockElementsType"/>
+			      <xs:element name="h4" type="simpleBlockElementsType"/>
+			      <xs:element name="h5" type="simpleBlockElementsType"/>
+			      <xs:element name="h6" type="simpleBlockElementsType"/>
+			      <xs:element ref="dl"/>
+			      <xs:element name="p" type="simpleBlockElementsType"/>
+			      <xs:element name="list" type="basicListType"/>
+			      <xs:element name="table" type="simpleTableType"/>
+		    </xs:choice>
+	  </xs:group>
+   <xs:group name="unmarkedInteractiveBlockElements">
+		    <xs:choice>
+			      <xs:element name="video" type="complexVideoType"/>
+		    </xs:choice>
+	  </xs:group>
+   <xs:group name="basicInlineElements">
+		    <xs:choice>
+			      <xs:element name="audio" type="simpleAudioType"/>
+			      <xs:element name="image" type="simpleImageType"/>
+			      <xs:element name="imageAudio" type="imageAudioType"/>
+			      <xs:element name="a" type="hyperLinkType"/>
+			      <xs:element name="textInput">
+				        <xs:annotation>
+					          <xs:documentation>Allows text input fields which are *not* marked to be used in	an activity</xs:documentation>
+				        </xs:annotation>
+				        <xs:complexType>
+					          <xs:attribute name="id" type="xs:string" use="required"/>
+					          <xs:attribute name="class" type="userClassPattern" use="optional"/>
+				        </xs:complexType>
+			      </xs:element>
+		    </xs:choice>
+	  </xs:group>
+   <xs:group name="formattingElements">
+		    <xs:annotation>
+			      <xs:documentation>The basic formatting tags: b, i, u, sup are allowed to contain other
+				tags, but only of the basicFormatting type</xs:documentation>
+		    </xs:annotation>
+		    <xs:choice>
+			      <xs:element name="b" type="basicFormattingType"/>
+			      <xs:element name="i" type="basicFormattingType"/>
+			      <xs:element name="u" type="basicFormattingType"/>
+			      <xs:element name="strike" type="basicFormattingType"/>
+			      <xs:element name="sup" type="basicFormattingType"/>
+			      <xs:element name="br">
+				        <xs:complexType/>
+			      </xs:element>
+			      <xs:element name="phons" type="phonsType"/>
+		    </xs:choice>
+	  </xs:group>
+   <xs:group name="multimediaFormattingElements">
+		    <xs:annotation>
+			      <xs:documentation>The basic formatting tags: b, i, u, sup are allowed to contain other tags, but only of the basicFormatting type</xs:documentation>
+		    </xs:annotation>
+		    <xs:choice>
+			      <xs:element name="b" type="basicFormattingType"/>
+			      <xs:element name="i" type="basicFormattingType"/>
+			      <xs:element name="u" type="basicFormattingType"/>
+			      <xs:element name="strike" type="basicFormattingType"/>
+			      <xs:element name="sup" type="basicFormattingType"/>
+			      <xs:element name="sub" type="basicFormattingType"/>
+			      <xs:element name="br">
+				        <xs:complexType/>
+			      </xs:element>
+			      <xs:element ref="sSpan" minOccurs="0"/>
+			      <xs:element ref="colourText" minOccurs="0"/>
+			      <xs:element ref="audio" minOccurs="0"/>
+			      <xs:element ref="image" minOccurs="0"/>
+		    </xs:choice>
+	  </xs:group>
+   <xs:attributeGroup name="rcfTriggerableAttributes">
+		    <xs:annotation>
+			      <xs:documentation>A triggerable object will detect clicks, and add it's class value to the 'activity div' on the final page</xs:documentation>
+		    </xs:annotation>
+		    <xs:attribute name="triggerClass" type="triggerClassPattern" use="optional"/>
+		    <xs:attribute name="triggerLoop" type="yesNoType" use="optional"/>
+		    <xs:attribute name="triggerNumber" type="xs:integer" use="optional"/>
+		    <xs:attribute name="triggerExclusive" type="yesNoType" use="optional">
+			      <xs:annotation>
+				        <xs:documentation>'Exclusive triggers' will remove any other trigger classes added to the activity div</xs:documentation>
+			      </xs:annotation>
+		    </xs:attribute>
+	  </xs:attributeGroup>
+</xsd:schema>
